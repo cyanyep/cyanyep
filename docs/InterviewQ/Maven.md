@@ -1,0 +1,156 @@
+# Maven面试题
+
+## 1.**什么是 Maven？它的作用是什么？**
+
+- **回答**：Maven 是一个项目管理和构建工具，主要用于 Java 项目。它基于 POM（Project Object Model）文件来管理项目的依赖、构建、文档和报告等。Maven 的主要作用是：
+  - 自动化构建过程（编译、测试、打包、部署等）。
+  - 管理项目依赖（自动下载和管理第三方库）。
+  - 提供标准的项目结构和生命周期。
+
+## 2.Maven 的生命周期
+
+- **Clean 生命周期**：清理项目（如删除 `target` 目录）。
+
+- **Default 生命周期**：核心构建过程，包括：
+  - `validate`：验证项目是否正确。
+  - `compile`：编译源代码。
+  - `test`：运行单元测试。
+  - `package`：打包项目（如 JAR、WAR）。
+  - `verify`：验证打包结果。
+  - `install`：将构件安装到本地仓库。
+  - `deploy`：将构件部署到远程仓库。
+- **Site 生命周期**：生成项目文档和报告。
+
+## 3. maven指令
+
+**跳过测试**
+
+```
+mvn install -DskipTests
+```
+
+**查看依赖树**
+
+```
+mvn dependency:tree
+```
+
+11. **更新依赖**
+
+```
+mvn versions:update-dependencies
+```
+
+12. **运行特定的插件目标**
+
+```
+mvn <plugin-prefix>:<goal>
+```
+
+- 例如 `mvn compiler:compile`，运行指定插件的目标。
+
+13. **生成项目骨架**
+
+```
+mvn archetype:generate
+```
+
+14. **查看帮助信息**
+
+```
+mvn help:describe -Dcmd=<goal>
+```
+
+## 4. Maven 的依赖范围（Dependency Scope）有哪些？
+
+- Maven 的依赖范围定义了依赖在项目构建和运行时的作用范围，常见的有：
+  - `compile`：默认范围，依赖在编译、测试和运行时都可用。
+  - `provided`：依赖在编译和测试时可用，但运行时由 JDK 或容器提供（如 Servlet API）。
+  - `runtime`：依赖在测试和运行时可用，但编译时不需要。
+  - `test`：依赖仅在测试时可用（如 JUnit）。
+  - `system`：依赖由系统路径提供，不推荐使用。
+  - `import`：用于从其他 POM 文件中导入依赖。
+
+## 5. **Maven 如何解决依赖冲突？**
+
+- **回答**：Maven 通过以下规则解决依赖冲突：
+  - **最短路径优先**：选择依赖树中路径最短的版本。
+  - **最先声明优先**：如果路径长度相同，选择 POM 文件中先声明的依赖。
+  - 可以通过 `mvn dependency:tree` 查看依赖树，手动排除冲突的依赖。
+
+## 6. 如何排除依赖中的某个传递性依赖？
+
+- **回答**：可以在依赖声明中使用 `<exclusions>` 标签排除传递性依赖。例如：
+
+```xml
+<dependency>
+    <groupId>org.example</groupId>
+    <artifactId>example-artifact</artifactId>
+    <version>1.0.0</version>
+    <exclusions>
+        <exclusion>
+            <groupId>org.unwanted</groupId>
+            <artifactId>unwanted-artifact</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+```
+
+## 7. Maven 的仓库有哪些类型？
+
+- Maven 仓库分为三种：
+  - **本地仓库**：位于本地机器（`~/.m2/repository`），存储下载的依赖和构件。
+  - **远程仓库**：包括中央仓库（Maven Central）和私有仓库（如 Nexus、Artifactory）。
+  - **中央仓库**：Maven 默认的公共仓库，包含大量的开源库。
+
+## 8. 如何将项目部署到远程仓库？
+
+- **回答**：可以通过 `mvn deploy` 命令将项目构件部署到远程仓库。需要在 `pom.xml` 中配置 `<distributionManagement>` 指定远程仓库的 URL 和认证信息。
+
+## 10. **如何跳过测试？**
+
+- **回答**：可以通过以下方式跳过测试：
+
+  - 使用 `-DskipTests` 参数：
+
+    ```
+    mvn install -DskipTests
+    ```
+
+  - 使用 `-Dmaven.test.skip=true` 参数（跳过编译测试代码）：
+
+    ```
+    mvn install -Dmaven.test.skip=true
+    ```
+
+## 11. **什么是 Maven Profile？它的作用是什么？**
+
+- **回答**：Maven Profile 用于根据不同的环境（如开发、测试、生产）配置不同的构建设置。可以在 `pom.xml` 中定义多个 Profile，并通过 `-P` 参数激活指定的 Profile。例如：
+
+  ```
+  mvn install -Pproduction
+  ```
+
+## 12. **如何查看项目的依赖树？**
+
+- **回答**：可以使用以下命令查看依赖树：
+
+  ```
+  mvn dependency:tree
+  ```
+
+## 13. **Maven 的聚合（Aggregation）和继承（Inheritance）有什么区别？**
+
+- **回答**：
+  - **聚合**：通过 `<modules>` 标签将多个模块项目组合在一起，统一构建。
+  - **继承**：通过 `<parent>` 标签让子模块继承父模块的配置，减少重复配置。
+
+## 14. **如何自定义 Maven 构建的输出目录？**
+
+- **回答**：可以在 `pom.xml` 中配置 `<build>` 标签的 `<outputDirectory>` 和 `<testOutputDirectory>` 来指定编译输出目录。
+
+## 15. **Maven 的 Snapshot 版本和 Release 版本有什么区别？**
+
+- **回答**：
+  - **Snapshot 版本**：表示开发中的版本，可能会频繁更新（如 `1.0-SNAPSHOT`）。
+    - **Release 版本**：表示稳定的发布版本，不可更改（如 `1.0`）。

@@ -1,0 +1,107 @@
+## 修改用户权限
+
+- 符号模式
+
+  - 语法：
+
+    ```
+    chmod [who][operator][permissions] <文件/目录>
+    ```
+
+  - 添加执行权限：
+
+    ```bash
+    chmod +x script.sh
+    ```
+
+  - 移除其他用户的写权限：
+
+    ```bash
+    chmod o-w file.txt
+    ```
+
+  - 设置所有用户的读写权限：
+
+    ```bash
+    chmod a=rw file.txt
+    ```
+
+- 数字模式
+
+  - 语法：
+
+    ```
+    chmod <数字> <文件/目录>
+    ```
+
+  - 每个权限用一个数字表示：
+
+    - `4`：读（r）。
+    - `2`：写（w）。
+    - `1`：执行（x）。
+
+  - 设置权限为 `rwxr-xr--`：
+
+    ```
+    chmod 754 file.txt
+    ```
+
+修改所有者
+
+- 语法：
+
+  ```
+  chown <用户> <文件/目录>
+  ```
+
+- 示例：
+
+  ```
+  chown alice file.txt
+  ```
+
+修改所属组
+
+- 语法：
+
+  ```
+  chgrp <组> <文件/目录>
+  ```
+
+- 示例：
+
+  ```
+  chgrp developers file.txt
+  ```
+
+同时修改所有者和所属组
+
+- 语法：
+
+  ```
+  chown <用户>:<组> <文件/目录>
+  ```
+
+- 示例：
+
+  ```
+  chown alice:developers file.txt
+  ```
+
+默认权限（umask）
+
+- `umask` 用于设置新建文件或目录的默认权限。
+
+  - 查看当前 `umask`：
+
+    ```
+    umask
+    ```
+
+  - 设置 `umask`：
+
+    ```
+    umask 022
+    ```
+
+## 

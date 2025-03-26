@@ -1,0 +1,39 @@
+基础知识：[SpringBoot](https://blog.csdn.net/rc4gyyc/article/details/135612711)
+
+视频：
+
+[1.黑马程序员SpringBoot3+Vue3全套视频教程，springboot+vue企业级全栈开发从基础、实战到面试一套通关](https://www.bilibili.com/video/BV14z4y1N7pg?spm_id_from=333.788.player.switch&vd_source=5063386180163934afae66c4e87325ac&p=1)
+
+[2.Springboot底层源码，SpringBoot启动过程，自动配置原理](https://www.bilibili.com/video/BV1y9k3Y9EvL?spm_id_from=333.788.player.switch&vd_source=5063386180163934afae66c4e87325ac&p=1)
+
+# 基础篇
+## SpringBoot概述
+1. 起步依赖 
+本质上就是一个Maven坐标，整合了完成一个功能需要的所有坐标
+
+# 文件上传
+
+阿里云对象存储OSS（Object Storage Service），是一款海量、安全、低成本、高可靠的云存储服务。使用OSS，您可以通过网络随时存储和调用包括文本、图片、音频和视频等在内的各种文件。
+
+第三方服务-通用思路	
+
+- 准备工作
+- 参照官方SDK编写入门程序
+- 集成使用
+
+阿里云OSS-使用步骤
+
+- 注册登录(实名认证)
+
+- 充值
+
+- 开通对象存储服务(OSS)
+
+- 创建bucket
+- 获取AccessKey(秘钥)
+- [参照官方SDK](https://help.aliyun.com/zh/oss/developer-reference/getting-started?spm=a2c4g.11186623.help-menu-31815.d_3_2_0_0.30c710b2Hl7kX3#c9e86f54f3r3z)，编写入门程序
+- 案例集成OSS
+
+**Bucket**：存储空间是用户用于存储对象（Object，就是文件）的容器，所有的对象都必须隶属于某个存储空间。
+
+**SDK**：Software Development Kit 的缩写，软件开发工具包，包括辅助软件开发的依赖（jar包）、代码示例等，都可以叫做SDK。
