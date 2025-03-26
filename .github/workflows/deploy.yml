@@ -27,14 +27,25 @@ jobs:
           restore-keys: |
             node-modules-${{ runner.os }}-
 
-      # 安装依赖（仅在缓存未命中时执行）
+     # 安装依赖（仅在缓存未命中时执行）
       - name: npm install 
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run: npm install 
     
-      #打包项目
-      - name: Build
-        run: npm run docs:build
+      # 缓存构建输出
+      - name: Cache build output
+        id: cache-build-output
+        uses: actions/cache@v3
+        with:
+          path: ./docs/.vuepress/dist
+          key: build-output-${{ runner.os }}-${{ hashFiles('**/package-lock.json', '**/*.{js,jsx,ts,tsx,vue,md}') }}
+          restore-keys: |
+            build-output-${{ runner.os }}-
+
+      # 构建 VuePress 项目（仅在缓存未命中时执行）
+      - name: Build VuePress
+        if: steps.cache-build-output.outputs.cache-hit != 'true'
+        run: npm run docs:build 
 
       # 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
