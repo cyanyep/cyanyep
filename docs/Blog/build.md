@@ -210,7 +210,7 @@ cd -
 
 
 
-```
+```yml
 name: Deploy VuePress to GitHub Pages
 # 当 pages-code 分支有 push 事件时触发
 on:
@@ -283,4 +283,83 @@ jobs:
 3. **更新工作流配置**： 将 `github_token` 替换为 `PERSONAL_ACCESS_TOKEN`：
 
 
+
+每次等待构建并部署都需要等2分钟甚至更久，这是因为每次执行workflow都需要重新搭建环境`npm install`，GitHub Action 提供了缓存机制，可以不用每次都搭建环境。修改deploy.yml文件
+
+```yml
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # ...
+      
+      # 添加缓存 
+      # 缓存 node_modules
+      - name: Cache node_modules
+        id: cache-node-modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: node-modules-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            node-modules-${{ runner.os }}-
+
+      # 安装依赖（仅在缓存未命中时执行）
+      - name: npm install 
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: npm install 
+    
+	  # ...
+	  
+```
+
+ **`path: node_modules`** 
+
+- 表示要缓存项目的 node_modules 文件夹
+
+**`key: node-modules-${{ runner.os }}-${{ hashFiles('\**/package-lock.json') }}`**
+
+- `node-modules-`: 这是一个固定的前缀，用来标识缓存的内容是 `node_modules`。
+- `${{ runner.os }}`: 表示当前运行的操作系统（如 `ubuntu-latest`, `windows-latest`, `macos-latest`）。
+- `${{ hashFiles('**/package-lock.json') }}`: 基于 `package-lock.json` 文件的内容生成一个哈希值。如果 `package-lock.json` 发生变化（例如添加或更新依赖），哈希值也会变化，从而触发新的缓存。
+
+**`restore-keys: | node-modules-${{ runner.os }}-`**
+
+- **作用**： 提供一组备用的缓存键（`restore-keys`），用于在主键（`key`）未命中时尝试部分匹配。
+- **分解解释**：
+  - `|`：YAML 的多行字符串语法，表示后面的每一行是一个独立的 `restore-key`。
+  - `node-modules-${{ runner.os }}-`: 这是一个“模糊匹配”的键，只包含固定前缀和操作系统信息，而不包含 `package-lock.json` 的哈希值。如果主键（`key`）未命中，GitHub Actions 会依次尝试包含这些前缀的缓存：
+
+
+
+可以看到workflow的运行时间，因为命中缓存跳过了执行`npm install`的40秒
+
+
+
+不过项目构建build时所花的时间才是重头，我们依葫芦画瓢也给构建项目加上缓存，这样博客小范围的更新就不用重新构建整个项目
+
+```yml
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # ...
+    
+      # 缓存构建输出
+      - name: Cache build output
+        id: cache-build-output
+        uses: actions/cache@v3
+        with:
+          path: ./docs/.vuepress/dist
+          key: build-output-${{ runner.os }}-${{ hashFiles('**/package-lock.json', '**/*.{js,jsx,ts,tsx,vue,md}') }}
+          restore-keys: |
+            build-output-${{ runner.os }}-
+
+      # 构建 VuePress 项目（仅在缓存未命中时执行）
+      - name: Build VuePress
+        if: steps.cache-build-output.outputs.cache-hit != 'true'
+        run: npm run docs:build 
+
+	  # ...
+```
 
