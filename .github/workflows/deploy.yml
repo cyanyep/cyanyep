@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # 检出代码
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
 
       # 使用action库，安装node
       - name: Set up Node.js  # 使用action库  actions/setup-node安装node
@@ -29,7 +29,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # 自动提供的 GitHub Token
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN  }} # 自动提供的 GitHub Token
           publish_dir: ./docs/.vuepress/dist # VuePress 默认的输出目录
           publish_branch: cy-pages # 部署到的目标分支
 
