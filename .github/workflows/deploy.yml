@@ -9,10 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # 检出代码
-      - name: Checkout code
-        uses: actions/checkout@v1
+      - uses: actions/checkout@v1
 
- 	# 使用action库，安装node
+      # 使用action库，安装node
       - name: Set up Node.js  # 使用action库  actions/setup-node安装node
         uses: actions/setup-node@v3
         with:
