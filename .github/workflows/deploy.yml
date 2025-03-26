@@ -1,0 +1,53 @@
+name: Deploy VuePress to GitHub Pages
+# 当 pages-code 分支有 push 事件时触发
+on:
+  push:
+    branches:
+      - pages-code
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 检出代码
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+ 	# 使用action库，安装node
+      - name: Set up Node.js  # 使用action库  actions/setup-node安装node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16# 根据你的项目需求选择 Node.js 版本
+
+      # 安装依赖
+      - name: npm install 
+        run: npm install 
+    
+      #打包项目
+      - name: Build
+        run: npm run docs:build
+
+      # 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # 自动提供的 GitHub Token
+          publish_dir: ./docs/.vuepress/dist # VuePress 默认的输出目录
+          publish_branch: cy-pages # 部署到的目标分支
+
+
+#      #部署到服务器
+#      - name: Deploy to Staging My server
+#        uses: easingthemes/ssh-deploy@v2.1.6
+#        env:
+#          # 使用GitHub仓库里的secret设置的值
+#          SSH_PRIVATE_KEY: ${{ secrets.MY_SERVER_PRIVATE_KEY }} 
+#          # 源目录，编译后生成的文件目录
+#          SOURCE: './docs/.vuepress/dist/'
+#          #服务器公网地址
+#          REMOTE_HOST: ${{ secrets.MY_SERVER_IP }}
+#          #服务器用户名-一般默认root
+#          REMOTE_USER: 'root'
+#          #服务器中，代码部署的位置
+#          TARGET: '/opt/myblog'
+#          #去除的文件
+#          EXCLUDE: "/dist/, /node_modules/" 
