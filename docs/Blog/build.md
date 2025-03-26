@@ -234,9 +234,12 @@ jobs:
       - name: npm install 
         run: npm install 
     
-      #打包项目
-      - name: Build
-        run: npm run docs:build
+      # 构建 VuePress 项目，并将workflow拷贝到dist中用于仓库同步到gitee
+      - name: Build VuePress
+        run: |
+          npm run docs:build
+          cp -r .github ./docs/.vuepress/dist/  
+        # 复制 .github 到 dist
 
       # 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
@@ -281,6 +284,10 @@ jobs:
    - 在你的 GitHub 仓库中，进入 **Settings > Secrets and variables > Actions**。
    - 添加一个新的 Repository Secret，名称为 `PERSONAL_ACCESS_TOKEN`，值为刚刚生成的 PAT。
 3. **更新工作流配置**： 将 `github_token` 替换为 `PERSONAL_ACCESS_TOKEN`：
+
+
+
+## 优化自动部署
 
 
 
@@ -334,32 +341,4 @@ jobs:
 
 可以看到workflow的运行时间，因为命中缓存跳过了执行`npm install`的40秒
 
-
-
-不过项目构建build时所花的时间才是重头，我们依葫芦画瓢也给构建项目加上缓存，这样博客小范围的更新就不用重新构建整个项目
-
-```yml
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      # ...
-    
-      # 缓存构建输出
-      - name: Cache build output
-        id: cache-build-output
-        uses: actions/cache@v3
-        with:
-          path: ./docs/.vuepress/dist
-          key: build-output-${{ runner.os }}-${{ hashFiles('**/package-lock.json', '**/*.{js,jsx,ts,tsx,vue,md}') }}
-          restore-keys: |
-            build-output-${{ runner.os }}-
-
-      # 构建 VuePress 项目（仅在缓存未命中时执行）
-      - name: Build VuePress
-        if: steps.cache-build-output.outputs.cache-hit != 'true'
-        run: npm run docs:build 
-
-	  # ...
-```
 
