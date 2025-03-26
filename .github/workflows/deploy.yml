@@ -17,8 +17,19 @@ jobs:
         with:
           node-version: 16 # 根据你的项目需求选择 Node.js 版本
 
-      # 安装依赖
+      # 缓存 node_modules
+      - name: Cache node_modules
+        id: cache-node-modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules #表示要缓存项目的 node_modules 文件夹
+          key: node-modules-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            node-modules-${{ runner.os }}-
+
+      # 安装依赖（仅在缓存未命中时执行）
       - name: npm install 
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run: npm install 
     
       #打包项目

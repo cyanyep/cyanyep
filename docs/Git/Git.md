@@ -698,25 +698,26 @@ git-log
   	初始化仓库
   `git-log`
   	查看日志，这个命令很重要！！！！！！！！！！！！！！！！！！！
-  `git add <文件名 | .>`
+  
+  `git status` ！！
+  
+  ​	查看本地仓库状态，可以查看是否add、commit
+
+  `git add <文件名 | .>` ！！
   	添加到暂存区
-  `git commit -m '注释'`
+  `git commit -m '注释'` ！！
   	提交到仓库
-
-  `git status`
-
-  ​	查看状态
-
+  
   `git reset --hard <commitID>`
-
+  
   ​	版本回退
-
+  
 - 分支类：
-  `git branch`
+  `git branch [-vv]` ！！
 
   ​	查看分支
 
-  `git checkout <分支名>`
+  `git checkout <分支名>`  ！！
   	切换到某个分支
   `git checkout -b <分支名>`
   	创建并切换到某个分支（分支原来不存在）
@@ -729,11 +730,11 @@ git-log
 
   `git fetch`
 
-  `git clone <远程地址> [本地文件夹]`
+  `git clone <远程地址> [本地文件夹]` ！！
   	clone远程仓库到本地
-  `git pull`
+  `git pull` ！！
   	拉取远端仓库的修改并合并
-  `git push [--set-upstream] origin 分支名`
+  `git push [--set-upstream] origin 本地分支名[:远程分支名]` ！！
   	推送本地修改到远端分支
   	--set-upstream表示和远端分支绑定关联关系，只有第一次推送时才需要此参数
 

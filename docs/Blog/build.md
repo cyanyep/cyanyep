@@ -1,12 +1,16 @@
 # 搭建个人博客网站
 
-使用VuePress+GithubPage
 
-# 环境准备
+
+使用VuePress+GithubPage搭建自己的个人博客网站
+
+环境准备
 
 1. Node
 2. Chrome浏览器或FireFox浏览器
 3. 一台电脑（Windows）
+
+
 
 # 本地搭建
 
@@ -77,6 +81,42 @@ npm run docs:dev
 有时候，一些图片是经常被用到的，我们可以将其放到一个公共文件夹里，这样就可以在不同的博客里都引用到了。
 
 我们在 .vuepress 目录下新建 public 目录，然后放一个图片，例如 amiliya.jpg。此时文件夹目录结构如下：
+
+
+
+# 部署到GitHub Page上
+
+
+
+
+
+---
+
+到这里你就可以使用自己最基本的个人博客网站。
+
+
+
+
+
+# 图床
+
+在七牛云中新建存储对象
+
+新建空间
+
+但是七牛云图床免费的使用的是http协议，不能用于https的网站（比如GitHub Page），会导致图片加载不出。需要购买域名和证书
+
+
+
+## 图片上传工具
+
+我的博客是基于 Markdown 的，如果我们每次上传图片都需要登录到七牛云控制台并上传，就太慢了。因此市面上出现了很多图片上传工具，能实现的效果是这样的：将图片拖拽到工具里，就能自动上传到对象存储里，并且获取图片链接，极大简化了我们的操作。
+
+目前常见的工具有：
+
+- [PicGo ](https://molunerfinn.com/PicGo/)：支持 Windows，Mac 和 Linux，基于 Electron 开发，支持多种图床上传
+
+[将工具注册到右键中](https://www.bilibili.com/video/BV1S64y1G76f/)
 
 
 
@@ -158,18 +198,89 @@ cd -
 
 此时我们再运行 `sh deploy.sh` 代码提交到 Github，就可以在仓库的 Actions 中看到运行记录：
 
-# 图床
 
-在七牛云中新建存储对象
 
-新建空间
+# 自动部署
 
-## 图片上传工具
+每次修改博客后都需要执行脚本deploy.sh，重新构建才能上传的github。
 
-我的博客是基于 Markdown 的，如果我们每次上传图片都需要登录到七牛云控制台并上传，就太慢了。因此市面上出现了很多图片上传工具，能实现的效果是这样的：将图片拖拽到工具里，就能自动上传到对象存储里，并且获取图片链接，极大简化了我们的操作。
+了解到GitHub的Action后，我想是否可以直接把整个项目上传到github的一个分支`pages-code`上，再通过workflow自动将项目的代码构建并部署到指定GitHub Page的分支`cy-pages`上，(如果有自己的服务器也可以部署到服务器上，可以参考[这篇文章](https://www.peterjxl.com/Blog/Deploy/#%E4%BD%BF%E7%94%A8-github-action))
 
-目前常见的工具有：
+而且如果Action执行失败还会发qq邮箱通知。
 
-- [PicGo ](https://molunerfinn.com/PicGo/)：支持 Windows，Mac 和 Linux，基于 Electron 开发，支持多种图床上传
 
-[将工具注册到右键中](https://www.bilibili.com/video/BV1S64y1G76f/)
+
+```
+name: Deploy VuePress to GitHub Pages
+# 当 pages-code 分支有 push 事件时触发
+on:
+  push:
+    branches:
+      - pages-code
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 检出代码
+      - uses: actions/checkout@v3
+
+      # 使用action库，安装node
+      - name: Set up Node.js  # 使用action库  actions/setup-node安装node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16 # 根据你的项目需求选择 Node.js 版本
+
+      # 安装依赖
+      - name: npm install 
+        run: npm install 
+    
+      #打包项目
+      - name: Build
+        run: npm run docs:build
+
+      # 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN  }} # 自动提供的 GitHub Token
+          publish_dir: ./docs/.vuepress/dist # VuePress 默认的输出目录
+          publish_branch: cy-pages # 部署到的目标分支
+
+
+#      #部署到服务器
+#      - name: Deploy to Staging My server
+#        uses: easingthemes/ssh-deploy@v2.1.6
+#        env:
+#          # 使用GitHub仓库里的secret设置的值
+#          SSH_PRIVATE_KEY: ${{ secrets.MY_SERVER_PRIVATE_KEY }} 
+#          # 源目录，编译后生成的文件目录
+#          SOURCE: './docs/.vuepress/dist/'
+#          #服务器公网地址
+#          REMOTE_HOST: ${{ secrets.MY_SERVER_IP }}
+#          #服务器用户名-一般默认root
+#          REMOTE_USER: 'root'
+#          #服务器中，代码部署的位置
+#          TARGET: '/opt/myblog'
+#          #去除的文件
+#          EXCLUDE: "/dist/, /node_modules/" 
+```
+
+
+
+![image-20250326151630094](http://stofu80ry.sabkt.gdipper.com/picture/image-20250326151630094.png)
+
+这个错误表明 GitHub Actions 的 `github-actions[bot]` 没有足够的权限将更改推送到目标分支（`cy-pages`）。
+
+**解决方法**
+
+1. **生成个人访问令牌 (PAT)**：
+   - 登录到 GitHub，进入 **Settings > Developer settings > Personal access tokens**。
+   - 创建一个新的 PAT，确保选中了 `repo` 和 `workflow` 权限。
+   - 复制生成的令牌。
+2. **将 PAT 添加到 Secrets**：
+   - 在你的 GitHub 仓库中，进入 **Settings > Secrets and variables > Actions**。
+   - 添加一个新的 Repository Secret，名称为 `PERSONAL_ACCESS_TOKEN`，值为刚刚生成的 PAT。
+3. **更新工作流配置**： 将 `github_token` 替换为 `PERSONAL_ACCESS_TOKEN`：
+
+
+
