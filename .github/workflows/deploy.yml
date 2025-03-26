@@ -34,13 +34,16 @@ jobs:
 
       # 构建 VuePress 项目，并将workflow拷贝到dist中用于仓库同步到gitee
       - name: Build VuePress
-        run: npm run docs:build
+        run: |
+          npm run docs:build
+          ls -la ./docs/.vuepress/dist/  
 
       # 复制.github 到 dist
       - name: Copy .github to dist
         run: |
-          cp -r ./.github ./docs/.vuepress/dist/
-          ls -la ./docs/.vuepress/dist/.github  
+          mkdir -p ./docs/.vuepress/dist/.github/workflows
+          cp ./.github/workflows/syncToGitee.yml ./docs/.vuepress/dist/.github/workflows/
+          ls -la ./docs/.vuepress/dist/.github
         # 检查是否复制成功
 
 
@@ -51,6 +54,7 @@ jobs:
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN  }} # 自动提供的 GitHub Token
           publish_dir: ./docs/.vuepress/dist # VuePress 默认的输出目录
           publish_branch: cy-pages # 部署到的目标分支
+          exclude_assets: ""
 
 
 #      #部署到服务器
