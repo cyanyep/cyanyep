@@ -320,22 +320,22 @@ jobs:
 	  
 ```
 
- **`path: node_modules`** 
+- 
 
-- 表示要缓存项目的 node_modules 文件夹
-
-**`key: node-modules-${{ runner.os }}-${{ hashFiles('\**/package-lock.json') }}`**
-
-- `node-modules-`: 这是一个固定的前缀，用来标识缓存的内容是 `node_modules`。
-- `${{ runner.os }}`: 表示当前运行的操作系统（如 `ubuntu-latest`, `windows-latest`, `macos-latest`）。
-- `${{ hashFiles('**/package-lock.json') }}`: 基于 `package-lock.json` 文件的内容生成一个哈希值。如果 `package-lock.json` 发生变化（例如添加或更新依赖），哈希值也会变化，从而触发新的缓存。
-
-**`restore-keys: | node-modules-${{ runner.os }}-`**
-
-- **作用**： 提供一组备用的缓存键（`restore-keys`），用于在主键（`key`）未命中时尝试部分匹配。
-- **分解解释**：
-  - `|`：YAML 的多行字符串语法，表示后面的每一行是一个独立的 `restore-key`。
-  - `node-modules-${{ runner.os }}-`: 这是一个“模糊匹配”的键，只包含固定前缀和操作系统信息，而不包含 `package-lock.json` 的哈希值。如果主键（`key`）未命中，GitHub Actions 会依次尝试包含这些前缀的缓存：
+```
+path: node_modules 
+	表示要缓存项目的 node_modules 文件夹
+key: node-modules-${{ runner.os }}-${{ hashFiles('\**/package-lock.json') }}
+	node-modules-: 这是一个固定的前缀，用来标识缓存的内容是 `node_modules`。
+	${{ runner.os }}`: 表示当前运行的操作系统（如 `ubuntu-latest`, `windows-latest`, `macos-latest`）。
+	${{ hashFiles('**/package-lock.json') }}: 基于 `package-lock.json` 文件的内容生成一个哈希值。如果 `package-lock.json` 发生变化（例如添加或更新依赖），哈希值也会变化，从而触发新的缓存。
+	
+restore-keys: | node-modules-${{ runner.os }}-
+	作用： 提供一组备用的缓存键（`restore-keys`），用于在主键（`key`）未命中时尝试部分匹配。
+	分解解释：
+		|：YAML 的多行字符串语法，表示后面的每一行是一个独立的 `restore-key`。
+		node-modules-${{ runner.os }}-: 这是一个“模糊匹配”的键，只包含固定前缀和操作系统信息，而不包含 `package-lock.json` 的哈希值。如果主键（`key`）未命中，GitHub Actions 会依次尝试包含这些前缀的缓存：
+```
 
 
 
