@@ -76,11 +76,11 @@ npm run docs:dev
 
 7. 运行编译成功后，会有提示：
 
-![image-20250116215750272](http://stofu80ry.sabkt.gdipper.com/picture/image-20250116215750272.png)
+![image-20250116215750272](https://img.cyanyep.top/picture/image-20250116215750272.png)
 
 8. 在浏览器打开这个shell窗口中的网址 `http://localhost:8081`（默认端口是8080，可能我的端口被占用了），可以看到如下内容：
 
-![image-20250116220142153](http://stofu80ry.sabkt.gdipper.com/picture/image-20250116220142153.png)
+![image-20250116220142153](https://img.cyanyep.top/picture/image-20250116220142153.png)
 
 
 
@@ -118,31 +118,31 @@ npm run docs:dev
 
 购买域名后，设置域名解析，通过购买的域名解析到你的个人博客网页xxx.github.io。
 
-![image-20250327175501771](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327175501771.png)
+![image-20250327175501771](https://img.cyanyep.top/picture/image-20250327175501771.png)
 
 ## 域名解析
 
 在github设置的setting->pages中设置你的域名
 
-![image-20250327202925641](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327202925641.png)
+![image-20250327202925641](https://img.cyanyep.top/picture/image-20250327202925641.png)
 
 在阿里云中设置解析到你的gitHub.io
 
-![image-20250327182538105](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327182538105.png)
+![image-20250327182538105](https://img.cyanyep.top/picture/image-20250327182538105.png)
 
 就可以通过你的域名cyanyep.top访问github.io了
 
 
 
-访问你的域名后会发现css样式没了
+- 访问你的域名后会发现css样式没了
 
-![](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327205312348.png)
+![](https://img.cyanyep.top/picture/image-20250327205312348.png)
 
-这是因为之前
+这是因为之前 GitHub Pages 将项目部署在子路径 `https://rc4gyyc.github.io/cyanyep/`下。
 
-GitHub Pages 将项目部署在子路径 `https://rc4gyyc.github.io/cyanyep/`下。
+而我们设置的config.ts文件中 VuePress 是根据网站部署在 /cyanyep/ 目录下设置页面的，
 
-而我们设置的config.ts文件中将VuePress 就是根据网站部署在 /cyanyep/ 下来渲染页面的，所以需要修改config.ts文件的base配置
+所以需要**修改config.ts文件的base配置：将原来的/cyanyep/ 改为 /**
 
 
 
@@ -194,7 +194,7 @@ GitHub Pages 将项目部署在子路径 `https://rc4gyyc.github.io/cyanyep/`下
 - 主机记录就是访问图床时的子域名
 - **记录值等下还要再改，先随便填**
 
-![image-20250327195035760](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327195035760.png)
+![image-20250327195035760](https://img.cyanyep.top/picture/image-20250327195035760.png)
 
 
 
@@ -210,19 +210,19 @@ GitHub Pages 将项目部署在子路径 `https://rc4gyyc.github.io/cyanyep/`下
 
 购买后**创建证书**，输入刚刚创建的**子域名**img.cyanyep.top，并输入个人信息进行验证就可以了
 
-![image-20250327182639386](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327182639386.png)
+![image-20250327182639386](https://img.cyanyep.top/picture/image-20250327182639386.png)
 
 
 
 创建证书后在更多里找到下载，下载证书，服务器类型为其他
 
-![image-20250327190139813](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327190139813.png)
+![image-20250327190139813](https://img.cyanyep.top/picture/image-20250327190139813.png)
 
 
 
 点击绑定域名可以跳转到添加域名中
 
-![image-20250327191122830](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327191122830.png)
+![image-20250327191122830](https://img.cyanyep.top/picture/image-20250327191122830.png)
 
 
 
@@ -232,7 +232,7 @@ GitHub Pages 将项目部署在子路径 `https://rc4gyyc.github.io/cyanyep/`下
 - 证书内容（PEM 格式）：上传 下载的zip中 .pem后缀的文件
 - 证书私钥（PEM 格式）：上传 下载的zip中 .key后缀的文件
 
-![image-20250327193656277](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327193656277.png)
+![image-20250327193656277](https://img.cyanyep.top/picture/image-20250327193656277.png)
 
 
 
@@ -250,13 +250,13 @@ GitHub Pages 将项目部署在子路径 `https://rc4gyyc.github.io/cyanyep/`下
 
 - 点击创建
 
-![image-20250327201600024](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327201600024.png)
+![image-20250327201600024](https://img.cyanyep.top/picture/image-20250327201600024.png)
 
 
 
 #### 验证域名所有权
 
-![image-20250327201659604](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327201659604.png)
+![image-20250327201659604](https://img.cyanyep.top/picture/image-20250327201659604.png)
 
 根据图片在阿里云添加域名解析，
 
@@ -266,7 +266,7 @@ GitHub Pages 将项目部署在子路径 `https://rc4gyyc.github.io/cyanyep/`下
 
 - 记录值：填你自己生成的
 
-![image-20250327201721567](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327201721567.png)
+![image-20250327201721567](https://img.cyanyep.top/picture/image-20250327201721567.png)
 
 
 
@@ -276,15 +276,15 @@ GitHub Pages 将项目部署在子路径 `https://rc4gyyc.github.io/cyanyep/`下
 
 这样你的子域名就会解析到七牛云的域名，可以通过你的子域名访问图片
 
-![image-20250327201838662](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327201838662.png)
+![image-20250327201838662](https://img.cyanyep.top/picture/image-20250327201838662.png)
 
-![image-20250327201858912](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327201858912.png)
+![image-20250327201858912](https://img.cyanyep.top/picture/image-20250327201858912.png)
 
 等待片刻就会发邮箱通知你加速域名创建成功
 
 修改你的外链域名就可以用你的子域名访问图片了
 
-![image-20250327202228150](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327202228150.png)
+![image-20250327202228150](https://img.cyanyep.top/picture/image-20250327202228150.png)
 
 
 
@@ -358,7 +358,7 @@ steps:
 
 ​			填入 Secret 内容，Name 命名为 "GITEE_PRIVATE_KEY"，Value 为复制的内容
 
-![image-20250327100809374](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327100809374.png)
+![image-20250327100809374](https://img.cyanyep.top/picture/image-20250327100809374.png)
 
 3. dst_token 创建仓库的API tokens， 用于自动创建不存在的仓库。这里我们从 Gitee 上获取，具体地址为 https://gitee.com/profile/personal_access_tokens。生成并复制 Token，然后同样的步骤，保存在 Github 的 Secrets 中，Name 为 "GITEE_TOKEN"
 
