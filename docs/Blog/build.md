@@ -2,13 +2,21 @@
 
 
 
-使用VuePress+GithubPage搭建自己的个人博客网站
+使用VuePress+GithubPage**零成本**搭建自己的个人博客网站
 
 环境准备
 
 1. Node
 2. Chrome浏览器或FireFox浏览器
 3. 一台电脑（Windows）
+
+
+
+本文主要参考：
+
+[从零开始搭建博客系列 | 从 01 开始](https://www.peterjxl.com/Blog/Introduce/#本系列讲什么)
+
+[VuePress 博客搭建系列 33 篇正式完结！ · Issue #279 · mqyqingfeng/Blog · GitHub](https://github.com/mqyqingfeng/Blog/issues/279)
 
 
 
@@ -74,7 +82,11 @@ npm run docs:dev
 
 ![image-20250116220142153](http://stofu80ry.sabkt.gdipper.com/picture/image-20250116220142153.png)
 
+
+
 # 优化页面
+
+
 
 # 静态资源
 
@@ -98,13 +110,49 @@ npm run docs:dev
 
 
 
+# 域名
+
+## 购买域名
+
+如果是新用户，可以在阿里云购买域名，首年只需要1元
+
+购买域名后，设置域名解析，通过购买的域名解析到你的个人博客网页xxx.github.io。
+
+![image-20250327175501771](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327175501771.png)
+
+## 域名解析
+
+在github设置的setting->pages中设置你的域名
+
+![image-20250327202925641](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327202925641.png)
+
+在阿里云中设置解析到你的gitHub.io
+
+![image-20250327182538105](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327182538105.png)
+
+就可以通过你的域名cyanyep.top访问github.io了
+
+
+
+访问你的域名后会发现css样式没了
+
+![](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327205312348.png)
+
+这是因为之前
+
+GitHub Pages 将项目部署在子路径 `https://rc4gyyc.github.io/cyanyep/`下。
+
+而我们设置的config.ts文件中将VuePress 就是根据网站部署在 /cyanyep/ 下来渲染页面的，所以需要修改config.ts文件的base配置
+
+
+
+
+
 # 图床
 
-在七牛云中新建存储对象
+参考视频：[十分钟搭建你自己的图床，手把手教你，免费，picgo, 七牛云](https://www.bilibili.com/video/BV1fw411t7eU/)
 
-新建空间
-
-但是七牛云图床免费的使用的是http协议，不能用于https的网站（比如GitHub Page），会导致图片加载不出。需要购买域名和证书
+在七牛云中的存储对象中新建空间
 
 
 
@@ -112,11 +160,145 @@ npm run docs:dev
 
 我的博客是基于 Markdown 的，如果我们每次上传图片都需要登录到七牛云控制台并上传，就太慢了。因此市面上出现了很多图片上传工具，能实现的效果是这样的：将图片拖拽到工具里，就能自动上传到对象存储里，并且获取图片链接，极大简化了我们的操作。
 
-目前常见的工具有：
+我使用的工具是：
 
 - [PicGo ](https://molunerfinn.com/PicGo/)：支持 Windows，Mac 和 Linux，基于 Electron 开发，支持多种图床上传
 
+
+
+‍[github.com/NothingMeaning/foureggs (opens new window)](https://github.com/NothingMeaning/foureggs)：博主目前在用的，直接在 Markdown 文件上右键即可上传，并自动替换原始文件里的图片链接，不过会生成一个新的Markdown文件，非常方便。
+
+该工具有安装包和源码，源码里有可运行的exe文件，如果使用源码可以自己[将工具注册到右键中](https://www.bilibili.com/video/BV1S64y1G76f/)
+
+
+
+## 为图床设置自己的域名
+
+**七牛云给的免费访问域名**是用于测试的，有有效期，想要长期使用还需要用自己的域名
+
+
+
+而且七牛云图床免费域名的使用的是**http协议**，不能用于https的网站（比如GitHub Page），会导致图片加载不出。
+
+需要用自己域名和证书
+
+可以在阿里云购买域名，**使用阿里云免费证书**，就供个人网站、测试用。每年有20个证书额度，一个证书可以用三个月
+
+
+
+### 添加子域名
+
+在阿里云云中添加一个新的子域名，用于博客网站访问我们的图床
+
+- 解析记录类型选**CNAME**，
+- 主机记录就是访问图床时的子域名
+- **记录值等下还要再改，先随便填**
+
+![image-20250327195035760](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327195035760.png)
+
+
+
+### 将阿里云的证书添加到七牛云
+
+参考视频：[wordpress 极速搭建个人独立博客 014七牛云上传阿里云SSL证书](https://www.bilibili.com/video/BV1i4411s72P/)
+
+
+
+在阿里云中搜索ssl证书。
+
+在**个人测试证书**中**立即购买**，可以购买免费的证书，每年可以有20个额度，
+
+购买后**创建证书**，输入刚刚创建的**子域名**img.cyanyep.top，并输入个人信息进行验证就可以了
+
+![image-20250327182639386](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327182639386.png)
+
+
+
+创建证书后在更多里找到下载，下载证书，服务器类型为其他
+
+![image-20250327190139813](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327190139813.png)
+
+
+
+点击绑定域名可以跳转到添加域名中
+
+![image-20250327191122830](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327191122830.png)
+
+
+
+在SSL 证书服务中上传自有证书
+
+- 证书备注名：随便填，可以填你的域名
+- 证书内容（PEM 格式）：上传 下载的zip中 .pem后缀的文件
+- 证书私钥（PEM 格式）：上传 下载的zip中 .key后缀的文件
+
+![image-20250327193656277](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327193656277.png)
+
+
+
+### 在七牛云添加域名
+
+- 输入刚刚创建的子域名
+
+- 选择https和刚刚上传的证书
+
+- 使用场景：图片小文件
+
+- 缓存配置：使用推荐配置
+
+- 其他不用修改
+
+- 点击创建
+
+![image-20250327201600024](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327201600024.png)
+
+
+
+#### 验证域名所有权
+
+![image-20250327201659604](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327201659604.png)
+
+根据图片在阿里云添加域名解析，
+
+- 记录类型：txt
+
+- 主机记录：verification
+
+- 记录值：填你自己生成的
+
+![image-20250327201721567](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327201721567.png)
+
+
+
+### 将子域名解析到七牛云
+
+添加后回到七牛云**点击验证**，验证后会给你一个**CNAME**，将其配置到刚刚创建的子域名img.cyanyep.top的**记录值**中。
+
+这样你的子域名就会解析到七牛云的域名，可以通过你的子域名访问图片
+
+![image-20250327201838662](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327201838662.png)
+
+![image-20250327201858912](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327201858912.png)
+
+等待片刻就会发邮箱通知你加速域名创建成功
+
+修改你的外链域名就可以用你的子域名访问图片了
+
+![image-20250327202228150](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327202228150.png)
+
+
+
+---
+
+参考：
+
+[十分钟搭建你自己的图床，手把手教你，免费，picgo, 七牛云](https://www.bilibili.com/video/BV1fw411t7eU/)
+
+[wordpress 极速搭建个人独立博客 014七牛云上传阿里云SSL证书](https://www.bilibili.com/video/BV1i4411s72P/)
+
 [将工具注册到右键中](https://www.bilibili.com/video/BV1S64y1G76f/)
+
+
 
 
 
@@ -126,7 +308,7 @@ npm run docs:dev
 
 
 
-我们成功的用 VuePress 搭建了博客并部署到 Github Pages，但由于 Github 的访问问题，我们可以选择把仓库部署到 Gitee 一份，利用 Gitee 的 Pages 服务再生成一份静态网站用于备用，不过也可以作为一个备份
+我们成功的用 VuePress 搭建了博客并部署到 Github Pages，但由于 Github 的访问问题，我们可以选择把仓库部署到 Gitee 一份，利用 Gitee 的 Pages 服务再生成一份静态网站用于备用（**gitee Pages目前停止服务**），不过也可以作为一个备份
 
 ## 1. 手动同步
 
@@ -258,7 +440,7 @@ cd -
 
 
 
-### Gitee 自动部署 Pages
+### Gitee 自动部署 Pages（Gitee Pages目前停止服务，以下操作已无效）
 
 参考：[Gitee 如何自动部署 Pages？还是用 GitHub Actions!](https://github.com/mqyqingfeng/Blog/issues/238)
 
@@ -287,17 +469,17 @@ jobs:
           force_update: true
           debug: true
           
-      - name: Build Gitee Pages
-        uses: yanglbme/gitee-pages-action@main
-        with:
-          # 注意替换为你的 Gitee 用户名
-          gitee-username: ${{ secrets.GITEE_USERNAME }}
-          # 注意在 Settings->Secrets 配置 GITEE_PASSWORD
-          gitee-password: ${{ secrets.GITEE_PASSWORD }}
-          # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
-          gitee-repo: Ciian/cyanyep
-          # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
-          branch: cy-pages
+      # - name: Build Gitee Pages
+      #   uses: yanglbme/gitee-pages-action@main
+      #   with:
+      #     # 注意替换为你的 Gitee 用户名
+      #     gitee-username: ${{ secrets.GITEE_USERNAME }}
+      #     # 注意在 Settings->Secrets 配置 GITEE_PASSWORD
+      #     gitee-password: ${{ secrets.GITEE_PASSWORD }}
+      #     # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
+      #     gitee-repo: Ciian/cyanyep
+      #     # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
+      #     branch: cy-pages
 ```
 
 - 注意**用户名和仓库名**都区分大小写
