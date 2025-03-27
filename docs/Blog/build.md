@@ -136,7 +136,7 @@ npm run docs:dev
 
 ## 2. 推送两个仓库
 
-除此之外，我们也可以在 sh 脚本文件里，直接推送到两个仓库地址上，具体操作参考[《一篇教你代码同步 Github 和 Gitee》](https://github.com/mqyqingfeng/Blog/issues/236) 
+除此之外，我们也可以在 sh 脚本文件里，直接将项目同时推送到两个仓库地址上，具体操作参考[《一篇教你代码同步 Github 和 Gitee》](https://github.com/mqyqingfeng/Blog/issues/236) 
 
 ## 3. Github Actions 自动同步（推荐使用）
 
@@ -144,12 +144,72 @@ npm run docs:dev
 
 关于 Github Actions 的介绍，可以参考阮一峰老师的 [《GitHub Actions 入门教程》](http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
 
+为了实现 Gitee 和 Github 的同步，我们需要借助一个 action，还好业界已经有现成的实现了，这里我采用的是 [Hub Mirror Action](https://github.com/Yikun/hub-mirror-action)，我们可以看到使用的示例代码：
+
+```yml
+steps:
+- name: Mirror the Github organization repos to Gitee.
+  uses: Yikun/hub-mirror-action@master
+  with:
+    src: github/rc4gyyc
+    dst: gitee/ciian
+    dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+    dst_token: ${{ secrets.GITEE_TOKEN }}
+```
+
+其中有四个必填项：
+
+- `src` 表示需要被同步的源端账户名，即我们 Github 的账户名，因为我的 Github ID 是 rc4gyyc，所以这里我应该改成 `github/rc4gyyc`。
+- `dst` 表示需要同步到的目的端账户名，即我们 Gitee 的账户名，因为我的 Gitee ID 是 ciian，所以这里我应该改成 `gitee/ciian`。
+- `dst_key` 表示用于在目的端上传代码的私钥，然后将其保存在 Secrets 中。
+
+### 具体操作
+
+1. 注意gitee上同时要配置好公钥，在setting->ssh公钥中配置
+2. 获取你电脑上的ssh私钥（在git命令行中执行、或者直接访问文件）：`cat ~/.ssh/id_rsa`
+   - 复制私钥内容（注意要全部复制包括
+
+​			-----BEGIN OPENSSH PRIVATE KEY-----
+​			-----END OPENSSH PRIVATE KEY-----
+
+​			），然后在要**同步的 Github 仓库**中，选择 "Setting" -> "Secrets" ->"Action" -> "New repository secret"
+
+​			填入 Secret 内容，Name 命名为 "GITEE_PRIVATE_KEY"，Value 为复制的内容
+
+![image-20250327100809374](http://stofu80ry.sabkt.gdipper.com/picture/image-20250327100809374.png)
+
+3. dst_token 创建仓库的API tokens， 用于自动创建不存在的仓库。这里我们从 Gitee 上获取，具体地址为 https://gitee.com/profile/personal_access_tokens。生成并复制 Token，然后同样的步骤，保存在 Github 的 Secrets 中，Name 为 "GITEE_TOKEN"
+
+4. 然后我们就可以在项目根目录(vuepress-starter)下建立目录 `.github/workflows` ，然后创建一个名为`syncToGitee.yml` 的文件：
+
+```yml
+name: syncToGitee
+on:
+  push:
+    branches:
+      - cy-pages
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mirror the Github organization repos to Gitee.
+        uses: Yikun/hub-mirror-action@master
+        with:
+          src: 'github/rc4gyyc'
+          dst: 'gitee/ciian'
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token:  ${{ secrets.GITEE_TOKEN }}
+          static_list: "cyanyep"
+          force_update: true
+          debug: true
+```
+
 还有几个问题要注意：
 
-1. 因为我们是提交到 Github 的 gh-pages 分支上，这个文件和目录需要写在 gh-pages 分支
-2. 观察我们的脚本代码，我们就会发现，每次我们 `sh deploy.sh` 的时候，都是编译代码到 dist 目录，然后重新 git init ，最后强制提交。所以我们在项目的根目录建立 `.github/woorkflows/syncToGitee.yml` 并没有什么用，一来提交的是 dist 目录里的代码，二是每次还都会清空重新编译生成代码提交。
+- on: push: branches: 就是当cy-pages分支发生事件推送时，GitHub Actions 会检查该分支当前提交中是否存在对应的 YAML 文件。所以我们需要将syncToGitee.yml文件放在cy-pages分支下
+- 观察我们的脚本代码，我们就会发现，每次我们 `sh deploy.sh` 的时候，都是编译代码到 dist 目录，然后重新 git init ，最后强制提交。就是说dist目录才是要提交到分支上的，而且每次运行都会清空dist重新编译，本地仓库也会重新初始化后再强制推送上去覆盖原来的分支，也就是说不能直接把脚本放在git仓库的cy-pages分支中
 
-为此，我们可以在脚本里添加代码，每次编译完后，再拷贝外层的 `.github/woorkflows/syncToGitee.yml` 到 dist 目录里，再提交到 Github 上。
+5. 为此，我们可以在脚本里添加代码，每次编译完后，再拷贝外层的 `.github/woorkflows/syncToGitee.yml` 到 dist 目录里，再提交到 Github 上。
 
 所以我们依然在项目根目录添加目录和文件，此时的文件结构如下：
 
@@ -189,12 +249,10 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:rc4gyyc/cyanyep.git master:unf-pages
+git push -f git@github.com:rc4gyyc/cyanyep.git master:cy-pages
 
 cd -
 ```
-
-
 
 此时我们再运行 `sh deploy.sh` 代码提交到 Github，就可以在仓库的 Actions 中看到运行记录：
 
@@ -204,11 +262,17 @@ cd -
 
 每次修改博客后都需要执行脚本deploy.sh，重新构建才能上传的github。
 
-了解到GitHub的Action后，我想是否可以直接把整个项目上传到github的一个分支`pages-code`上，再通过workflow自动将项目的代码构建并部署到指定GitHub Page的分支`cy-pages`上，(如果有自己的服务器也可以部署到服务器上，可以参考[这篇文章](https://www.peterjxl.com/Blog/Deploy/#%E4%BD%BF%E7%94%A8-github-action))
+了解到GitHub的Action后，我想是否可以直接把整个项目上传到github的一个分支`pages-code`（从main分支新建一个分支）上，再通过workflow自动将项目的代码构建并部署到指定GitHub Page的分支`cy-pages`上，(如果有自己的服务器也可以部署到服务器上，可以参考[这篇文章](https://www.peterjxl.com/Blog/Deploy/#%E4%BD%BF%E7%94%A8-github-action))
 
-而且如果Action执行失败还会发qq邮箱通知。
+而且如果Action执行失败还会发qq邮箱通知，不用担心构建失败不知道。
 
+1. 在项目根目录创建文件.gitignore，推送时忽略node_modules目录，因为node_modules是一些三方依赖很大，而且可以在workflow中安装
 
+   ```.gitignore
+   node_modules/
+   ```
+
+2. 仍然在.github/woorkflows/目录中创建新的workflow脚本deploy.yml
 
 ```yml
 name: Deploy VuePress to GitHub Pages
@@ -217,6 +281,7 @@ on:
   push:
     branches:
       - pages-code
+      
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -234,18 +299,22 @@ jobs:
       - name: npm install 
         run: npm install 
     
+
       # 构建 VuePress 项目，并将workflow拷贝到dist中用于仓库同步到gitee
       - name: Build VuePress
+        run: npm run docs:build
+
+      # 复制同步工作流syncToGitee 到 dist
+      - name: Copy .github to dist
         run: |
-          npm run docs:build
-          cp -r .github ./docs/.vuepress/dist/  
-        # 复制 .github 到 dist
+          mkdir -p ./docs/.vuepress/dist/.github/workflows
+          cp ./.github/workflows/syncToGitee.yml ./docs/.vuepress/dist/.github/workflows/
 
       # 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN  }} # 自动提供的 GitHub Token
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN  }} # 在github生成PERSONAL_ACCESS_TOKEN
           publish_dir: ./docs/.vuepress/dist # VuePress 默认的输出目录
           publish_branch: cy-pages # 部署到的目标分支
 
@@ -268,22 +337,30 @@ jobs:
 #          EXCLUDE: "/dist/, /node_modules/" 
 ```
 
+这里简单说明下文件的内容
 
+- 第一行：本次workflow的名字，可自行更换
+- 第 3~6 行：说明只有当 pages-code分支有提交到远程库（push）的时候，执行本次workflow
+- 第 8 行：jobs，本次我们只用了一个 job，也就是第 9 行的 job
+- 第 10 行：指定要在哪个操作系统的环境下编译出包（一般是 Linux）
+- 接下来就是 deploy 这个 job 的 steps，每个 step 做了不同的事情，例如安装 node，然后安装依赖和执行构建命令
+- 第 31 行开始就是一些环境变量的设置，例如读取我们上一小节设置的 IP 和私钥信息
 
-![image-20250326151630094](http://stofu80ry.sabkt.gdipper.com/picture/image-20250326151630094.png)
+注意：
 
-这个错误表明 GitHub Actions 的 `github-actions[bot]` 没有足够的权限将更改推送到目标分支（`cy-pages`）。
+- 因为workflow需要放在对应分支下才能被触发，pages-code分支触发事件push时，GitHub Actions 会检查该分支当前提交中是否存在对应的 YAML 文件，才会执行，所以需要把syncToGitee.yml文件复制到 dist目录
 
-**解决方法**
+- github_token：
 
-1. **生成个人访问令牌 (PAT)**：
-   - 登录到 GitHub，进入 **Settings > Developer settings > Personal access tokens**。
-   - 创建一个新的 PAT，确保选中了 `repo` 和 `workflow` 权限。
-   - 复制生成的令牌。
-2. **将 PAT 添加到 Secrets**：
-   - 在你的 GitHub 仓库中，进入 **Settings > Secrets and variables > Actions**。
-   - 添加一个新的 Repository Secret，名称为 `PERSONAL_ACCESS_TOKEN`，值为刚刚生成的 PAT。
-3. **更新工作流配置**： 将 `github_token` 替换为 `PERSONAL_ACCESS_TOKEN`：
+  1. 生成个人访问令牌 (PAT)：
+     - 在GitHub的 **Settings > Developer settings > Personal access tokens**->token classic。
+     - 创建一个新的 token (classic)，确保选中了 `repo` 和 `workflow` 权限。
+     - 复制生成的令牌。
+  2. 将 token 添加到 Secrets：
+     - 在你的 GitHub 仓库中，进入 **Settings > Secrets and variables > Actions**。
+     - 添加一个新的 Repository Secret，名称为 `PERSONAL_ACCESS_TOKEN`，值为刚刚生成的 PAT。
+
+- publish_dir: 就是你要复制到目标分支cy-pages的目录
 
 
 
@@ -320,25 +397,23 @@ jobs:
 	  
 ```
 
-- 
-
 ```
+解释（由于带${{ }}部署项目时会被node解析，所以写在代码块里）
 path: node_modules 
 	表示要缓存项目的 node_modules 文件夹
 key: node-modules-${{ runner.os }}-${{ hashFiles('\**/package-lock.json') }}
 	node-modules-: 这是一个固定的前缀，用来标识缓存的内容是 `node_modules`。
-	${{ runner.os }}`: 表示当前运行的操作系统（如 `ubuntu-latest`, `windows-latest`, `macos-latest`）。
-	${{ hashFiles('**/package-lock.json') }}: 基于 `package-lock.json` 文件的内容生成一个哈希值。如果 `package-lock.json` 发生变化（例如添加或更新依赖），哈希值也会变化，从而触发新的缓存。
+	${{ runner.os }}: 表示当前运行的操作系统（如 `ubuntu-latest`, `windows-latest`, `macos-latest`）。
+	${{ hashFiles('**/package-lock.json') }}: 基于 `package-lock.json` 文件的内容生成一个哈希值。如果 `package-lock.json 发生变化（例如添加或更新依赖），哈希值也会变化，从而触发新的缓存。
 	
-restore-keys: | node-modules-${{ runner.os }}-
-	作用： 提供一组备用的缓存键（`restore-keys`），用于在主键（`key`）未命中时尝试部分匹配。
+restore-keys: | 
+	node-modules-${{ runner.os }}-
+	作用： 提供一组备用的缓存键（`restore-keys`），用于在主键（key）未命中时尝试部分匹配。
 	分解解释：
-		|：YAML 的多行字符串语法，表示后面的每一行是一个独立的 `restore-key`。
-		node-modules-${{ runner.os }}-: 这是一个“模糊匹配”的键，只包含固定前缀和操作系统信息，而不包含 `package-lock.json` 的哈希值。如果主键（`key`）未命中，GitHub Actions 会依次尝试包含这些前缀的缓存：
+		|：YAML 的多行字符串语法，表示后面的每一行是一个独立的 restore-key。
+		node-modules-${{ runner.os }}-: 这是一个“模糊匹配”的键，只包含固定前缀和操作系统信息，而不包含 `package-lock.json 的哈希值。如果主键（key）未命中，GitHub Actions 会依次尝试包含这些前缀的缓存：
 ```
-
-
 
 可以看到workflow的运行时间，因为命中缓存跳过了执行`npm install`的40秒
 
-
+这样deploy.sh脚本就没用了

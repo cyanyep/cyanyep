@@ -38,7 +38,7 @@ jobs:
           npm run docs:build
           ls -la ./docs/.vuepress/dist/  
 
-      # 复制.github 到 dist
+      # 复制同步工作流syncToGitee 到 dist
       - name: Copy .github to dist
         run: |
           mkdir -p ./docs/.vuepress/dist/.github/workflows
