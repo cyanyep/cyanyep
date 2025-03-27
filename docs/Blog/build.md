@@ -126,7 +126,7 @@ npm run docs:dev
 
 
 
-我们成功的用 VuePress 搭建了博客并部署到 Github Pages，但由于 Github 的访问问题，我们可以选择把仓库部署到 Gitee 一份，利用 Gitee 的 Pages 服务再生成一份静态网站用于备用（**Gitee Pages目前停止服务，不能使用**），不过也可以作为一个备份
+我们成功的用 VuePress 搭建了博客并部署到 Github Pages，但由于 Github 的访问问题，我们可以选择把仓库部署到 Gitee 一份，利用 Gitee 的 Pages 服务再生成一份静态网站用于备用，不过也可以作为一个备份
 
 ## 1. 手动同步
 
@@ -256,9 +256,48 @@ cd -
 
 此时我们再运行 `sh deploy.sh` 代码提交到 Github，就可以在仓库的 Actions 中看到运行记录：
 
-### 启动Gitee Pages
+### Gitee 自动部署 Pages
 
-在gitee仓库中的服务启动Gitee Pages。
+参考：[Gitee 如何自动部署 Pages？还是用 GitHub Actions!](https://github.com/mqyqingfeng/Blog/issues/238)
+
+在syncToGitee文件中补充代码
+
+- 在仓库secret中设置gitee用户名
+- 参考文章中使用的是用户密码，我推荐使用token，也能使用，而且之前也已经添加、使用过GITEE_TOKEN
+
+```yml
+name: syncToGitee
+on:
+  push:
+    branches:
+      - cy-pages
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mirror the Github organization repos to Gitee.
+        uses: Yikun/hub-mirror-action@master
+        with:
+          src: 'github/rc4gyyc'
+          dst: 'gitee/ciian'
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token:  ${{ secrets.GITEE_TOKEN }}
+          static_list: "cyanyep"
+          force_update: true
+          debug: true
+          
+      - name: Build Gitee Pages
+        uses: yanglbme/gitee-pages-action@main
+        with:
+          # 注意替换为你的 Gitee 用户名
+          gitee-username: ${{ secrets.GITEE_USERNAME }}
+          # 注意在 Settings->Secrets 配置 GITEE_TOKEN 
+          gitee-token: ${{ secrets.GITEE_TOKEN  }}
+          # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
+          gitee-repo: Ciian/cyanyep
+          # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
+          branch: cy-pages
+```
 
 
 
