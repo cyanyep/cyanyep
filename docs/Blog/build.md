@@ -126,7 +126,7 @@ npm run docs:dev
 
 
 
-我们成功的用 VuePress 搭建了博客并部署到 Github Pages，但由于 Github 的访问问题，我们可以选择把仓库部署到 Gitee 一份，利用 Gitee 的 Pages 服务再生成一份静态网站用于备用，也可以作为一个备份
+我们成功的用 VuePress 搭建了博客并部署到 Github Pages，但由于 Github 的访问问题，我们可以选择把仓库部署到 Gitee 一份，利用 Gitee 的 Pages 服务再生成一份静态网站用于备用（**Gitee Pages目前停止服务，不能使用**），不过也可以作为一个备份
 
 ## 1. 手动同步
 
@@ -163,7 +163,7 @@ steps:
 - `dst` 表示需要同步到的目的端账户名，即我们 Gitee 的账户名，因为我的 Gitee ID 是 ciian，所以这里我应该改成 `gitee/ciian`。
 - `dst_key` 表示用于在目的端上传代码的私钥，然后将其保存在 Secrets 中。
 
-### 具体操作
+### 同步仓库具体操作
 
 1. 注意gitee上同时要配置好公钥，在setting->ssh公钥中配置
 2. 获取你电脑上的ssh私钥（在git命令行中执行、或者直接访问文件）：`cat ~/.ssh/id_rsa`
@@ -256,6 +256,10 @@ cd -
 
 此时我们再运行 `sh deploy.sh` 代码提交到 Github，就可以在仓库的 Actions 中看到运行记录：
 
+### 启动Gitee Pages
+
+在gitee仓库中的服务启动Gitee Pages。
+
 
 
 # 自动部署
@@ -317,6 +321,7 @@ jobs:
           github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN  }} # 在github生成PERSONAL_ACCESS_TOKEN
           publish_dir: ./docs/.vuepress/dist # VuePress 默认的输出目录
           publish_branch: cy-pages # 部署到的目标分支
+          exclude_assets: ""
 
 
 #      #部署到服务器
@@ -361,6 +366,8 @@ jobs:
      - 添加一个新的 Repository Secret，名称为 `PERSONAL_ACCESS_TOKEN`，值为刚刚生成的 PAT。
 
 - publish_dir: 就是你要复制到目标分支cy-pages的目录
+
+- exclude_assets: 指定哪些文件或目录不推送到目标分支，exclude_assets的值默认有**`.github`**
 
 
 

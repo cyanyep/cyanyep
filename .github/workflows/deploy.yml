@@ -34,17 +34,13 @@ jobs:
 
       # 构建 VuePress 项目，并将workflow拷贝到dist中用于仓库同步到gitee
       - name: Build VuePress
-        run: |
-          npm run docs:build
-          ls -la ./docs/.vuepress/dist/  
+        run: npm run docs:build
 
       # 复制同步工作流syncToGitee 到 dist
       - name: Copy .github to dist
         run: |
           mkdir -p ./docs/.vuepress/dist/.github/workflows
           cp ./.github/workflows/syncToGitee.yml ./docs/.vuepress/dist/.github/workflows/
-          ls -la ./docs/.vuepress/dist/.github
-        # 检查是否复制成功
 
 
       # 部署到 GitHub Pages
