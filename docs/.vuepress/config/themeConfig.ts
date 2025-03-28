@@ -7,7 +7,7 @@ export default <VdoingThemeConfig>{
       { 
           text: '西螈的 JavaScript 博客', 
           items: [
-              { text: 'Github', link: 'https://github.com/rc4gyyc' },
+              { text: 'Github', link: 'https://github.com/cyanyep' },
               { text: 'CSDN', link: 'https://blog.csdn.net/rc4gyyc' }
           ]
       }
