@@ -19,9 +19,9 @@ export default <UserPlugins>[
   //网站动态标题
   ['dynamic-title', {
     // showIcon: '',
-    showText: '欢迎回来  O(∩_∩)O~~',
+    showText: '(/≧∇≦/)咦!又好了!',
     // hideIcon: '',
-    hideText: '等等，你别走啊 ::>_<::',
+    hideText: '(●——●)喔哟，崩溃啦!',
     recoverTime: 2000,
   }]
 ]

@@ -1,0 +1,1 @@
+export { default } from "D:\\Code\\vuepress-starter\\node_modules\\vuepress-plugin-dynamic-title\\bin\\enhanceAppFile.js"

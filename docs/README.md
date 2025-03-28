@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://img.cyanyep.top/picture/mmexport1689155413427.png
+heroImage: https://img.cyanyep.top/Blog/Snipaste_2025-02-11_20-04-18.png
 heroText: 西螈的博客
 tagline: Hero副标题
 actionText: 快速上手→
