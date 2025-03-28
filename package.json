@@ -14,5 +14,11 @@
     "vuepress": "^1.9.10",
     "vuepress-theme-reco": "^1.6.17",
     "vuepress-theme-vdoing": "^1.12.9"
+  },
+  "dependencies": {
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "vuepress-plugin-cursor-effects": "^1.1.6",
+    "vuepress-plugin-dynamic-title": "^1.0.0",
+    "vuepress-plugin-reading-progress": "^1.0.10"
   }
 }

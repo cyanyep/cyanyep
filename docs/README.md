@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://s3.bmp.ovh/imgs/2022/12/02/bc7428e3916c3a4c.jpg
+heroImage: https://img.cyanyep.top/picture/mmexport1689155413427.png
 heroText: Hero标题
 tagline: Hero副标题
 actionText: 快速上手→

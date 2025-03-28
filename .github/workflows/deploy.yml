@@ -36,6 +36,10 @@ jobs:
       - name: Build VuePress
         run: npm run docs:build
 
+      # 复制 CNAME 文件到 dist
+      - name: Copy NAME to dist
+        run: cp ./CNAME ./docs/.vuepress/dist/
+
       # 复制同步工作流syncToGitee 到 dist
       - name: Copy .github to dist
         run: |
