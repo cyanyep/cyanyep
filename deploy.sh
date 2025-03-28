@@ -16,6 +16,6 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:rc4gyyc/cyanyep.git master:unf-pages
+git push -f git@github.com:rc4gyyc/cyanyep.git master:cy-pages
 
 cd -
