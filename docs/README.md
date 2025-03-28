@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: https://img.cyanyep.top/picture/mmexport1689155413427.png
-heroText: Hero标题
+heroText: 西螈的博客
 tagline: Hero副标题
 actionText: 快速上手→
 actionLink: /README.md
