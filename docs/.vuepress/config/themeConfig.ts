@@ -1,6 +1,6 @@
 import { VdoingThemeConfig } from "vuepress-theme-vdoing/types";
 export default <VdoingThemeConfig>{
-    logo: 'https://img.cyanyep.top/picture/mmexport1689155413427.png',
+    logo: 'https://img.cyanyep.top/Blog/Snipaste_2025-02-11_20-04-18.png',
     lastUpdated: '上次更新', // string | boolean
     nav: [
       { text: '首页', link: '/' },
