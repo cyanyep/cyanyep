@@ -11,22 +11,15 @@ export default <VdoingThemeConfig>{
                 { text: 'JUC', link: 'https://cyanyep.top/Java/JUC' },
                 { text: 'JVM', link: 'https://cyanyep.top/Java/JVM' },
                 {
-                    text: '数据库',
-                    items: [
-                        { text: 'MySQL', link: 'https://cyanyep.top/MySQL' },
-                        { text: 'NoSQL', link: 'https://cyanyep.top/NoSQL' },
-                    ]
-                },
-                {
                     text: 'Redis',
                     items: [
-                        { text: 'Redis安装', link: 'https://cyanyep.top/Redis/Redis安装/Win' },
-                        { text: 'Redis基础', link: 'https://cyanyep.top/Redis/Redis基础' },
-                        { text: 'Redis实战', link: 'https://cyanyep.top/Redis/Redis实战' },
-                        { text: 'Redis集群安装', link: 'https://cyanyep.top/Redis/Redis集群安装' },
-                        { text: 'Redis分布式缓存', link: 'https://cyanyep.top/Redis/Redis分布式缓存' },
-                        { text: 'Redis多级缓存', link: 'https://cyanyep.top/Redis/Redis多级缓存' },
-                        { text: 'Redis原理', link: 'https://cyanyep.top/Redis/Redis原理' },
+                        { text: 'Redis安装', link: 'https://cyanyep.top/Redis/RedisInstall/Win' },
+                        { text: 'Redis基础', link: 'https://cyanyep.top/Redis/RedisBase' },
+                        { text: 'Redis实战', link: 'https://cyanyep.top/Redis/RedisRealWar' },
+                        { text: 'Redis集群安装', link: 'https://cyanyep.top/Redis/RedisClusterInstall' },
+                        { text: 'Redis分布式缓存', link: 'https://cyanyep.top/Redis/RedisDistributedCache' },
+                        { text: 'Redis多级缓存', link: 'https://cyanyep.top/Redis/RedisMulti-levelCache' },
+                        { text: 'Redis原理', link: 'https://cyanyep.top/Redis/RedisPrinciple' },
                     ]
                 },
                 {
@@ -56,20 +49,32 @@ export default <VdoingThemeConfig>{
                         { text: 'Zookeeper', link: 'https://cyanyep.top/MicroServices/Zookeeper' },
                     ]
                 },
-                {
-                    text: '面试题',
-                    items: [
-                        { text: 'Java面试题', link: 'https://cyanyep.top/InterviewQ/Java面试题/' },
-                        { text: 'JUC面试题', link: 'https://cyanyep.top/InterviewQ/JUC面试题/' }
-                    ]
-                },
+            ]
+        },
+        {
+            text: '面试题',
+            items: [
+                { text: 'Java面试题', link: 'https://cyanyep.top/InterviewQ/Java-Q/' },
+                { text: 'JUC面试题', link: 'https://cyanyep.top/InterviewQ/JUC-Q/' }
             ]
         },
         {
             text: '计算机',
             items: [
                 { text: 'Linux', link: 'https://cyanyep.top/Computer/Linux' },
-                { text: '软件测试', link: 'https://cyanyep.top/Computer/SoftwareTest' }
+                {
+                    text: '数据库',
+                    items: [
+                        { text: 'MySQL', link: 'https://cyanyep.top/MySQL' },
+                        { text: 'NoSQL', link: 'https://cyanyep.top/NoSQL' },
+                    ]
+                },
+                { 
+                    text: '软件测试',
+                    items: [
+                        { text: '软件测试', link: 'https://cyanyep.top/Computer/SoftwareTest' },
+                    ]
+                },
             ]
         },
         {
@@ -81,14 +86,19 @@ export default <VdoingThemeConfig>{
         {
             text: '关于',
             items: [
-                { text: 'Github', link: 'https://github.com/cyanyep' },
-                { text: 'CSDN', link: 'https://blog.csdn.net/rc4gyyc' },
+                {
+                    text: '关于博主',
+                    items: [
+                        { text: 'Github', link: 'https://github.com/cyanyep' },
+                        { text: 'CSDN', link: 'https://blog.csdn.net/rc4gyyc' },
+                    ]
+                },
                 {
                     text: '关于本站',
                     items: [
-                        { text: '搭建博客', link: 'https://cyanyep.top/Blog/Introduce' }
+                        { text: '如何搭建博客网站', link: 'https://cyanyep.top/Blog/Introduce' }
                     ]
-                }
+                },
             ]
         }
     ],
@@ -102,6 +112,6 @@ export default <VdoingThemeConfig>{
 
     // 页脚
     footer: {
-        createYear: 2022
+        createYear: 2025
     }
 }
