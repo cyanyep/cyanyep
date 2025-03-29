@@ -57,6 +57,22 @@ export const routes = [
     redirect: "/Blog/More/"
   },
   {
+    name: "v-2a0d135a",
+    path: "/Blog/PicBed/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-2a0d135a").then(next)
+    },
+  },
+  {
+    path: "/Blog/PicBed/index.html",
+    redirect: "/Blog/PicBed/"
+  },
+  {
+    path: "/01.Blog/05.PicBed.html",
+    redirect: "/Blog/PicBed/"
+  },
+  {
     name: "v-0ac604d3",
     path: "/Blog/DN/",
     component: GlobalLayout,
@@ -105,38 +121,6 @@ export const routes = [
     redirect: "/Blog/AutoDeploy/"
   },
   {
-    name: "v-631db1d0",
-    path: "/pages/f8a36c/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-631db1d0").then(next)
-    },
-  },
-  {
-    path: "/pages/f8a36c/index.html",
-    redirect: "/pages/f8a36c/"
-  },
-  {
-    path: "/02.C++/01.C++方法.html",
-    redirect: "/pages/f8a36c/"
-  },
-  {
-    name: "v-3f56744d",
-    path: "/Blog/Qiniu/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-3f56744d").then(next)
-    },
-  },
-  {
-    path: "/Blog/Qiniu/index.html",
-    redirect: "/Blog/Qiniu/"
-  },
-  {
-    path: "/01.Blog/05.Qiniu.html",
-    redirect: "/Blog/Qiniu/"
-  },
-  {
     name: "v-202ccaad",
     path: "/pages/2e662a/",
     component: GlobalLayout,
@@ -169,91 +153,123 @@ export const routes = [
     redirect: "/InterviewQ/INTV/"
   },
   {
-    name: "v-071e3c0a",
-    path: "/InterviewQ/JUC/",
+    name: "v-631db1d0",
+    path: "/pages/f8a36c/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-071e3c0a").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-631db1d0").then(next)
     },
   },
   {
-    path: "/InterviewQ/JUC/index.html",
-    redirect: "/InterviewQ/JUC/"
+    path: "/pages/f8a36c/index.html",
+    redirect: "/pages/f8a36c/"
   },
   {
-    path: "/04.InterviewQ/03.JUC.html",
-    redirect: "/InterviewQ/JUC/"
+    path: "/02.C++/01.C++方法.html",
+    redirect: "/pages/f8a36c/"
   },
   {
-    name: "v-e10f75b2",
-    path: "/InterviewQ/JVM/",
+    name: "v-42d2b6d6",
+    path: "/InterviewQ/Java面试题/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-e10f75b2").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-42d2b6d6").then(next)
     },
   },
   {
-    path: "/InterviewQ/JVM/index.html",
-    redirect: "/InterviewQ/JVM/"
+    path: "/InterviewQ/Java面试题/index.html",
+    redirect: "/InterviewQ/Java面试题/"
   },
   {
-    path: "/04.InterviewQ/04.JVM.html",
-    redirect: "/InterviewQ/JVM/"
+    path: "/04.InterviewQ/02.Java面试题.html",
+    redirect: "/InterviewQ/Java面试题/"
   },
   {
-    name: "v-cd328d1a",
-    path: "/InterviewQ/Java/",
+    name: "v-ecb78abe",
+    path: "/InterviewQ/JVM面试题/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-cd328d1a").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-ecb78abe").then(next)
     },
   },
   {
-    path: "/InterviewQ/Java/index.html",
-    redirect: "/InterviewQ/Java/"
+    path: "/InterviewQ/JVM面试题/index.html",
+    redirect: "/InterviewQ/JVM面试题/"
   },
   {
-    path: "/04.InterviewQ/02.Java.html",
-    redirect: "/InterviewQ/Java/"
+    path: "/04.InterviewQ/04.JVM面试题.html",
+    redirect: "/InterviewQ/JVM面试题/"
   },
   {
-    name: "v-210a26ee",
-    path: "/InterviewQ/SQL/",
+    name: "v-4d1a963e",
+    path: "/InterviewQ/JUC面试题/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-210a26ee").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-4d1a963e").then(next)
     },
   },
   {
-    path: "/InterviewQ/SQL/index.html",
-    redirect: "/InterviewQ/SQL/"
+    path: "/InterviewQ/JUC面试题/index.html",
+    redirect: "/InterviewQ/JUC面试题/"
   },
   {
-    path: "/04.InterviewQ/06.SQL.html",
-    redirect: "/InterviewQ/SQL/"
+    path: "/04.InterviewQ/03.JUC面试题.html",
+    redirect: "/InterviewQ/JUC面试题/"
   },
   {
-    name: "v-7904caff",
-    path: "/InterviewQ/Linux/",
+    name: "v-e38c833e",
+    path: "/InterviewQ/Linux面试题/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-7904caff").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-e38c833e").then(next)
     },
   },
   {
-    path: "/InterviewQ/Linux/index.html",
-    redirect: "/InterviewQ/Linux/"
+    path: "/InterviewQ/Linux面试题/index.html",
+    redirect: "/InterviewQ/Linux面试题/"
   },
   {
-    path: "/04.InterviewQ/05.Linux.html",
-    redirect: "/InterviewQ/Linux/"
+    path: "/04.InterviewQ/05.Linux面试题.html",
+    redirect: "/InterviewQ/Linux面试题/"
   },
   {
-    name: "v-73e1a14d",
+    name: "v-27c01541",
+    path: "/InterviewQ/SQL面试题/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-27c01541").then(next)
+    },
+  },
+  {
+    path: "/InterviewQ/SQL面试题/index.html",
+    redirect: "/InterviewQ/SQL面试题/"
+  },
+  {
+    path: "/04.InterviewQ/06.SQL面试题.html",
+    redirect: "/InterviewQ/SQL面试题/"
+  },
+  {
+    name: "v-958e28c6",
+    path: "/InterviewQ/Spring面试题/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-958e28c6").then(next)
+    },
+  },
+  {
+    path: "/InterviewQ/Spring面试题/index.html",
+    redirect: "/InterviewQ/Spring面试题/"
+  },
+  {
+    path: "/04.InterviewQ/09.Spring面试题.html",
+    redirect: "/InterviewQ/Spring面试题/"
+  },
+  {
+    name: "v-30f56101",
     path: "/InterviewQ/Maven/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-73e1a14d").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-30f56101").then(next)
     },
   },
   {
@@ -261,15 +277,15 @@ export const routes = [
     redirect: "/InterviewQ/Maven/"
   },
   {
-    path: "/04.InterviewQ/07.Maven.html",
+    path: "/04.InterviewQ/07.Maven面试题.html",
     redirect: "/InterviewQ/Maven/"
   },
   {
-    name: "v-4416917b",
+    name: "v-e595833e",
     path: "/InterviewQ/MyBatis/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-4416917b").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-e595833e").then(next)
     },
   },
   {
@@ -277,24 +293,24 @@ export const routes = [
     redirect: "/InterviewQ/MyBatis/"
   },
   {
-    path: "/04.InterviewQ/08.MyBatis.html",
+    path: "/04.InterviewQ/08.MyBatis面试题.html",
     redirect: "/InterviewQ/MyBatis/"
   },
   {
-    name: "v-4fb26793",
-    path: "/pages/896da2/",
+    name: "v-2fa7fe01",
+    path: "/InterviewQ/Redis面试题/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-4fb26793").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-2fa7fe01").then(next)
     },
   },
   {
-    path: "/pages/896da2/index.html",
-    redirect: "/pages/896da2/"
+    path: "/InterviewQ/Redis面试题/index.html",
+    redirect: "/InterviewQ/Redis面试题/"
   },
   {
-    path: "/04.InterviewQ/09.SpringHome.html",
-    redirect: "/pages/896da2/"
+    path: "/04.InterviewQ/10.Redis面试题.html",
+    redirect: "/InterviewQ/Redis面试题/"
   },
   {
     name: "v-d917335a",
@@ -311,22 +327,6 @@ export const routes = [
   {
     path: "/04.InterviewQ/11.Algorithm.html",
     redirect: "/InterviewQ/Algorithm/"
-  },
-  {
-    name: "v-25c8413d",
-    path: "/InterviewQ/Redis/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-25c8413d").then(next)
-    },
-  },
-  {
-    path: "/InterviewQ/Redis/index.html",
-    redirect: "/InterviewQ/Redis/"
-  },
-  {
-    path: "/04.InterviewQ/10.Redis.html",
-    redirect: "/InterviewQ/Redis/"
   },
   {
     name: "v-dd6c0f46",
@@ -377,6 +377,22 @@ export const routes = [
     redirect: "/pages/777f5e/"
   },
   {
+    name: "v-eeb5098a",
+    path: "/Life/Learn/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-eeb5098a").then(next)
+    },
+  },
+  {
+    path: "/Life/Learn/index.html",
+    redirect: "/Life/Learn/"
+  },
+  {
+    path: "/06.Life/01.Learn.html",
+    redirect: "/Life/Learn/"
+  },
+  {
     name: "v-8ba3a0c2",
     path: "/pages/eec04e/",
     component: GlobalLayout,
@@ -393,20 +409,20 @@ export const routes = [
     redirect: "/pages/eec04e/"
   },
   {
-    name: "v-eedbe766",
-    path: "/pages/c70e3b/",
+    name: "v-eee68fa6",
+    path: "/pages/bd79a7/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-eedbe766").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-eee68fa6").then(next)
     },
   },
   {
-    path: "/pages/c70e3b/index.html",
-    redirect: "/pages/c70e3b/"
+    path: "/pages/bd79a7/index.html",
+    redirect: "/pages/bd79a7/"
   },
   {
-    path: "/06.Learn/01.Learn.html",
-    redirect: "/pages/c70e3b/"
+    path: "/08.MicroServices/04.Dubbo.html",
+    redirect: "/pages/bd79a7/"
   },
   {
     name: "v-5059f7fe",
@@ -423,22 +439,6 @@ export const routes = [
   {
     path: "/05.Java/04.反射&动态代理.html",
     redirect: "/pages/6d69d7/"
-  },
-  {
-    name: "v-3c0876ed",
-    path: "/pages/29ecf5/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-3c0876ed").then(next)
-    },
-  },
-  {
-    path: "/pages/29ecf5/index.html",
-    redirect: "/pages/29ecf5/"
-  },
-  {
-    path: "/07.Linux/01.Linux.html",
-    redirect: "/pages/29ecf5/"
   },
   {
     name: "v-fc6c8ae6",
@@ -489,20 +489,20 @@ export const routes = [
     redirect: "/pages/e01785/"
   },
   {
-    name: "v-eee68fa6",
-    path: "/pages/bd79a7/",
+    name: "v-9474a4e6",
+    path: "/pages/75426d/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-eee68fa6").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-9474a4e6").then(next)
     },
   },
   {
-    path: "/pages/bd79a7/index.html",
-    redirect: "/pages/bd79a7/"
+    path: "/pages/75426d/index.html",
+    redirect: "/pages/75426d/"
   },
   {
-    path: "/08.MicroServices/04.Dubbo.html",
-    redirect: "/pages/bd79a7/"
+    path: "/08.MicroServices/05.MongoDB.html",
+    redirect: "/pages/75426d/"
   },
   {
     name: "v-3a0063ad",
@@ -521,36 +521,52 @@ export const routes = [
     redirect: "/pages/7839e5/"
   },
   {
-    name: "v-9474a4e6",
-    path: "/pages/75426d/",
+    name: "v-08220c74",
+    path: "/Redis/Redis安装/Win/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-9474a4e6").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-08220c74").then(next)
     },
   },
   {
-    path: "/pages/75426d/index.html",
-    redirect: "/pages/75426d/"
+    path: "/Redis/Redis安装/Win/index.html",
+    redirect: "/Redis/Redis安装/Win/"
   },
   {
-    path: "/08.MicroServices/05.MongoDB.html",
-    redirect: "/pages/75426d/"
+    path: "/10.Redis/01.Redis安装/01.Redis安装.html",
+    redirect: "/Redis/Redis安装/Win/"
   },
   {
-    name: "v-448b85d8",
-    path: "/pages/3c30a0/",
+    name: "v-9e397966",
+    path: "/Reids/Redis安装/Linux/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-448b85d8").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-9e397966").then(next)
     },
   },
   {
-    path: "/pages/3c30a0/index.html",
-    redirect: "/pages/3c30a0/"
+    path: "/Reids/Redis安装/Linux/index.html",
+    redirect: "/Reids/Redis安装/Linux/"
   },
   {
-    path: "/10.Redis/01.Redis安装.html",
-    redirect: "/pages/3c30a0/"
+    path: "/10.Redis/01.Redis安装/02.Linux.html",
+    redirect: "/Reids/Redis安装/Linux/"
+  },
+  {
+    name: "v-48f6742d",
+    path: "/pages/767b46/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-48f6742d").then(next)
+    },
+  },
+  {
+    path: "/pages/767b46/index.html",
+    redirect: "/pages/767b46/"
+  },
+  {
+    path: "/09.MySQL/01.MySQL.html",
+    redirect: "/pages/767b46/"
   },
   {
     name: "v-2d5edf7b",
@@ -585,20 +601,20 @@ export const routes = [
     redirect: "/pages/6b727a/"
   },
   {
-    name: "v-9f5e32aa",
-    path: "/pages/e81cee/",
+    name: "v-663869a2",
+    path: "/pages/f302c3/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-9f5e32aa").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-663869a2").then(next)
     },
   },
   {
-    path: "/pages/e81cee/index.html",
-    redirect: "/pages/e81cee/"
+    path: "/pages/f302c3/index.html",
+    redirect: "/pages/f302c3/"
   },
   {
-    path: "/10.Redis/07.Redis原理.html",
-    redirect: "/pages/e81cee/"
+    path: "/10.Redis/03.Redis实战.html",
+    redirect: "/pages/f302c3/"
   },
   {
     name: "v-6c489d60",
@@ -617,22 +633,6 @@ export const routes = [
     redirect: "/pages/97d2c6/"
   },
   {
-    name: "v-48f6742d",
-    path: "/pages/767b46/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-48f6742d").then(next)
-    },
-  },
-  {
-    path: "/pages/767b46/index.html",
-    redirect: "/pages/767b46/"
-  },
-  {
-    path: "/09.MySQL/01.MySQL.html",
-    redirect: "/pages/767b46/"
-  },
-  {
     name: "v-c8a5cf8c",
     path: "/pages/c7ec43/",
     component: GlobalLayout,
@@ -649,6 +649,22 @@ export const routes = [
     redirect: "/pages/c7ec43/"
   },
   {
+    name: "v-9f5e32aa",
+    path: "/pages/e81cee/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-9f5e32aa").then(next)
+    },
+  },
+  {
+    path: "/pages/e81cee/index.html",
+    redirect: "/pages/e81cee/"
+  },
+  {
+    path: "/10.Redis/07.Redis原理.html",
+    redirect: "/pages/e81cee/"
+  },
+  {
     name: "v-1157bebe",
     path: "/pages/5c3702/",
     component: GlobalLayout,
@@ -663,6 +679,22 @@ export const routes = [
   {
     path: "/10.Redis/08.案例导入说明.html",
     redirect: "/pages/5c3702/"
+  },
+  {
+    name: "v-dbf39936",
+    path: "/Computer/Linux/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-dbf39936").then(next)
+    },
+  },
+  {
+    path: "/Computer/Linux/index.html",
+    redirect: "/Computer/Linux/"
+  },
+  {
+    path: "/11.Computer/01.Linux.html",
+    redirect: "/Computer/Linux/"
   },
   {
     name: "v-ca99173c",
@@ -713,20 +745,20 @@ export const routes = [
     redirect: "/pages/7dc24f/"
   },
   {
-    name: "v-663869a2",
-    path: "/pages/f302c3/",
+    name: "v-48d11354",
+    path: "/pages/651745/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-663869a2").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-48d11354").then(next)
     },
   },
   {
-    path: "/pages/f302c3/index.html",
-    redirect: "/pages/f302c3/"
+    path: "/pages/651745/index.html",
+    redirect: "/pages/651745/"
   },
   {
-    path: "/10.Redis/03.Redis实战.html",
-    redirect: "/pages/f302c3/"
+    path: "/12.SpringBoot/04.Spring注解.html",
+    redirect: "/pages/651745/"
   },
   {
     name: "v-b3797e00",
@@ -743,22 +775,6 @@ export const routes = [
   {
     path: "/12.SpringBoot/05.数据库设计文档.html",
     redirect: "/pages/e27777/"
-  },
-  {
-    name: "v-48d11354",
-    path: "/pages/651745/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-48d11354").then(next)
-    },
-  },
-  {
-    path: "/pages/651745/index.html",
-    redirect: "/pages/651745/"
-  },
-  {
-    path: "/12.SpringBoot/04.Spring注解.html",
-    redirect: "/pages/651745/"
   },
   {
     name: "v-e966c23e",
@@ -809,6 +825,38 @@ export const routes = [
     redirect: "/pages/1fa27c/"
   },
   {
+    name: "v-3a699613",
+    path: "/pages/c0269b/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-3a699613").then(next)
+    },
+  },
+  {
+    path: "/pages/c0269b/index.html",
+    redirect: "/pages/c0269b/"
+  },
+  {
+    path: "/12.SpringBoot/03.sky-take-out2.html",
+    redirect: "/pages/c0269b/"
+  },
+  {
+    name: "v-6e6ef9f3",
+    path: "/pages/1e2d53/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-6e6ef9f3").then(next)
+    },
+  },
+  {
+    path: "/pages/1e2d53/index.html",
+    redirect: "/pages/1e2d53/"
+  },
+  {
+    path: "/12.SpringBoot/02.sky-take-out.html",
+    redirect: "/pages/1e2d53/"
+  },
+  {
     name: "v-277c682c",
     path: "/pages/47e1e8/",
     component: GlobalLayout,
@@ -823,22 +871,6 @@ export const routes = [
   {
     path: "/14.Work/01.idea快捷键.html",
     redirect: "/pages/47e1e8/"
-  },
-  {
-    name: "v-2732075a",
-    path: "/pages/f2ef46/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-2732075a").then(next)
-    },
-  },
-  {
-    path: "/pages/f2ef46/index.html",
-    redirect: "/pages/f2ef46/"
-  },
-  {
-    path: "/14.Work/02.Secure.html",
-    redirect: "/pages/f2ef46/"
   },
   {
     name: "v-9656075a",
@@ -857,20 +889,20 @@ export const routes = [
     redirect: "/pages/b8f6a1/"
   },
   {
-    name: "v-3a699613",
-    path: "/pages/c0269b/",
+    name: "v-1ee99ef1",
+    path: "/pages/a1a8a7/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-3a699613").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-1ee99ef1").then(next)
     },
   },
   {
-    path: "/pages/c0269b/index.html",
-    redirect: "/pages/c0269b/"
+    path: "/pages/a1a8a7/index.html",
+    redirect: "/pages/a1a8a7/"
   },
   {
-    path: "/12.SpringBoot/03.sky-take-out2.html",
-    redirect: "/pages/c0269b/"
+    path: "/14.Work/04.项目搭建.html",
+    redirect: "/pages/a1a8a7/"
   },
   {
     name: "v-1c11e32d",
@@ -889,52 +921,20 @@ export const routes = [
     redirect: "/pages/6f5b27/"
   },
   {
-    name: "v-1ee99ef1",
-    path: "/pages/a1a8a7/",
+    name: "v-2732075a",
+    path: "/pages/f2ef46/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-1ee99ef1").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-2732075a").then(next)
     },
   },
   {
-    path: "/pages/a1a8a7/index.html",
-    redirect: "/pages/a1a8a7/"
+    path: "/pages/f2ef46/index.html",
+    redirect: "/pages/f2ef46/"
   },
   {
-    path: "/14.Work/04.项目搭建.html",
-    redirect: "/pages/a1a8a7/"
-  },
-  {
-    name: "v-d1ba87a6",
-    path: "/archives/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-d1ba87a6").then(next)
-    },
-  },
-  {
-    path: "/archives/index.html",
-    redirect: "/archives/"
-  },
-  {
-    path: "/@pages/archivesPage.html",
-    redirect: "/archives/"
-  },
-  {
-    name: "v-6e6ef9f3",
-    path: "/pages/1e2d53/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-6e6ef9f3").then(next)
-    },
-  },
-  {
-    path: "/pages/1e2d53/index.html",
-    redirect: "/pages/1e2d53/"
-  },
-  {
-    path: "/12.SpringBoot/02.sky-take-out.html",
-    redirect: "/pages/1e2d53/"
+    path: "/14.Work/02.Secure.html",
+    redirect: "/pages/f2ef46/"
   },
   {
     name: "v-0343b8e6",
@@ -979,6 +979,22 @@ export const routes = [
   {
     path: "/index.html",
     redirect: "/"
+  },
+  {
+    name: "v-d1ba87a6",
+    path: "/archives/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-d1ba87a6").then(next)
+    },
+  },
+  {
+    path: "/archives/index.html",
+    redirect: "/archives/"
+  },
+  {
+    path: "/@pages/archivesPage.html",
+    redirect: "/archives/"
   },
   {
     path: '*',

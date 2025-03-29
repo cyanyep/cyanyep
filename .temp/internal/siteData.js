@@ -16,9 +16,9 @@ export const siteData = {
   ],
   "pages": [
     {
-      "title": "零成本搭建个人博客网站",
+      "title": "低成本搭建个人博客网站",
       "frontmatter": {
-        "title": "零成本搭建个人博客网站",
+        "title": "低成本搭建个人博客网站",
         "date": "2025-01-16T21:10:33.000Z",
         "permalink": "/Blog/Introduce/",
         "categories": [
@@ -36,11 +36,6 @@ export const siteData = {
       "headers": [
         {
           "level": 2,
-          "title": "",
-          "slug": ""
-        },
-        {
-          "level": 2,
           "title": "你需要会什么",
           "slug": "你需要会什么"
         },
@@ -50,8 +45,8 @@ export const siteData = {
           "slug": "你需要付出什么"
         }
       ],
-      "lastUpdated": "2025/3/28 22:19:47",
-      "lastUpdatedTimestamp": 1743171587000
+      "lastUpdated": "2025/3/29 15:08:11",
+      "lastUpdatedTimestamp": 1743232091000
     },
     {
       "title": "从零开始搭建博客",
@@ -200,6 +195,64 @@ export const siteData = {
       "lastUpdatedTimestamp": 1743171587000
     },
     {
+      "title": "图床",
+      "frontmatter": {
+        "title": "图床",
+        "date": "2025-03-26T21:10:33.000Z",
+        "permalink": "/Blog/PicBed/",
+        "categories": [
+          "Blog"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/01.Blog/05.PicBed.html",
+      "relativePath": "01.Blog/05.PicBed.md",
+      "key": "v-2a0d135a",
+      "path": "/Blog/PicBed/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "图片上传工具",
+          "slug": "图片上传工具"
+        },
+        {
+          "level": 2,
+          "title": "Github",
+          "slug": "github"
+        },
+        {
+          "level": 2,
+          "title": "七牛云",
+          "slug": "七牛云"
+        },
+        {
+          "level": 3,
+          "title": "设置自己的域名",
+          "slug": "设置自己的域名"
+        },
+        {
+          "level": 3,
+          "title": "将阿里云的证书添加到七牛云",
+          "slug": "将阿里云的证书添加到七牛云"
+        },
+        {
+          "level": 3,
+          "title": "在七牛云添加域名",
+          "slug": "在七牛云添加域名"
+        },
+        {
+          "level": 3,
+          "title": "将子域名解析到七牛云",
+          "slug": "将子域名解析到七牛云"
+        }
+      ],
+      "lastUpdated": "2025/3/29 15:08:11",
+      "lastUpdatedTimestamp": 1743232091000
+    },
+    {
       "title": "域名",
       "frontmatter": {
         "title": "域名",
@@ -234,8 +287,8 @@ export const siteData = {
           "slug": "域名解析完善"
         }
       ],
-      "lastUpdated": "2025/3/28 15:37:45",
-      "lastUpdatedTimestamp": 1743147465000
+      "lastUpdated": "2025/3/29 15:08:11",
+      "lastUpdatedTimestamp": 1743232091000
     },
     {
       "title": "同步GitHub和Gitee",
@@ -317,80 +370,6 @@ export const siteData = {
       ],
       "lastUpdated": "2025/3/28 15:14:15",
       "lastUpdatedTimestamp": 1743146055000
-    },
-    {
-      "title": "C++方法",
-      "frontmatter": {
-        "title": "C++方法",
-        "date": "2025-03-17T11:12:20.000Z",
-        "permalink": "/pages/f8a36c/",
-        "categories": [
-          "C++"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/02.C++/01.C++%E6%96%B9%E6%B3%95.html",
-      "relativePath": "02.C++/01.C++方法.md",
-      "key": "v-631db1d0",
-      "path": "/pages/f8a36c/",
-      "lastUpdated": "2025/3/28 10:23:05",
-      "lastUpdatedTimestamp": 1743128585000
-    },
-    {
-      "title": "图床",
-      "frontmatter": {
-        "title": "图床",
-        "date": "2025-03-26T21:10:33.000Z",
-        "permalink": "/Blog/Qiniu/",
-        "categories": [
-          "Blog"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/01.Blog/05.Qiniu.html",
-      "relativePath": "01.Blog/05.Qiniu.md",
-      "key": "v-3f56744d",
-      "path": "/Blog/Qiniu/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "图片上传工具",
-          "slug": "图片上传工具"
-        },
-        {
-          "level": 2,
-          "title": "为图床设置自己的域名",
-          "slug": "为图床设置自己的域名"
-        },
-        {
-          "level": 3,
-          "title": "添加子域名",
-          "slug": "添加子域名"
-        },
-        {
-          "level": 3,
-          "title": "将阿里云的证书添加到七牛云",
-          "slug": "将阿里云的证书添加到七牛云"
-        },
-        {
-          "level": 3,
-          "title": "在七牛云添加域名",
-          "slug": "在七牛云添加域名"
-        },
-        {
-          "level": 3,
-          "title": "将子域名解析到七牛云",
-          "slug": "将子域名解析到七牛云"
-        }
-      ],
-      "lastUpdated": "2025/3/28 22:19:47",
-      "lastUpdatedTimestamp": 1743171587000
     },
     {
       "title": "Git",
@@ -702,44 +681,65 @@ export const siteData = {
       "lastUpdatedTimestamp": 1743146055000
     },
     {
-      "title": "JUC",
+      "title": "C++方法",
       "frontmatter": {
-        "title": "JUC",
-        "date": "2025-03-21T16:26:41.000Z",
-        "permalink": "/InterviewQ/JUC/",
+        "title": "C++方法",
+        "date": "2025-03-17T11:12:20.000Z",
+        "permalink": "/pages/f8a36c/",
         "categories": [
-          "InterviewQ"
+          "C++"
         ],
         "tags": [
           null
         ],
         "readingShow": "top"
       },
-      "regularPath": "/04.InterviewQ/03.JUC.html",
-      "relativePath": "04.InterviewQ/03.JUC.md",
-      "key": "v-071e3c0a",
-      "path": "/InterviewQ/JUC/",
-      "lastUpdated": "2025/3/28 15:14:15",
-      "lastUpdatedTimestamp": 1743146055000
+      "regularPath": "/02.C++/01.C++%E6%96%B9%E6%B3%95.html",
+      "relativePath": "02.C++/01.C++方法.md",
+      "key": "v-631db1d0",
+      "path": "/pages/f8a36c/",
+      "lastUpdated": "2025/3/28 10:23:05",
+      "lastUpdatedTimestamp": 1743128585000
     },
     {
-      "title": "JVM",
+      "title": "Java面试题",
       "frontmatter": {
-        "title": "JVM",
-        "date": "2025-03-03T09:58:58.000Z",
-        "permalink": "/InterviewQ/JVM/",
+        "title": "Java面试题",
+        "date": "2025-03-12T20:35:09.000Z",
+        "permalink": "/InterviewQ/Java面试题/",
         "categories": [
-          "InterviewQ"
+          "InterviewQ",
+          "Java"
         ],
         "tags": [
-          null
+          "Java"
         ],
         "readingShow": "top"
       },
-      "regularPath": "/04.InterviewQ/04.JVM.html",
-      "relativePath": "04.InterviewQ/04.JVM.md",
-      "key": "v-e10f75b2",
-      "path": "/InterviewQ/JVM/",
+      "regularPath": "/04.InterviewQ/02.Java%E9%9D%A2%E8%AF%95%E9%A2%98.html",
+      "relativePath": "04.InterviewQ/02.Java面试题.md",
+      "key": "v-42d2b6d6",
+      "path": "/InterviewQ/Java面试题/"
+    },
+    {
+      "title": "JVM面试题",
+      "frontmatter": {
+        "title": "JVM面试题",
+        "date": "2025-03-03T09:58:58.000Z",
+        "permalink": "/InterviewQ/JVM面试题/",
+        "categories": [
+          "InterviewQ",
+          "Java"
+        ],
+        "tags": [
+          "Java"
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/04.InterviewQ/04.JVM%E9%9D%A2%E8%AF%95%E9%A2%98.html",
+      "relativePath": "04.InterviewQ/04.JVM面试题.md",
+      "key": "v-ecb78abe",
+      "path": "/InterviewQ/JVM面试题/",
       "headers": [
         {
           "level": 2,
@@ -756,16 +756,34 @@ export const siteData = {
           "title": "jvis",
           "slug": "jvis"
         }
-      ],
-      "lastUpdated": "2025/3/28 15:14:15",
-      "lastUpdatedTimestamp": 1743146055000
+      ]
     },
     {
-      "title": "Java",
+      "title": "JUC面试题",
       "frontmatter": {
-        "title": "Java",
-        "date": "2025-03-12T20:35:09.000Z",
-        "permalink": "/InterviewQ/Java/",
+        "title": "JUC面试题",
+        "date": "2025-03-21T16:26:41.000Z",
+        "permalink": "/InterviewQ/JUC面试题/",
+        "categories": [
+          "InterviewQ",
+          "Java"
+        ],
+        "tags": [
+          "Java"
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/04.InterviewQ/03.JUC%E9%9D%A2%E8%AF%95%E9%A2%98.html",
+      "relativePath": "04.InterviewQ/03.JUC面试题.md",
+      "key": "v-4d1a963e",
+      "path": "/InterviewQ/JUC面试题/"
+    },
+    {
+      "title": "Linux面试题",
+      "frontmatter": {
+        "title": "Linux面试题",
+        "date": "2025-03-12T10:15:12.000Z",
+        "permalink": "/InterviewQ/Linux面试题/",
         "categories": [
           "InterviewQ"
         ],
@@ -774,19 +792,79 @@ export const siteData = {
         ],
         "readingShow": "top"
       },
-      "regularPath": "/04.InterviewQ/02.Java.html",
-      "relativePath": "04.InterviewQ/02.Java.md",
-      "key": "v-cd328d1a",
-      "path": "/InterviewQ/Java/",
-      "lastUpdated": "2025/3/28 15:14:15",
-      "lastUpdatedTimestamp": 1743146055000
+      "regularPath": "/04.InterviewQ/05.Linux%E9%9D%A2%E8%AF%95%E9%A2%98.html",
+      "relativePath": "04.InterviewQ/05.Linux面试题.md",
+      "key": "v-e38c833e",
+      "path": "/InterviewQ/Linux面试题/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "目录、文件",
+          "slug": "目录、文件"
+        },
+        {
+          "level": 3,
+          "title": "查询日志文件后200条数据并实时监控",
+          "slug": "查询日志文件后200条数据并实时监控"
+        },
+        {
+          "level": 3,
+          "title": "将文件中i改为I",
+          "slug": "将文件中i改为i"
+        },
+        {
+          "level": 2,
+          "title": "系统",
+          "slug": "系统"
+        },
+        {
+          "level": 3,
+          "title": "查看内存使用情况",
+          "slug": "查看内存使用情况"
+        },
+        {
+          "level": 3,
+          "title": "修改用户权限",
+          "slug": "修改用户权限"
+        },
+        {
+          "level": 2,
+          "title": "下载",
+          "slug": "下载"
+        },
+        {
+          "level": 2,
+          "title": "使用 & 符号",
+          "slug": "使用-符号"
+        },
+        {
+          "level": 2,
+          "title": "使用 nohup 命令",
+          "slug": "使用-nohup-命令"
+        },
+        {
+          "level": 2,
+          "title": "使用 disown 命令",
+          "slug": "使用-disown-命令"
+        },
+        {
+          "level": 2,
+          "title": "使用 jobs 命令",
+          "slug": "使用-jobs-命令"
+        },
+        {
+          "level": 2,
+          "title": "使用 ps 命令",
+          "slug": "使用-ps-命令"
+        }
+      ]
     },
     {
-      "title": "SQL",
+      "title": "SQL面试题",
       "frontmatter": {
-        "title": "SQL",
+        "title": "SQL面试题",
         "date": "2025-03-08T09:27:40.000Z",
-        "permalink": "/InterviewQ/SQL/",
+        "permalink": "/InterviewQ/SQL面试题/",
         "categories": [
           "InterviewQ"
         ],
@@ -795,10 +873,10 @@ export const siteData = {
         ],
         "readingShow": "top"
       },
-      "regularPath": "/04.InterviewQ/06.SQL.html",
-      "relativePath": "04.InterviewQ/06.SQL.md",
-      "key": "v-210a26ee",
-      "path": "/InterviewQ/SQL/",
+      "regularPath": "/04.InterviewQ/06.SQL%E9%9D%A2%E8%AF%95%E9%A2%98.html",
+      "relativePath": "04.InterviewQ/06.SQL面试题.md",
+      "key": "v-27c01541",
+      "path": "/InterviewQ/SQL面试题/",
       "headers": [
         {
           "level": 2,
@@ -920,16 +998,14 @@ export const siteData = {
           "title": "为什么update一定要用索引",
           "slug": "为什么update一定要用索引"
         }
-      ],
-      "lastUpdated": "2025/3/28 22:19:47",
-      "lastUpdatedTimestamp": 1743171587000
+      ]
     },
     {
-      "title": "Linux",
+      "title": "Spring面试题",
       "frontmatter": {
-        "title": "Linux",
-        "date": "2025-03-12T10:15:12.000Z",
-        "permalink": "/InterviewQ/Linux/",
+        "title": "Spring面试题",
+        "date": "2025-03-11T17:51:14.000Z",
+        "permalink": "/InterviewQ/Spring面试题/",
         "categories": [
           "InterviewQ"
         ],
@@ -938,74 +1014,17 @@ export const siteData = {
         ],
         "readingShow": "top"
       },
-      "regularPath": "/04.InterviewQ/05.Linux.html",
-      "relativePath": "04.InterviewQ/05.Linux.md",
-      "key": "v-7904caff",
-      "path": "/InterviewQ/Linux/",
+      "regularPath": "/04.InterviewQ/09.Spring%E9%9D%A2%E8%AF%95%E9%A2%98.html",
+      "relativePath": "04.InterviewQ/09.Spring面试题.md",
+      "key": "v-958e28c6",
+      "path": "/InterviewQ/Spring面试题/",
       "headers": [
         {
           "level": 2,
-          "title": "目录、文件",
-          "slug": "目录、文件"
-        },
-        {
-          "level": 3,
-          "title": "查询日志文件后200条数据并实时监控",
-          "slug": "查询日志文件后200条数据并实时监控"
-        },
-        {
-          "level": 3,
-          "title": "将文件中i改为I",
-          "slug": "将文件中i改为i"
-        },
-        {
-          "level": 2,
-          "title": "系统",
-          "slug": "系统"
-        },
-        {
-          "level": 3,
-          "title": "查看内存使用情况",
-          "slug": "查看内存使用情况"
-        },
-        {
-          "level": 3,
-          "title": "修改用户权限",
-          "slug": "修改用户权限"
-        },
-        {
-          "level": 2,
-          "title": "下载",
-          "slug": "下载"
-        },
-        {
-          "level": 2,
-          "title": "使用 & 符号",
-          "slug": "使用-符号"
-        },
-        {
-          "level": 2,
-          "title": "使用 nohup 命令",
-          "slug": "使用-nohup-命令"
-        },
-        {
-          "level": 2,
-          "title": "使用 disown 命令",
-          "slug": "使用-disown-命令"
-        },
-        {
-          "level": 2,
-          "title": "使用 jobs 命令",
-          "slug": "使用-jobs-命令"
-        },
-        {
-          "level": 2,
-          "title": "使用 ps 命令",
-          "slug": "使用-ps-命令"
+          "title": "怎么组织上面这些对象的转换，有没有遇到什么挑战",
+          "slug": "怎么组织上面这些对象的转换-有没有遇到什么挑战"
         }
-      ],
-      "lastUpdated": "2025/3/28 15:14:15",
-      "lastUpdatedTimestamp": 1743146055000
+      ]
     },
     {
       "title": "Maven",
@@ -1021,9 +1040,9 @@ export const siteData = {
         ],
         "readingShow": "top"
       },
-      "regularPath": "/04.InterviewQ/07.Maven.html",
-      "relativePath": "04.InterviewQ/07.Maven.md",
-      "key": "v-73e1a14d",
+      "regularPath": "/04.InterviewQ/07.Maven%E9%9D%A2%E8%AF%95%E9%A2%98.html",
+      "relativePath": "04.InterviewQ/07.Maven面试题.md",
+      "key": "v-30f56101",
       "path": "/InterviewQ/Maven/",
       "headers": [
         {
@@ -1096,9 +1115,7 @@ export const siteData = {
           "title": "15. Maven 的 Snapshot 版本和 Release 版本有什么区别？",
           "slug": "_15-maven-的-snapshot-版本和-release-版本有什么区别"
         }
-      ],
-      "lastUpdated": "2025/3/28 15:14:15",
-      "lastUpdatedTimestamp": 1743146055000
+      ]
     },
     {
       "title": "MyBatis",
@@ -1114,92 +1131,30 @@ export const siteData = {
         ],
         "readingShow": "top"
       },
-      "regularPath": "/04.InterviewQ/08.MyBatis.html",
-      "relativePath": "04.InterviewQ/08.MyBatis.md",
-      "key": "v-4416917b",
-      "path": "/InterviewQ/MyBatis/",
-      "lastUpdated": "2025/3/28 15:14:15",
-      "lastUpdatedTimestamp": 1743146055000
+      "regularPath": "/04.InterviewQ/08.MyBatis%E9%9D%A2%E8%AF%95%E9%A2%98.html",
+      "relativePath": "04.InterviewQ/08.MyBatis面试题.md",
+      "key": "v-e595833e",
+      "path": "/InterviewQ/MyBatis/"
     },
     {
-      "title": "SpringHome",
+      "title": "Redis面试题",
       "frontmatter": {
-        "title": "SpringHome",
-        "date": "2025-03-11T17:51:14.000Z",
-        "permalink": "/pages/896da2/",
-        "categories": [
-          "InterviewQ"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/04.InterviewQ/09.SpringHome.html",
-      "relativePath": "04.InterviewQ/09.SpringHome.md",
-      "key": "v-4fb26793",
-      "path": "/pages/896da2/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "怎么组织上面这些对象的转换，有没有遇到什么挑战",
-          "slug": "怎么组织上面这些对象的转换-有没有遇到什么挑战"
-        }
-      ],
-      "lastUpdated": "2025/3/28 15:14:15",
-      "lastUpdatedTimestamp": 1743146055000
-    },
-    {
-      "title": "Algorithm",
-      "frontmatter": {
-        "title": "Algorithm",
-        "date": "2025-03-11T21:14:31.000Z",
-        "permalink": "/InterviewQ/Algorithm/",
-        "categories": [
-          "InterviewQ"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/04.InterviewQ/11.Algorithm.html",
-      "relativePath": "04.InterviewQ/11.Algorithm.md",
-      "key": "v-d917335a",
-      "path": "/InterviewQ/Algorithm/",
-      "headers": [
-        {
-          "level": 3,
-          "title": "前缀和",
-          "slug": "前缀和"
-        },
-        {
-          "level": 3,
-          "title": "哈希表",
-          "slug": "哈希表"
-        }
-      ],
-      "lastUpdated": "2025/3/28 15:14:15",
-      "lastUpdatedTimestamp": 1743146055000
-    },
-    {
-      "title": "Redis",
-      "frontmatter": {
-        "title": "Redis",
+        "title": "Redis面试题",
         "date": "2025-03-14T15:19:32.000Z",
-        "permalink": "/InterviewQ/Redis/",
+        "permalink": "/InterviewQ/Redis面试题/",
         "categories": [
-          "InterviewQ"
+          "InterviewQ",
+          "Redis"
         ],
         "tags": [
-          null
+          "Redis"
         ],
         "readingShow": "top"
       },
-      "regularPath": "/04.InterviewQ/10.Redis.html",
-      "relativePath": "04.InterviewQ/10.Redis.md",
-      "key": "v-25c8413d",
-      "path": "/InterviewQ/Redis/",
+      "regularPath": "/04.InterviewQ/10.Redis%E9%9D%A2%E8%AF%95%E9%A2%98.html",
+      "relativePath": "04.InterviewQ/10.Redis面试题.md",
+      "key": "v-2fa7fe01",
+      "path": "/InterviewQ/Redis面试题/",
       "headers": [
         {
           "level": 2,
@@ -1285,6 +1240,37 @@ export const siteData = {
           "level": 2,
           "title": "28. Redis分片集群中数据是怎么存储和读取的？",
           "slug": "_28-redis分片集群中数据是怎么存储和读取的"
+        }
+      ]
+    },
+    {
+      "title": "Algorithm",
+      "frontmatter": {
+        "title": "Algorithm",
+        "date": "2025-03-11T21:14:31.000Z",
+        "permalink": "/InterviewQ/Algorithm/",
+        "categories": [
+          "InterviewQ"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/04.InterviewQ/11.Algorithm.html",
+      "relativePath": "04.InterviewQ/11.Algorithm.md",
+      "key": "v-d917335a",
+      "path": "/InterviewQ/Algorithm/",
+      "headers": [
+        {
+          "level": 3,
+          "title": "前缀和",
+          "slug": "前缀和"
+        },
+        {
+          "level": 3,
+          "title": "哈希表",
+          "slug": "哈希表"
         }
       ],
       "lastUpdated": "2025/3/28 15:14:15",
@@ -1598,6 +1584,32 @@ export const siteData = {
       ],
       "lastUpdated": "2025/3/28 10:23:05",
       "lastUpdatedTimestamp": 1743128585000
+    },
+    {
+      "title": "Learn",
+      "frontmatter": {
+        "title": "Learn",
+        "date": "2025-03-22T16:03:49.000Z",
+        "permalink": "/Life/Learn/",
+        "categories": [
+          "Life"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/06.Life/01.Learn.html",
+      "relativePath": "06.Life/01.Learn.md",
+      "key": "v-eeb5098a",
+      "path": "/Life/Learn/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "幸福只属于知足的人",
+          "slug": "幸福只属于知足的人"
+        }
+      ]
     },
     {
       "title": "JUC",
@@ -1988,32 +2000,25 @@ export const siteData = {
       "lastUpdatedTimestamp": 1743128585000
     },
     {
-      "title": "Learn",
+      "title": "Dubbo",
       "frontmatter": {
-        "title": "Learn",
-        "date": "2025-03-22T16:03:49.000Z",
-        "permalink": "/pages/c70e3b/",
+        "title": "Dubbo",
+        "date": "2025-02-09T15:57:03.000Z",
+        "permalink": "/pages/bd79a7/",
         "categories": [
-          "Learn"
+          "MicroServices"
         ],
         "tags": [
           null
         ],
         "readingShow": "top"
       },
-      "regularPath": "/06.Learn/01.Learn.html",
-      "relativePath": "06.Learn/01.Learn.md",
-      "key": "v-eedbe766",
-      "path": "/pages/c70e3b/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "幸福只属于知足的人",
-          "slug": "幸福只属于知足的人"
-        }
-      ],
-      "lastUpdated": "2025/3/28 15:14:15",
-      "lastUpdatedTimestamp": 1743146055000
+      "regularPath": "/08.MicroServices/04.Dubbo.html",
+      "relativePath": "08.MicroServices/04.Dubbo.md",
+      "key": "v-eee68fa6",
+      "path": "/pages/bd79a7/",
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
       "title": "反射&动态代理",
@@ -2139,39 +2144,6 @@ export const siteData = {
       "lastUpdatedTimestamp": 1743128585000
     },
     {
-      "title": "Linux",
-      "frontmatter": {
-        "title": "Linux",
-        "date": "2025-03-19T10:32:42.000Z",
-        "permalink": "/pages/29ecf5/",
-        "categories": [
-          "Linux"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/07.Linux/01.Linux.html",
-      "relativePath": "07.Linux/01.Linux.md",
-      "key": "v-3c0876ed",
-      "path": "/pages/29ecf5/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "修改用户权限",
-          "slug": "修改用户权限"
-        },
-        {
-          "level": 2,
-          "title": "",
-          "slug": ""
-        }
-      ],
-      "lastUpdated": "2025/3/28 10:23:05",
-      "lastUpdatedTimestamp": 1743128585000
-    },
-    {
       "title": "MicroServices",
       "frontmatter": {
         "title": "MicroServices",
@@ -2205,7 +2177,9 @@ export const siteData = {
           "title": "2.2.2.怎么拆⭐",
           "slug": "_2-2-2-怎么拆⭐"
         }
-      ]
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
       "title": "RabbitMQ",
@@ -2224,7 +2198,9 @@ export const siteData = {
       "regularPath": "/08.MicroServices/02.RabbitMQ.html",
       "relativePath": "08.MicroServices/02.RabbitMQ.md",
       "key": "v-4ff8ceea",
-      "path": "/pages/16ebf4/"
+      "path": "/pages/16ebf4/",
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
       "title": "Docker",
@@ -2370,45 +2346,9 @@ export const siteData = {
           "title": "3.3.2.基础命令",
           "slug": "_3-3-2-基础命令"
         }
-      ]
-    },
-    {
-      "title": "Dubbo",
-      "frontmatter": {
-        "title": "Dubbo",
-        "date": "2025-02-09T15:57:03.000Z",
-        "permalink": "/pages/bd79a7/",
-        "categories": [
-          "MicroServices"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/08.MicroServices/04.Dubbo.html",
-      "relativePath": "08.MicroServices/04.Dubbo.md",
-      "key": "v-eee68fa6",
-      "path": "/pages/bd79a7/"
-    },
-    {
-      "title": "Zookeeper",
-      "frontmatter": {
-        "title": "Zookeeper",
-        "date": "2025-02-09T15:57:09.000Z",
-        "permalink": "/pages/7839e5/",
-        "categories": [
-          "MicroServices"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/08.MicroServices/06.Zookeeper.html",
-      "relativePath": "08.MicroServices/06.Zookeeper.md",
-      "key": "v-3a0063ad",
-      "path": "/pages/7839e5/"
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
       "title": "MongoDB",
@@ -2427,26 +2367,49 @@ export const siteData = {
       "regularPath": "/08.MicroServices/05.MongoDB.html",
       "relativePath": "08.MicroServices/05.MongoDB.md",
       "key": "v-9474a4e6",
-      "path": "/pages/75426d/"
+      "path": "/pages/75426d/",
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
-      "title": "Redis安装说明",
+      "title": "Zookeeper",
       "frontmatter": {
-        "title": "Redis安装说明",
-        "date": "2025-01-17T18:56:01.000Z",
-        "permalink": "/pages/3c30a0/",
+        "title": "Zookeeper",
+        "date": "2025-02-09T15:57:09.000Z",
+        "permalink": "/pages/7839e5/",
         "categories": [
-          "Redis"
+          "MicroServices"
         ],
         "tags": [
           null
         ],
         "readingShow": "top"
       },
-      "regularPath": "/10.Redis/01.Redis%E5%AE%89%E8%A3%85.html",
-      "relativePath": "10.Redis/01.Redis安装.md",
-      "key": "v-448b85d8",
-      "path": "/pages/3c30a0/",
+      "regularPath": "/08.MicroServices/06.Zookeeper.html",
+      "relativePath": "08.MicroServices/06.Zookeeper.md",
+      "key": "v-3a0063ad",
+      "path": "/pages/7839e5/",
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
+    },
+    {
+      "title": "Redis安装说明",
+      "frontmatter": {
+        "title": "Redis安装说明",
+        "date": "2025-01-17T18:56:01.000Z",
+        "permalink": "/Redis/Redis安装/Win",
+        "categories": [
+          "Redis"
+        ],
+        "tags": [
+          "Redis"
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/10.Redis/01.Redis%E5%AE%89%E8%A3%85/01.Redis%E5%AE%89%E8%A3%85.html",
+      "relativePath": "10.Redis/01.Redis安装/01.Redis安装.md",
+      "key": "v-08220c74",
+      "path": "/Redis/Redis安装/Win/",
       "headers": [
         {
           "level": 2,
@@ -2531,493 +2494,23 @@ export const siteData = {
       ]
     },
     {
-      "title": "Redis基础",
+      "title": "Linux",
       "frontmatter": {
-        "title": "Redis基础",
-        "date": "2025-02-11T17:36:19.000Z",
-        "permalink": "/pages/83183b/",
+        "title": "Linux",
+        "date": "2025-03-29T15:36:51.000Z",
+        "permalink": "/Reids/Redis安装/Linux",
         "categories": [
-          "Redis"
+          null
         ],
         "tags": [
           null
         ],
         "readingShow": "top"
       },
-      "regularPath": "/10.Redis/02.Redis%E5%9F%BA%E7%A1%80.html",
-      "relativePath": "10.Redis/02.Redis基础.md",
-      "key": "v-2d5edf7b",
-      "path": "/pages/83183b/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "NoSQL",
-          "slug": "nosql"
-        },
-        {
-          "level": 2,
-          "title": "认识Redis",
-          "slug": "认识redis"
-        },
-        {
-          "level": 2,
-          "title": "Redis安装",
-          "slug": "redis安装"
-        },
-        {
-          "level": 2,
-          "title": "Redis数据结构介绍**",
-          "slug": "redis数据结构介绍"
-        },
-        {
-          "level": 3,
-          "title": "基本类型",
-          "slug": "基本类型"
-        },
-        {
-          "level": 3,
-          "title": "特殊类型",
-          "slug": "特殊类型"
-        },
-        {
-          "level": 2,
-          "title": "Redis通用命令",
-          "slug": "redis通用命令"
-        },
-        {
-          "level": 2,
-          "title": "String类型",
-          "slug": "string类型"
-        },
-        {
-          "level": 3,
-          "title": "String的常见命令**",
-          "slug": "string的常见命令"
-        },
-        {
-          "level": 3,
-          "title": "key的结构*",
-          "slug": "key的结构"
-        },
-        {
-          "level": 2,
-          "title": "Hash类型",
-          "slug": "hash类型"
-        },
-        {
-          "level": 3,
-          "title": "Hash的常见命令**",
-          "slug": "hash的常见命令"
-        },
-        {
-          "level": 2,
-          "title": "List类型",
-          "slug": "list类型"
-        },
-        {
-          "level": 3,
-          "title": "List的常见命令**",
-          "slug": "list的常见命令"
-        },
-        {
-          "level": 2,
-          "title": "Set类型",
-          "slug": "set类型"
-        },
-        {
-          "level": 3,
-          "title": "Set类型的常见命令**",
-          "slug": "set类型的常见命令"
-        },
-        {
-          "level": 2,
-          "title": "SortedSet类型",
-          "slug": "sortedset类型"
-        },
-        {
-          "level": 3,
-          "title": "SortedSet的常见命令",
-          "slug": "sortedset的常见命令"
-        },
-        {
-          "level": 2,
-          "title": "Jedis",
-          "slug": "jedis"
-        },
-        {
-          "level": 2,
-          "title": "Jedis连接池",
-          "slug": "jedis连接池"
-        },
-        {
-          "level": 2,
-          "title": "SpringDataRedis**(导入)",
-          "slug": "springdataredis-导入"
-        },
-        {
-          "level": 2,
-          "title": "SpringDataRedis的序列化方式*",
-          "slug": "springdataredis的序列化方式"
-        },
-        {
-          "level": 2,
-          "title": "StringRedisTemplate**",
-          "slug": "stringredistemplate"
-        },
-        {
-          "level": 2,
-          "title": "RedisTemplate的两种序列化实践方案：",
-          "slug": "redistemplate的两种序列化实践方案"
-        },
-        {
-          "level": 2,
-          "title": "操作常见类型数据",
-          "slug": "操作常见类型数据"
-        }
-      ]
-    },
-    {
-      "title": "Redis集群",
-      "frontmatter": {
-        "title": "Redis集群",
-        "date": "2025-02-07T17:34:59.000Z",
-        "permalink": "/pages/6b727a/",
-        "categories": [
-          "Redis"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/10.Redis/04.Redis%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85.html",
-      "relativePath": "10.Redis/04.Redis集群安装.md",
-      "key": "v-96d8cf86",
-      "path": "/pages/6b727a/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "2.1.集群结构",
-          "slug": "_2-1-集群结构"
-        },
-        {
-          "level": 2,
-          "title": "2.2.准备实例和配置",
-          "slug": "_2-2-准备实例和配置"
-        },
-        {
-          "level": 2,
-          "title": "2.3.启动",
-          "slug": "_2-3-启动"
-        },
-        {
-          "level": 2,
-          "title": "2.4.开启主从关系",
-          "slug": "_2-4-开启主从关系"
-        },
-        {
-          "level": 2,
-          "title": "2.5.测试",
-          "slug": "_2-5-测试"
-        },
-        {
-          "level": 2,
-          "title": "3.1.集群结构",
-          "slug": "_3-1-集群结构"
-        },
-        {
-          "level": 2,
-          "title": "3.2.准备实例和配置",
-          "slug": "_3-2-准备实例和配置"
-        },
-        {
-          "level": 2,
-          "title": "3.3.启动",
-          "slug": "_3-3-启动"
-        },
-        {
-          "level": 2,
-          "title": "3.4.测试",
-          "slug": "_3-4-测试"
-        },
-        {
-          "level": 2,
-          "title": "4.1.集群结构",
-          "slug": "_4-1-集群结构"
-        },
-        {
-          "level": 2,
-          "title": "4.2.准备实例和配置",
-          "slug": "_4-2-准备实例和配置"
-        },
-        {
-          "level": 2,
-          "title": "4.3.启动",
-          "slug": "_4-3-启动"
-        },
-        {
-          "level": 2,
-          "title": "4.4.创建集群",
-          "slug": "_4-4-创建集群"
-        },
-        {
-          "level": 2,
-          "title": "4.5.测试",
-          "slug": "_4-5-测试"
-        }
-      ]
-    },
-    {
-      "title": "Redis原理",
-      "frontmatter": {
-        "title": "Redis原理",
-        "date": "2025-02-09T15:45:05.000Z",
-        "permalink": "/pages/e81cee/",
-        "categories": [
-          "Redis"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/10.Redis/07.Redis%E5%8E%9F%E7%90%86.html",
-      "relativePath": "10.Redis/07.Redis原理.md",
-      "key": "v-9f5e32aa",
-      "path": "/pages/e81cee/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "1、原理篇-Redis数据结构",
-          "slug": "_1、原理篇-redis数据结构"
-        },
-        {
-          "level": 3,
-          "title": "1.1 Redis数据结构-动态字符串",
-          "slug": "_1-1-redis数据结构-动态字符串"
-        }
-      ]
-    },
-    {
-      "title": "Redis分布式缓存",
-      "frontmatter": {
-        "title": "Redis分布式缓存",
-        "date": "2025-02-07T17:28:15.000Z",
-        "permalink": "/pages/97d2c6/",
-        "categories": [
-          "Redis"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/10.Redis/05.Redis%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98.html",
-      "relativePath": "10.Redis/05.Redis分布式缓存.md",
-      "key": "v-6c489d60",
-      "path": "/pages/97d2c6/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "1.1.RDB持久化",
-          "slug": "_1-1-rdb持久化"
-        },
-        {
-          "level": 3,
-          "title": "1.1.1.执行时机",
-          "slug": "_1-1-1-执行时机"
-        },
-        {
-          "level": 3,
-          "title": "1.1.2.RDB原理",
-          "slug": "_1-1-2-rdb原理"
-        },
-        {
-          "level": 3,
-          "title": "1.1.3.小结",
-          "slug": "_1-1-3-小结"
-        },
-        {
-          "level": 2,
-          "title": "1.2.AOF持久化",
-          "slug": "_1-2-aof持久化"
-        },
-        {
-          "level": 3,
-          "title": "1.2.1.AOF原理",
-          "slug": "_1-2-1-aof原理"
-        },
-        {
-          "level": 3,
-          "title": "1.2.2.AOF配置",
-          "slug": "_1-2-2-aof配置"
-        },
-        {
-          "level": 3,
-          "title": "1.2.3.AOF文件重写bgrewriteaof",
-          "slug": "_1-2-3-aof文件重写bgrewriteaof"
-        },
-        {
-          "level": 2,
-          "title": "1.3.RDB与AOF对比",
-          "slug": "_1-3-rdb与aof对比"
-        },
-        {
-          "level": 2,
-          "title": "2.1.搭建主从架构",
-          "slug": "_2-1-搭建主从架构"
-        },
-        {
-          "level": 2,
-          "title": "2.2.主从数据同步原理",
-          "slug": "_2-2-主从数据同步原理"
-        },
-        {
-          "level": 3,
-          "title": "2.2.1.全量同步",
-          "slug": "_2-2-1-全量同步"
-        },
-        {
-          "level": 3,
-          "title": "2.2.2.增量同步",
-          "slug": "_2-2-2-增量同步"
-        },
-        {
-          "level": 3,
-          "title": "2.2.3.repl_backlog原理",
-          "slug": "_2-2-3-repl-backlog原理"
-        },
-        {
-          "level": 2,
-          "title": "2.3.主从同步优化**",
-          "slug": "_2-3-主从同步优化"
-        },
-        {
-          "level": 2,
-          "title": "2.4.小结**",
-          "slug": "_2-4-小结"
-        },
-        {
-          "level": 2,
-          "title": "3.1.哨兵原理",
-          "slug": "_3-1-哨兵原理"
-        },
-        {
-          "level": 3,
-          "title": "3.1.1.集群结构和作用",
-          "slug": "_3-1-1-集群结构和作用"
-        },
-        {
-          "level": 3,
-          "title": "3.1.2.集群监控原理",
-          "slug": "_3-1-2-集群监控原理"
-        },
-        {
-          "level": 3,
-          "title": "3.1.3.集群故障恢复原理",
-          "slug": "_3-1-3-集群故障恢复原理"
-        },
-        {
-          "level": 3,
-          "title": "3.1.4.小结",
-          "slug": "_3-1-4-小结"
-        },
-        {
-          "level": 2,
-          "title": "3.2.搭建哨兵集群",
-          "slug": "_3-2-搭建哨兵集群"
-        },
-        {
-          "level": 2,
-          "title": "3.3.RedisTemplate",
-          "slug": "_3-3-redistemplate"
-        },
-        {
-          "level": 3,
-          "title": "3.3.1.导入Demo工程",
-          "slug": "_3-3-1-导入demo工程"
-        },
-        {
-          "level": 3,
-          "title": "3.3.2.引入依赖",
-          "slug": "_3-3-2-引入依赖"
-        },
-        {
-          "level": 3,
-          "title": "3.3.3.配置Redis地址",
-          "slug": "_3-3-3-配置redis地址"
-        },
-        {
-          "level": 3,
-          "title": "3.3.4.配置读写分离",
-          "slug": "_3-3-4-配置读写分离"
-        },
-        {
-          "level": 2,
-          "title": "4.1.搭建分片集群",
-          "slug": "_4-1-搭建分片集群"
-        },
-        {
-          "level": 2,
-          "title": "4.2.散列插槽",
-          "slug": "_4-2-散列插槽"
-        },
-        {
-          "level": 3,
-          "title": "4.2.1.插槽原理",
-          "slug": "_4-2-1-插槽原理"
-        },
-        {
-          "level": 3,
-          "title": "4.2.1.小结**",
-          "slug": "_4-2-1-小结"
-        },
-        {
-          "level": 2,
-          "title": "4.3.集群伸缩**",
-          "slug": "_4-3-集群伸缩"
-        },
-        {
-          "level": 3,
-          "title": "4.3.1.需求分析",
-          "slug": "_4-3-1-需求分析"
-        },
-        {
-          "level": 3,
-          "title": "4.3.2.创建新的redis实例",
-          "slug": "_4-3-2-创建新的redis实例"
-        },
-        {
-          "level": 3,
-          "title": "4.3.3.添加新节点到redis",
-          "slug": "_4-3-3-添加新节点到redis"
-        },
-        {
-          "level": 3,
-          "title": "4.3.4.转移插槽",
-          "slug": "_4-3-4-转移插槽"
-        },
-        {
-          "level": 2,
-          "title": "4.4.故障转移",
-          "slug": "_4-4-故障转移"
-        },
-        {
-          "level": 3,
-          "title": "4.4.1.自动故障转移",
-          "slug": "_4-4-1-自动故障转移"
-        },
-        {
-          "level": 3,
-          "title": "4.4.2.手动故障转移",
-          "slug": "_4-4-2-手动故障转移"
-        },
-        {
-          "level": 2,
-          "title": "4.5.RedisTemplate访问分片集群",
-          "slug": "_4-5-redistemplate访问分片集群"
-        }
-      ]
+      "regularPath": "/10.Redis/01.Redis%E5%AE%89%E8%A3%85/02.Linux.html",
+      "relativePath": "10.Redis/01.Redis安装/02.Linux.md",
+      "key": "v-9e397966",
+      "path": "/Reids/Redis安装/Linux/"
     },
     {
       "title": "MySQL",
@@ -3663,14 +3156,16 @@ export const siteData = {
           "title": "二进制类型",
           "slug": "二进制类型"
         }
-      ]
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
-      "title": "Redis多级缓存",
+      "title": "Redis基础",
       "frontmatter": {
-        "title": "Redis多级缓存",
-        "date": "2025-02-09T13:04:55.000Z",
-        "permalink": "/pages/c7ec43/",
+        "title": "Redis基础",
+        "date": "2025-02-11T17:36:19.000Z",
+        "permalink": "/pages/83183b/",
         "categories": [
           "Redis"
         ],
@@ -3679,134 +3174,146 @@ export const siteData = {
         ],
         "readingShow": "top"
       },
-      "regularPath": "/10.Redis/06.Redis%E5%A4%9A%E7%BA%A7%E7%BC%93%E5%AD%98.html",
-      "relativePath": "10.Redis/06.Redis多级缓存.md",
-      "key": "v-c8a5cf8c",
-      "path": "/pages/c7ec43/",
+      "regularPath": "/10.Redis/02.Redis%E5%9F%BA%E7%A1%80.html",
+      "relativePath": "10.Redis/02.Redis基础.md",
+      "key": "v-2d5edf7b",
+      "path": "/pages/83183b/",
       "headers": [
         {
           "level": 2,
-          "title": "2.1.导入案例",
-          "slug": "_2-1-导入案例"
+          "title": "NoSQL",
+          "slug": "nosql"
         },
         {
           "level": 2,
-          "title": "2.2.初识Caffeine",
-          "slug": "_2-2-初识caffeine"
+          "title": "认识Redis",
+          "slug": "认识redis"
         },
         {
           "level": 2,
-          "title": "2.3.实现JVM进程缓存",
-          "slug": "_2-3-实现jvm进程缓存"
-        },
-        {
-          "level": 3,
-          "title": "2.3.1.需求",
-          "slug": "_2-3-1-需求"
-        },
-        {
-          "level": 3,
-          "title": "2.3.2.实现",
-          "slug": "_2-3-2-实现"
+          "title": "Redis安装",
+          "slug": "redis安装"
         },
         {
           "level": 2,
-          "title": "3.1.初识Lua",
-          "slug": "_3-1-初识lua"
+          "title": "Redis数据结构介绍**",
+          "slug": "redis数据结构介绍"
+        },
+        {
+          "level": 3,
+          "title": "基本类型",
+          "slug": "基本类型"
+        },
+        {
+          "level": 3,
+          "title": "特殊类型",
+          "slug": "特殊类型"
         },
         {
           "level": 2,
-          "title": "3.1.HelloWorld",
-          "slug": "_3-1-helloworld"
+          "title": "Redis通用命令",
+          "slug": "redis通用命令"
         },
         {
           "level": 2,
-          "title": "3.2.变量和循环",
-          "slug": "_3-2-变量和循环"
+          "title": "String类型",
+          "slug": "string类型"
         },
         {
           "level": 3,
-          "title": "3.2.1.Lua的数据类型",
-          "slug": "_3-2-1-lua的数据类型"
+          "title": "String的常见命令**",
+          "slug": "string的常见命令"
         },
         {
           "level": 3,
-          "title": "3.2.2.声明变量",
-          "slug": "_3-2-2-声明变量"
-        },
-        {
-          "level": 3,
-          "title": "3.2.3.循环(ipairs和pairs)",
-          "slug": "_3-2-3-循环-ipairs和pairs"
+          "title": "key的结构*",
+          "slug": "key的结构"
         },
         {
           "level": 2,
-          "title": "3.3.条件控制、函数",
-          "slug": "_3-3-条件控制、函数"
+          "title": "Hash类型",
+          "slug": "hash类型"
         },
         {
           "level": 3,
-          "title": "3.3.1.函数",
-          "slug": "_3-3-1-函数"
-        },
-        {
-          "level": 3,
-          "title": "3.3.2.条件控制",
-          "slug": "_3-3-2-条件控制"
-        },
-        {
-          "level": 3,
-          "title": "3.3.3.案例",
-          "slug": "_3-3-3-案例"
+          "title": "Hash的常见命令**",
+          "slug": "hash的常见命令"
         },
         {
           "level": 2,
-          "title": "4.1.安装OpenResty",
-          "slug": "_4-1-安装openresty"
+          "title": "List类型",
+          "slug": "list类型"
+        },
+        {
+          "level": 3,
+          "title": "List的常见命令**",
+          "slug": "list的常见命令"
         },
         {
           "level": 2,
-          "title": "4.2.OpenResty快速入门",
-          "slug": "_4-2-openresty快速入门"
+          "title": "Set类型",
+          "slug": "set类型"
         },
         {
           "level": 3,
-          "title": "4.2.1.反向代理流程*",
-          "slug": "_4-2-1-反向代理流程"
-        },
-        {
-          "level": 3,
-          "title": "4.2.2.OpenResty监听请求*",
-          "slug": "_4-2-2-openresty监听请求"
-        },
-        {
-          "level": 3,
-          "title": "4.2.3.编写item.lua",
-          "slug": "_4-2-3-编写item-lua"
+          "title": "Set类型的常见命令**",
+          "slug": "set类型的常见命令"
         },
         {
           "level": 2,
-          "title": "4.3.请求参数处理**",
-          "slug": "_4-3-请求参数处理"
+          "title": "SortedSet类型",
+          "slug": "sortedset类型"
         },
         {
           "level": 3,
-          "title": "4.3.1.获取参数的API",
-          "slug": "_4-3-1-获取参数的api"
+          "title": "SortedSet的常见命令",
+          "slug": "sortedset的常见命令"
         },
         {
-          "level": 3,
-          "title": "4.3.2.获取参数并返回",
-          "slug": "_4-3-2-获取参数并返回"
+          "level": 2,
+          "title": "Jedis",
+          "slug": "jedis"
+        },
+        {
+          "level": 2,
+          "title": "Jedis连接池",
+          "slug": "jedis连接池"
+        },
+        {
+          "level": 2,
+          "title": "SpringDataRedis**(导入)",
+          "slug": "springdataredis-导入"
+        },
+        {
+          "level": 2,
+          "title": "SpringDataRedis的序列化方式*",
+          "slug": "springdataredis的序列化方式"
+        },
+        {
+          "level": 2,
+          "title": "StringRedisTemplate**",
+          "slug": "stringredistemplate"
+        },
+        {
+          "level": 2,
+          "title": "RedisTemplate的两种序列化实践方案：",
+          "slug": "redistemplate的两种序列化实践方案"
+        },
+        {
+          "level": 2,
+          "title": "操作常见类型数据",
+          "slug": "操作常见类型数据"
         }
-      ]
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
-      "title": "案例导入说明",
+      "title": "Redis集群",
       "frontmatter": {
-        "title": "案例导入说明",
-        "date": "2025-02-09T13:06:02.000Z",
-        "permalink": "/pages/5c3702/",
+        "title": "Redis集群",
+        "date": "2025-02-07T17:34:59.000Z",
+        "permalink": "/pages/6b727a/",
         "categories": [
           "Redis"
         ],
@@ -3815,325 +3322,84 @@ export const siteData = {
         ],
         "readingShow": "top"
       },
-      "regularPath": "/10.Redis/08.%E6%A1%88%E4%BE%8B%E5%AF%BC%E5%85%A5%E8%AF%B4%E6%98%8E.html",
-      "relativePath": "10.Redis/08.案例导入说明.md",
-      "key": "v-1157bebe",
-      "path": "/pages/5c3702/",
+      "regularPath": "/10.Redis/04.Redis%E9%9B%86%E7%BE%A4%E5%AE%89%E8%A3%85.html",
+      "relativePath": "10.Redis/04.Redis集群安装.md",
+      "key": "v-96d8cf86",
+      "path": "/pages/6b727a/",
       "headers": [
         {
           "level": 2,
-          "title": "1.1.准备目录",
-          "slug": "_1-1-准备目录"
+          "title": "2.1.集群结构",
+          "slug": "_2-1-集群结构"
         },
         {
           "level": 2,
-          "title": "1.2.运行命令",
-          "slug": "_1-2-运行命令"
+          "title": "2.2.准备实例和配置",
+          "slug": "_2-2-准备实例和配置"
         },
         {
           "level": 2,
-          "title": "1.3.修改配置",
-          "slug": "_1-3-修改配置"
+          "title": "2.3.启动",
+          "slug": "_2-3-启动"
         },
         {
           "level": 2,
-          "title": "1.4.重启",
-          "slug": "_1-4-重启"
+          "title": "2.4.开启主从关系",
+          "slug": "_2-4-开启主从关系"
         },
         {
           "level": 2,
-          "title": "3.1.分页查询商品",
-          "slug": "_3-1-分页查询商品"
+          "title": "2.5.测试",
+          "slug": "_2-5-测试"
         },
         {
           "level": 2,
-          "title": "3.2.新增商品",
-          "slug": "_3-2-新增商品"
+          "title": "3.1.集群结构",
+          "slug": "_3-1-集群结构"
         },
         {
           "level": 2,
-          "title": "3.3.修改商品",
-          "slug": "_3-3-修改商品"
+          "title": "3.2.准备实例和配置",
+          "slug": "_3-2-准备实例和配置"
         },
         {
           "level": 2,
-          "title": "3.4.修改库存",
-          "slug": "_3-4-修改库存"
+          "title": "3.3.启动",
+          "slug": "_3-3-启动"
         },
         {
           "level": 2,
-          "title": "3.5.删除商品",
-          "slug": "_3-5-删除商品"
+          "title": "3.4.测试",
+          "slug": "_3-4-测试"
         },
         {
           "level": 2,
-          "title": "3.6.根据id查询商品",
-          "slug": "_3-6-根据id查询商品"
+          "title": "4.1.集群结构",
+          "slug": "_4-1-集群结构"
         },
         {
           "level": 2,
-          "title": "3.7.根据id查询库存",
-          "slug": "_3-7-根据id查询库存"
+          "title": "4.2.准备实例和配置",
+          "slug": "_4-2-准备实例和配置"
         },
         {
           "level": 2,
-          "title": "3.8.启动",
-          "slug": "_3-8-启动"
+          "title": "4.3.启动",
+          "slug": "_4-3-启动"
         },
         {
           "level": 2,
-          "title": "4.1.运行nginx服务",
-          "slug": "_4-1-运行nginx服务"
+          "title": "4.4.创建集群",
+          "slug": "_4-4-创建集群"
         },
         {
           "level": 2,
-          "title": "4.2.反向代理",
-          "slug": "_4-2-反向代理"
+          "title": "4.5.测试",
+          "slug": "_4-5-测试"
         }
-      ]
-    },
-    {
-      "title": "安装OpenResty",
-      "frontmatter": {
-        "title": "安装OpenResty",
-        "date": "2025-02-09T14:30:06.000Z",
-        "permalink": "/pages/0459ad/",
-        "categories": [
-          "Redis"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/10.Redis/09.%E5%AE%89%E8%A3%85OpenResty.html",
-      "relativePath": "10.Redis/09.安装OpenResty.md",
-      "key": "v-ca99173c",
-      "path": "/pages/0459ad/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "1）安装开发库",
-          "slug": "_1-安装开发库"
-        },
-        {
-          "level": 2,
-          "title": "2）安装OpenResty仓库",
-          "slug": "_2-安装openresty仓库"
-        },
-        {
-          "level": 2,
-          "title": "3）安装OpenResty",
-          "slug": "_3-安装openresty"
-        },
-        {
-          "level": 2,
-          "title": "4）安装opm工具",
-          "slug": "_4-安装opm工具"
-        },
-        {
-          "level": 2,
-          "title": "5）目录结构",
-          "slug": "_5-目录结构"
-        },
-        {
-          "level": 2,
-          "title": "6）配置nginx的环境变量",
-          "slug": "_6-配置nginx的环境变量"
-        }
-      ]
-    },
-    {
-      "title": "big-event",
-      "frontmatter": {
-        "title": "big-event",
-        "date": "2025-01-17T20:00:04.000Z",
-        "permalink": "/pages/6de838/",
-        "categories": [
-          "SpringBoot"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/12.SpringBoot/01.big-event.html",
-      "relativePath": "12.SpringBoot/01.big-event.md",
-      "key": "v-03357bf9",
-      "path": "/pages/6de838/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "SpringBoot概述",
-          "slug": "springboot概述"
-        }
-      ]
-    },
-    {
-      "title": "SoftwareTest",
-      "frontmatter": {
-        "title": "SoftwareTest",
-        "date": "2025-03-17T23:02:36.000Z",
-        "permalink": "/pages/7dc24f/",
-        "categories": [
-          "SoftwareTest"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/11.Computer/01.SoftwareTest.html",
-      "relativePath": "11.Computer/01.SoftwareTest.md",
-      "key": "v-2a143353",
-      "path": "/pages/7dc24f/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "WebDriver⭐⭐",
-          "slug": "webdriver⭐⭐"
-        },
-        {
-          "level": 2,
-          "title": "定位⭐⭐",
-          "slug": "定位⭐⭐"
-        },
-        {
-          "level": 3,
-          "title": "普通定位类型（定位方法、定位策略）",
-          "slug": "普通定位类型-定位方法、定位策略"
-        },
-        {
-          "level": 3,
-          "title": "XPATH高级定位",
-          "slug": "xpath高级定位"
-        },
-        {
-          "level": 3,
-          "title": "CSS选择器高级定位",
-          "slug": "css选择器高级定位"
-        },
-        {
-          "level": 3,
-          "title": "小结：定位方法",
-          "slug": "小结-定位方法"
-        },
-        {
-          "level": 2,
-          "title": "浏览器操作⭐",
-          "slug": "浏览器操作⭐"
-        },
-        {
-          "level": 2,
-          "title": "元素基本操作",
-          "slug": "元素基本操作"
-        },
-        {
-          "level": 3,
-          "title": "文本框和文本域⭐",
-          "slug": "文本框和文本域⭐"
-        },
-        {
-          "level": 3,
-          "title": "按钮",
-          "slug": "按钮"
-        },
-        {
-          "level": 3,
-          "title": "单选按钮和复选框⭐",
-          "slug": "单选按钮和复选框⭐"
-        },
-        {
-          "level": 3,
-          "title": "超级链接和图片",
-          "slug": "超级链接和图片"
-        },
-        {
-          "level": 3,
-          "title": "超级链接和静态文本⭐",
-          "slug": "超级链接和静态文本⭐"
-        },
-        {
-          "level": 2,
-          "title": "模拟键鼠操作⭐⭐",
-          "slug": "模拟键鼠操作⭐⭐"
-        },
-        {
-          "level": 3,
-          "title": "模拟键盘操作",
-          "slug": "模拟键盘操作"
-        },
-        {
-          "level": 3,
-          "title": "模拟鼠标操作",
-          "slug": "模拟鼠标操作"
-        },
-        {
-          "level": 2,
-          "title": "消息框操作⭐",
-          "slug": "消息框操作⭐"
-        },
-        {
-          "level": 2,
-          "title": "切换浏览器窗口⭐",
-          "slug": "切换浏览器窗口⭐"
-        },
-        {
-          "level": 2,
-          "title": "切换Frame⭐",
-          "slug": "切换frame⭐"
-        },
-        {
-          "level": 3,
-          "title": "Frame标记",
-          "slug": "frame标记"
-        },
-        {
-          "level": 3,
-          "title": "Iframe标记",
-          "slug": "iframe标记"
-        },
-        {
-          "level": 3,
-          "title": "切换frame语法",
-          "slug": "切换frame语法"
-        },
-        {
-          "level": 3,
-          "title": "总结",
-          "slug": "总结"
-        },
-        {
-          "level": 2,
-          "title": "下拉列表操作",
-          "slug": "下拉列表操作"
-        },
-        {
-          "level": 2,
-          "title": "截屏操作",
-          "slug": "截屏操作"
-        },
-        {
-          "level": 2,
-          "title": "验证码测试",
-          "slug": "验证码测试"
-        },
-        {
-          "level": 2,
-          "title": "文件上传下载操作",
-          "slug": "文件上传下载操作"
-        },
-        {
-          "level": 3,
-          "title": "文件上传",
-          "slug": "文件上传"
-        },
-        {
-          "level": 3,
-          "title": "文件下载",
-          "slug": "文件下载"
-        }
-      ]
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
       "title": "Redis实战",
@@ -4624,7 +3890,797 @@ export const siteData = {
           "title": "12.2 UV统计-测试百万数据的统计",
           "slug": "_12-2-uv统计-测试百万数据的统计"
         }
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
+    },
+    {
+      "title": "Redis分布式缓存",
+      "frontmatter": {
+        "title": "Redis分布式缓存",
+        "date": "2025-02-07T17:28:15.000Z",
+        "permalink": "/pages/97d2c6/",
+        "categories": [
+          "Redis"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/10.Redis/05.Redis%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98.html",
+      "relativePath": "10.Redis/05.Redis分布式缓存.md",
+      "key": "v-6c489d60",
+      "path": "/pages/97d2c6/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1.1.RDB持久化",
+          "slug": "_1-1-rdb持久化"
+        },
+        {
+          "level": 3,
+          "title": "1.1.1.执行时机",
+          "slug": "_1-1-1-执行时机"
+        },
+        {
+          "level": 3,
+          "title": "1.1.2.RDB原理",
+          "slug": "_1-1-2-rdb原理"
+        },
+        {
+          "level": 3,
+          "title": "1.1.3.小结",
+          "slug": "_1-1-3-小结"
+        },
+        {
+          "level": 2,
+          "title": "1.2.AOF持久化",
+          "slug": "_1-2-aof持久化"
+        },
+        {
+          "level": 3,
+          "title": "1.2.1.AOF原理",
+          "slug": "_1-2-1-aof原理"
+        },
+        {
+          "level": 3,
+          "title": "1.2.2.AOF配置",
+          "slug": "_1-2-2-aof配置"
+        },
+        {
+          "level": 3,
+          "title": "1.2.3.AOF文件重写bgrewriteaof",
+          "slug": "_1-2-3-aof文件重写bgrewriteaof"
+        },
+        {
+          "level": 2,
+          "title": "1.3.RDB与AOF对比",
+          "slug": "_1-3-rdb与aof对比"
+        },
+        {
+          "level": 2,
+          "title": "2.1.搭建主从架构",
+          "slug": "_2-1-搭建主从架构"
+        },
+        {
+          "level": 2,
+          "title": "2.2.主从数据同步原理",
+          "slug": "_2-2-主从数据同步原理"
+        },
+        {
+          "level": 3,
+          "title": "2.2.1.全量同步",
+          "slug": "_2-2-1-全量同步"
+        },
+        {
+          "level": 3,
+          "title": "2.2.2.增量同步",
+          "slug": "_2-2-2-增量同步"
+        },
+        {
+          "level": 3,
+          "title": "2.2.3.repl_backlog原理",
+          "slug": "_2-2-3-repl-backlog原理"
+        },
+        {
+          "level": 2,
+          "title": "2.3.主从同步优化**",
+          "slug": "_2-3-主从同步优化"
+        },
+        {
+          "level": 2,
+          "title": "2.4.小结**",
+          "slug": "_2-4-小结"
+        },
+        {
+          "level": 2,
+          "title": "3.1.哨兵原理",
+          "slug": "_3-1-哨兵原理"
+        },
+        {
+          "level": 3,
+          "title": "3.1.1.集群结构和作用",
+          "slug": "_3-1-1-集群结构和作用"
+        },
+        {
+          "level": 3,
+          "title": "3.1.2.集群监控原理",
+          "slug": "_3-1-2-集群监控原理"
+        },
+        {
+          "level": 3,
+          "title": "3.1.3.集群故障恢复原理",
+          "slug": "_3-1-3-集群故障恢复原理"
+        },
+        {
+          "level": 3,
+          "title": "3.1.4.小结",
+          "slug": "_3-1-4-小结"
+        },
+        {
+          "level": 2,
+          "title": "3.2.搭建哨兵集群",
+          "slug": "_3-2-搭建哨兵集群"
+        },
+        {
+          "level": 2,
+          "title": "3.3.RedisTemplate",
+          "slug": "_3-3-redistemplate"
+        },
+        {
+          "level": 3,
+          "title": "3.3.1.导入Demo工程",
+          "slug": "_3-3-1-导入demo工程"
+        },
+        {
+          "level": 3,
+          "title": "3.3.2.引入依赖",
+          "slug": "_3-3-2-引入依赖"
+        },
+        {
+          "level": 3,
+          "title": "3.3.3.配置Redis地址",
+          "slug": "_3-3-3-配置redis地址"
+        },
+        {
+          "level": 3,
+          "title": "3.3.4.配置读写分离",
+          "slug": "_3-3-4-配置读写分离"
+        },
+        {
+          "level": 2,
+          "title": "4.1.搭建分片集群",
+          "slug": "_4-1-搭建分片集群"
+        },
+        {
+          "level": 2,
+          "title": "4.2.散列插槽",
+          "slug": "_4-2-散列插槽"
+        },
+        {
+          "level": 3,
+          "title": "4.2.1.插槽原理",
+          "slug": "_4-2-1-插槽原理"
+        },
+        {
+          "level": 3,
+          "title": "4.2.1.小结**",
+          "slug": "_4-2-1-小结"
+        },
+        {
+          "level": 2,
+          "title": "4.3.集群伸缩**",
+          "slug": "_4-3-集群伸缩"
+        },
+        {
+          "level": 3,
+          "title": "4.3.1.需求分析",
+          "slug": "_4-3-1-需求分析"
+        },
+        {
+          "level": 3,
+          "title": "4.3.2.创建新的redis实例",
+          "slug": "_4-3-2-创建新的redis实例"
+        },
+        {
+          "level": 3,
+          "title": "4.3.3.添加新节点到redis",
+          "slug": "_4-3-3-添加新节点到redis"
+        },
+        {
+          "level": 3,
+          "title": "4.3.4.转移插槽",
+          "slug": "_4-3-4-转移插槽"
+        },
+        {
+          "level": 2,
+          "title": "4.4.故障转移",
+          "slug": "_4-4-故障转移"
+        },
+        {
+          "level": 3,
+          "title": "4.4.1.自动故障转移",
+          "slug": "_4-4-1-自动故障转移"
+        },
+        {
+          "level": 3,
+          "title": "4.4.2.手动故障转移",
+          "slug": "_4-4-2-手动故障转移"
+        },
+        {
+          "level": 2,
+          "title": "4.5.RedisTemplate访问分片集群",
+          "slug": "_4-5-redistemplate访问分片集群"
+        }
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
+    },
+    {
+      "title": "Redis多级缓存",
+      "frontmatter": {
+        "title": "Redis多级缓存",
+        "date": "2025-02-09T13:04:55.000Z",
+        "permalink": "/pages/c7ec43/",
+        "categories": [
+          "Redis"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/10.Redis/06.Redis%E5%A4%9A%E7%BA%A7%E7%BC%93%E5%AD%98.html",
+      "relativePath": "10.Redis/06.Redis多级缓存.md",
+      "key": "v-c8a5cf8c",
+      "path": "/pages/c7ec43/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "2.1.导入案例",
+          "slug": "_2-1-导入案例"
+        },
+        {
+          "level": 2,
+          "title": "2.2.初识Caffeine",
+          "slug": "_2-2-初识caffeine"
+        },
+        {
+          "level": 2,
+          "title": "2.3.实现JVM进程缓存",
+          "slug": "_2-3-实现jvm进程缓存"
+        },
+        {
+          "level": 3,
+          "title": "2.3.1.需求",
+          "slug": "_2-3-1-需求"
+        },
+        {
+          "level": 3,
+          "title": "2.3.2.实现",
+          "slug": "_2-3-2-实现"
+        },
+        {
+          "level": 2,
+          "title": "3.1.初识Lua",
+          "slug": "_3-1-初识lua"
+        },
+        {
+          "level": 2,
+          "title": "3.1.HelloWorld",
+          "slug": "_3-1-helloworld"
+        },
+        {
+          "level": 2,
+          "title": "3.2.变量和循环",
+          "slug": "_3-2-变量和循环"
+        },
+        {
+          "level": 3,
+          "title": "3.2.1.Lua的数据类型",
+          "slug": "_3-2-1-lua的数据类型"
+        },
+        {
+          "level": 3,
+          "title": "3.2.2.声明变量",
+          "slug": "_3-2-2-声明变量"
+        },
+        {
+          "level": 3,
+          "title": "3.2.3.循环(ipairs和pairs)",
+          "slug": "_3-2-3-循环-ipairs和pairs"
+        },
+        {
+          "level": 2,
+          "title": "3.3.条件控制、函数",
+          "slug": "_3-3-条件控制、函数"
+        },
+        {
+          "level": 3,
+          "title": "3.3.1.函数",
+          "slug": "_3-3-1-函数"
+        },
+        {
+          "level": 3,
+          "title": "3.3.2.条件控制",
+          "slug": "_3-3-2-条件控制"
+        },
+        {
+          "level": 3,
+          "title": "3.3.3.案例",
+          "slug": "_3-3-3-案例"
+        },
+        {
+          "level": 2,
+          "title": "4.1.安装OpenResty",
+          "slug": "_4-1-安装openresty"
+        },
+        {
+          "level": 2,
+          "title": "4.2.OpenResty快速入门",
+          "slug": "_4-2-openresty快速入门"
+        },
+        {
+          "level": 3,
+          "title": "4.2.1.反向代理流程*",
+          "slug": "_4-2-1-反向代理流程"
+        },
+        {
+          "level": 3,
+          "title": "4.2.2.OpenResty监听请求*",
+          "slug": "_4-2-2-openresty监听请求"
+        },
+        {
+          "level": 3,
+          "title": "4.2.3.编写item.lua",
+          "slug": "_4-2-3-编写item-lua"
+        },
+        {
+          "level": 2,
+          "title": "4.3.请求参数处理**",
+          "slug": "_4-3-请求参数处理"
+        },
+        {
+          "level": 3,
+          "title": "4.3.1.获取参数的API",
+          "slug": "_4-3-1-获取参数的api"
+        },
+        {
+          "level": 3,
+          "title": "4.3.2.获取参数并返回",
+          "slug": "_4-3-2-获取参数并返回"
+        }
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
+    },
+    {
+      "title": "Redis原理",
+      "frontmatter": {
+        "title": "Redis原理",
+        "date": "2025-02-09T15:45:05.000Z",
+        "permalink": "/pages/e81cee/",
+        "categories": [
+          "Redis"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/10.Redis/07.Redis%E5%8E%9F%E7%90%86.html",
+      "relativePath": "10.Redis/07.Redis原理.md",
+      "key": "v-9f5e32aa",
+      "path": "/pages/e81cee/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1、原理篇-Redis数据结构",
+          "slug": "_1、原理篇-redis数据结构"
+        },
+        {
+          "level": 3,
+          "title": "1.1 Redis数据结构-动态字符串",
+          "slug": "_1-1-redis数据结构-动态字符串"
+        }
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
+    },
+    {
+      "title": "案例导入说明",
+      "frontmatter": {
+        "title": "案例导入说明",
+        "date": "2025-02-09T13:06:02.000Z",
+        "permalink": "/pages/5c3702/",
+        "categories": [
+          "Redis"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/10.Redis/08.%E6%A1%88%E4%BE%8B%E5%AF%BC%E5%85%A5%E8%AF%B4%E6%98%8E.html",
+      "relativePath": "10.Redis/08.案例导入说明.md",
+      "key": "v-1157bebe",
+      "path": "/pages/5c3702/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1.1.准备目录",
+          "slug": "_1-1-准备目录"
+        },
+        {
+          "level": 2,
+          "title": "1.2.运行命令",
+          "slug": "_1-2-运行命令"
+        },
+        {
+          "level": 2,
+          "title": "1.3.修改配置",
+          "slug": "_1-3-修改配置"
+        },
+        {
+          "level": 2,
+          "title": "1.4.重启",
+          "slug": "_1-4-重启"
+        },
+        {
+          "level": 2,
+          "title": "3.1.分页查询商品",
+          "slug": "_3-1-分页查询商品"
+        },
+        {
+          "level": 2,
+          "title": "3.2.新增商品",
+          "slug": "_3-2-新增商品"
+        },
+        {
+          "level": 2,
+          "title": "3.3.修改商品",
+          "slug": "_3-3-修改商品"
+        },
+        {
+          "level": 2,
+          "title": "3.4.修改库存",
+          "slug": "_3-4-修改库存"
+        },
+        {
+          "level": 2,
+          "title": "3.5.删除商品",
+          "slug": "_3-5-删除商品"
+        },
+        {
+          "level": 2,
+          "title": "3.6.根据id查询商品",
+          "slug": "_3-6-根据id查询商品"
+        },
+        {
+          "level": 2,
+          "title": "3.7.根据id查询库存",
+          "slug": "_3-7-根据id查询库存"
+        },
+        {
+          "level": 2,
+          "title": "3.8.启动",
+          "slug": "_3-8-启动"
+        },
+        {
+          "level": 2,
+          "title": "4.1.运行nginx服务",
+          "slug": "_4-1-运行nginx服务"
+        },
+        {
+          "level": 2,
+          "title": "4.2.反向代理",
+          "slug": "_4-2-反向代理"
+        }
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
+    },
+    {
+      "title": "Linux",
+      "frontmatter": {
+        "title": "Linux",
+        "date": "2025-03-19T10:32:42.000Z",
+        "permalink": "/Computer/Linux/",
+        "categories": [
+          "Linux"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/11.Computer/01.Linux.html",
+      "relativePath": "11.Computer/01.Linux.md",
+      "key": "v-dbf39936",
+      "path": "/Computer/Linux/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "修改用户权限",
+          "slug": "修改用户权限"
+        },
+        {
+          "level": 2,
+          "title": "",
+          "slug": ""
+        }
       ]
+    },
+    {
+      "title": "安装OpenResty",
+      "frontmatter": {
+        "title": "安装OpenResty",
+        "date": "2025-02-09T14:30:06.000Z",
+        "permalink": "/pages/0459ad/",
+        "categories": [
+          "Redis"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/10.Redis/09.%E5%AE%89%E8%A3%85OpenResty.html",
+      "relativePath": "10.Redis/09.安装OpenResty.md",
+      "key": "v-ca99173c",
+      "path": "/pages/0459ad/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "1）安装开发库",
+          "slug": "_1-安装开发库"
+        },
+        {
+          "level": 2,
+          "title": "2）安装OpenResty仓库",
+          "slug": "_2-安装openresty仓库"
+        },
+        {
+          "level": 2,
+          "title": "3）安装OpenResty",
+          "slug": "_3-安装openresty"
+        },
+        {
+          "level": 2,
+          "title": "4）安装opm工具",
+          "slug": "_4-安装opm工具"
+        },
+        {
+          "level": 2,
+          "title": "5）目录结构",
+          "slug": "_5-目录结构"
+        },
+        {
+          "level": 2,
+          "title": "6）配置nginx的环境变量",
+          "slug": "_6-配置nginx的环境变量"
+        }
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
+    },
+    {
+      "title": "big-event",
+      "frontmatter": {
+        "title": "big-event",
+        "date": "2025-01-17T20:00:04.000Z",
+        "permalink": "/pages/6de838/",
+        "categories": [
+          "SpringBoot"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/12.SpringBoot/01.big-event.html",
+      "relativePath": "12.SpringBoot/01.big-event.md",
+      "key": "v-03357bf9",
+      "path": "/pages/6de838/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "SpringBoot概述",
+          "slug": "springboot概述"
+        }
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
+    },
+    {
+      "title": "SoftwareTest",
+      "frontmatter": {
+        "title": "SoftwareTest",
+        "date": "2025-03-17T23:02:36.000Z",
+        "permalink": "/pages/7dc24f/",
+        "categories": [
+          "SoftwareTest"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/11.Computer/01.SoftwareTest.html",
+      "relativePath": "11.Computer/01.SoftwareTest.md",
+      "key": "v-2a143353",
+      "path": "/pages/7dc24f/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "WebDriver⭐⭐",
+          "slug": "webdriver⭐⭐"
+        },
+        {
+          "level": 2,
+          "title": "定位⭐⭐",
+          "slug": "定位⭐⭐"
+        },
+        {
+          "level": 3,
+          "title": "普通定位类型（定位方法、定位策略）",
+          "slug": "普通定位类型-定位方法、定位策略"
+        },
+        {
+          "level": 3,
+          "title": "XPATH高级定位",
+          "slug": "xpath高级定位"
+        },
+        {
+          "level": 3,
+          "title": "CSS选择器高级定位",
+          "slug": "css选择器高级定位"
+        },
+        {
+          "level": 3,
+          "title": "小结：定位方法",
+          "slug": "小结-定位方法"
+        },
+        {
+          "level": 2,
+          "title": "浏览器操作⭐",
+          "slug": "浏览器操作⭐"
+        },
+        {
+          "level": 2,
+          "title": "元素基本操作",
+          "slug": "元素基本操作"
+        },
+        {
+          "level": 3,
+          "title": "文本框和文本域⭐",
+          "slug": "文本框和文本域⭐"
+        },
+        {
+          "level": 3,
+          "title": "按钮",
+          "slug": "按钮"
+        },
+        {
+          "level": 3,
+          "title": "单选按钮和复选框⭐",
+          "slug": "单选按钮和复选框⭐"
+        },
+        {
+          "level": 3,
+          "title": "超级链接和图片",
+          "slug": "超级链接和图片"
+        },
+        {
+          "level": 3,
+          "title": "超级链接和静态文本⭐",
+          "slug": "超级链接和静态文本⭐"
+        },
+        {
+          "level": 2,
+          "title": "模拟键鼠操作⭐⭐",
+          "slug": "模拟键鼠操作⭐⭐"
+        },
+        {
+          "level": 3,
+          "title": "模拟键盘操作",
+          "slug": "模拟键盘操作"
+        },
+        {
+          "level": 3,
+          "title": "模拟鼠标操作",
+          "slug": "模拟鼠标操作"
+        },
+        {
+          "level": 2,
+          "title": "消息框操作⭐",
+          "slug": "消息框操作⭐"
+        },
+        {
+          "level": 2,
+          "title": "切换浏览器窗口⭐",
+          "slug": "切换浏览器窗口⭐"
+        },
+        {
+          "level": 2,
+          "title": "切换Frame⭐",
+          "slug": "切换frame⭐"
+        },
+        {
+          "level": 3,
+          "title": "Frame标记",
+          "slug": "frame标记"
+        },
+        {
+          "level": 3,
+          "title": "Iframe标记",
+          "slug": "iframe标记"
+        },
+        {
+          "level": 3,
+          "title": "切换frame语法",
+          "slug": "切换frame语法"
+        },
+        {
+          "level": 3,
+          "title": "总结",
+          "slug": "总结"
+        },
+        {
+          "level": 2,
+          "title": "下拉列表操作",
+          "slug": "下拉列表操作"
+        },
+        {
+          "level": 2,
+          "title": "截屏操作",
+          "slug": "截屏操作"
+        },
+        {
+          "level": 2,
+          "title": "验证码测试",
+          "slug": "验证码测试"
+        },
+        {
+          "level": 2,
+          "title": "文件上传下载操作",
+          "slug": "文件上传下载操作"
+        },
+        {
+          "level": 3,
+          "title": "文件上传",
+          "slug": "文件上传"
+        },
+        {
+          "level": 3,
+          "title": "文件下载",
+          "slug": "文件下载"
+        }
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
+    },
+    {
+      "title": "Spring注解",
+      "frontmatter": {
+        "title": "Spring注解",
+        "date": "2025-03-16T15:57:59.000Z",
+        "permalink": "/pages/651745/",
+        "categories": [
+          "SpringBoot"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/12.SpringBoot/04.Spring%E6%B3%A8%E8%A7%A3.html",
+      "relativePath": "12.SpringBoot/04.Spring注解.md",
+      "key": "v-48d11354",
+      "path": "/pages/651745/",
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
       "title": "数据库设计文档",
@@ -4705,26 +4761,9 @@ export const siteData = {
           "title": "11. order_detail",
           "slug": "_11-order-detail"
         }
-      ]
-    },
-    {
-      "title": "Spring注解",
-      "frontmatter": {
-        "title": "Spring注解",
-        "date": "2025-03-16T15:57:59.000Z",
-        "permalink": "/pages/651745/",
-        "categories": [
-          "SpringBoot"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/12.SpringBoot/04.Spring%E6%B3%A8%E8%A7%A3.html",
-      "relativePath": "12.SpringBoot/04.Spring注解.md",
-      "key": "v-48d11354",
-      "path": "/pages/651745/"
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
       "title": "Spring",
@@ -4743,7 +4782,9 @@ export const siteData = {
       "regularPath": "/13.SSM/01.Spring.html",
       "relativePath": "13.SSM/01.Spring.md",
       "key": "v-e966c23e",
-      "path": "/pages/cde4de/"
+      "path": "/pages/cde4de/",
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
       "title": "SpringBoot",
@@ -4762,7 +4803,9 @@ export const siteData = {
       "regularPath": "/13.SSM/02.SpringBoot.html",
       "relativePath": "13.SSM/02.SpringBoot.md",
       "key": "v-0133d33f",
-      "path": "/pages/73b0ae/"
+      "path": "/pages/73b0ae/",
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
       "title": "MyBatis",
@@ -4781,81 +4824,9 @@ export const siteData = {
       "regularPath": "/13.SSM/03.MyBatis.html",
       "relativePath": "13.SSM/03.MyBatis.md",
       "key": "v-080c2ce6",
-      "path": "/pages/1fa27c/"
-    },
-    {
-      "title": "idea快捷键",
-      "frontmatter": {
-        "title": "idea快捷键",
-        "date": "2025-03-17T15:39:10.000Z",
-        "permalink": "/pages/47e1e8/",
-        "categories": [
-          "Work"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/14.Work/01.idea%E5%BF%AB%E6%8D%B7%E9%94%AE.html",
-      "relativePath": "14.Work/01.idea快捷键.md",
-      "key": "v-277c682c",
-      "path": "/pages/47e1e8/",
-      "headers": [
-        {
-          "level": 3,
-          "title": "设置idea的背景颜色",
-          "slug": "设置idea的背景颜色"
-        },
-        {
-          "level": 2,
-          "title": "生成序列化id",
-          "slug": "生成序列化id"
-        },
-        {
-          "level": 2,
-          "title": "模板",
-          "slug": "模板"
-        }
-      ]
-    },
-    {
-      "title": "Secure",
-      "frontmatter": {
-        "title": "Secure",
-        "date": "2025-03-15T09:42:04.000Z",
-        "permalink": "/pages/f2ef46/",
-        "categories": [
-          "Work"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/14.Work/02.Secure.html",
-      "relativePath": "14.Work/02.Secure.md",
-      "key": "v-2732075a",
-      "path": "/pages/f2ef46/"
-    },
-    {
-      "title": "Sql",
-      "frontmatter": {
-        "title": "Sql",
-        "date": "2025-03-15T09:43:14.000Z",
-        "permalink": "/pages/b8f6a1/",
-        "categories": [
-          "Work"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/14.Work/03.Sql.html",
-      "relativePath": "14.Work/03.Sql.md",
-      "key": "v-9656075a",
-      "path": "/pages/b8f6a1/"
+      "path": "/pages/1fa27c/",
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
       "title": "sky-take-out2",
@@ -5531,420 +5502,9 @@ export const siteData = {
           "title": "3.4 代码提交",
           "slug": "_3-4-代码提交-2"
         }
-      ]
-    },
-    {
-      "title": "MyBatisPlus",
-      "frontmatter": {
-        "title": "MyBatisPlus",
-        "date": "2025-01-17T14:57:31.000Z",
-        "permalink": "/pages/6f5b27/",
-        "categories": [
-          "SSM"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/13.SSM/04.MyBatisPlus.html",
-      "relativePath": "13.SSM/04.MyBatisPlus.md",
-      "key": "v-1c11e32d",
-      "path": "/pages/6f5b27/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "MyBatisPlus概述",
-          "slug": "mybatisplus概述"
-        },
-        {
-          "level": 2,
-          "title": "MyBatisPlus特性",
-          "slug": "mybatisplus特性"
-        },
-        {
-          "level": 2,
-          "title": "标准数据层CRUD功能",
-          "slug": "标准数据层crud功能"
-        },
-        {
-          "level": 2,
-          "title": "lombok",
-          "slug": "lombok"
-        },
-        {
-          "level": 2,
-          "title": "1.1.环境准备",
-          "slug": "_1-1-环境准备"
-        },
-        {
-          "level": 2,
-          "title": "1.2.快速开始",
-          "slug": "_1-2-快速开始"
-        },
-        {
-          "level": 3,
-          "title": "1.2.1引入依赖",
-          "slug": "_1-2-1引入依赖"
-        },
-        {
-          "level": 3,
-          "title": "1.2.2.定义Mapper",
-          "slug": "_1-2-2-定义mapper"
-        },
-        {
-          "level": 3,
-          "title": "1.2.3.测试",
-          "slug": "_1-2-3-测试"
-        },
-        {
-          "level": 2,
-          "title": "常见注解**",
-          "slug": "常见注解"
-        },
-        {
-          "level": 3,
-          "title": "@TableName**",
-          "slug": "tablename"
-        },
-        {
-          "level": 3,
-          "title": "@TableId",
-          "slug": "tableid"
-        },
-        {
-          "level": 3,
-          "title": "@TableField",
-          "slug": "tablefield"
-        },
-        {
-          "level": 3,
-          "title": "更多注解",
-          "slug": "更多注解"
-        },
-        {
-          "level": 2,
-          "title": "常见配置",
-          "slug": "常见配置"
-        },
-        {
-          "level": 2,
-          "title": "2.1.条件构造器",
-          "slug": "_2-1-条件构造器"
-        },
-        {
-          "level": 3,
-          "title": "2.1.1.QueryWrapper",
-          "slug": "_2-1-1-querywrapper"
-        },
-        {
-          "level": 3,
-          "title": "2.1.2.UpdateWrapper",
-          "slug": "_2-1-2-updatewrapper"
-        },
-        {
-          "level": 3,
-          "title": "2.1.3.LambdaQueryWrapper",
-          "slug": "_2-1-3-lambdaquerywrapper"
-        },
-        {
-          "level": 2,
-          "title": "2.2.自定义SQL",
-          "slug": "_2-2-自定义sql"
-        },
-        {
-          "level": 3,
-          "title": "2.2.1.基本用法",
-          "slug": "_2-2-1-基本用法"
-        },
-        {
-          "level": 3,
-          "title": "2.2.2.多表关联",
-          "slug": "_2-2-2-多表关联"
-        },
-        {
-          "level": 2,
-          "title": "2.3.Service接口",
-          "slug": "_2-3-service接口"
-        },
-        {
-          "level": 3,
-          "title": "2.3.1.CRUD",
-          "slug": "_2-3-1-crud"
-        },
-        {
-          "level": 3,
-          "title": "2.3.2.基本用法",
-          "slug": "_2-3-2-基本用法"
-        },
-        {
-          "level": 3,
-          "title": "2.3.3.Lambda",
-          "slug": "_2-3-3-lambda"
-        },
-        {
-          "level": 3,
-          "title": "2.3.4.批量新增",
-          "slug": "_2-3-4-批量新增"
-        },
-        {
-          "level": 2,
-          "title": "3.1.代码生成",
-          "slug": "_3-1-代码生成"
-        },
-        {
-          "level": 3,
-          "title": "3.1.1.安装插件",
-          "slug": "_3-1-1-安装插件"
-        },
-        {
-          "level": 3,
-          "title": "3.1.2.使用",
-          "slug": "_3-1-2-使用"
-        },
-        {
-          "level": 2,
-          "title": "3.2.静态工具",
-          "slug": "_3-2-静态工具"
-        },
-        {
-          "level": 2,
-          "title": "3.3.逻辑删除",
-          "slug": "_3-3-逻辑删除"
-        },
-        {
-          "level": 2,
-          "title": "3.3.通用枚举",
-          "slug": "_3-3-通用枚举"
-        },
-        {
-          "level": 3,
-          "title": "3.3.1.定义枚举",
-          "slug": "_3-3-1-定义枚举"
-        },
-        {
-          "level": 3,
-          "title": "3.3.2.配置枚举处理器",
-          "slug": "_3-3-2-配置枚举处理器"
-        },
-        {
-          "level": 3,
-          "title": "3.3.3.测试",
-          "slug": "_3-3-3-测试"
-        },
-        {
-          "level": 2,
-          "title": "3.4.JSON类型处理器",
-          "slug": "_3-4-json类型处理器"
-        },
-        {
-          "level": 3,
-          "title": "3.4.1.定义实体",
-          "slug": "_3-4-1-定义实体"
-        },
-        {
-          "level": 3,
-          "title": "3.4.2.使用类型处理器",
-          "slug": "_3-4-2-使用类型处理器"
-        },
-        {
-          "level": 2,
-          "title": "3.5.配置加密（选学）",
-          "slug": "_3-5-配置加密-选学"
-        },
-        {
-          "level": 3,
-          "title": "3.5.1.生成秘钥",
-          "slug": "_3-5-1-生成-秘钥"
-        },
-        {
-          "level": 3,
-          "title": "3.5.2.修改配置",
-          "slug": "_3-5-2-修改配置"
-        },
-        {
-          "level": 3,
-          "title": "3.5.3.测试",
-          "slug": "_3-5-3-测试"
-        },
-        {
-          "level": 2,
-          "title": "4.1.分页插件",
-          "slug": "_4-1-分页插件"
-        },
-        {
-          "level": 3,
-          "title": "4.1.1.配置分页插件",
-          "slug": "_4-1-1-配置分页插件"
-        },
-        {
-          "level": 3,
-          "title": "4.1.2.分页API",
-          "slug": "_4-1-2-分页-api"
-        },
-        {
-          "level": 2,
-          "title": "4.2.通用分页实体",
-          "slug": "_4-2-通用分页实体"
-        },
-        {
-          "level": 3,
-          "title": "4.2.1.实体",
-          "slug": "_4-2-1-实体"
-        },
-        {
-          "level": 3,
-          "title": "4.2.2.开发接口",
-          "slug": "_4-2-2-开发接口"
-        },
-        {
-          "level": 3,
-          "title": "4.2.3.改造PageQuery实体",
-          "slug": "_4-2-3-改造pagequery实体"
-        },
-        {
-          "level": 3,
-          "title": "4.2.4.改造PageDTO实体",
-          "slug": "_4-2-4-改造pagedto实体"
-        }
-      ]
-    },
-    {
-      "title": "项目搭建",
-      "frontmatter": {
-        "title": "项目搭建",
-        "date": "2025-03-16T14:46:55.000Z",
-        "permalink": "/pages/a1a8a7/",
-        "categories": [
-          "Work"
-        ],
-        "tags": [
-          null
-        ],
-        "readingShow": "top"
-      },
-      "regularPath": "/14.Work/04.%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA.html",
-      "relativePath": "14.Work/04.项目搭建.md",
-      "key": "v-1ee99ef1",
-      "path": "/pages/a1a8a7/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "需求分析",
-          "slug": "需求分析"
-        },
-        {
-          "level": 2,
-          "title": "技术选型",
-          "slug": "技术选型"
-        },
-        {
-          "level": 3,
-          "title": "前端",
-          "slug": "前端"
-        },
-        {
-          "level": 3,
-          "title": "后端：",
-          "slug": "后端"
-        },
-        {
-          "level": 2,
-          "title": "部署：服务器 / 容器（平台）",
-          "slug": "部署-服务器-容器-平台"
-        },
-        {
-          "level": 3,
-          "title": "原始部署",
-          "slug": "原始部署"
-        },
-        {
-          "level": 3,
-          "title": "宝塔 Linux 部署",
-          "slug": "宝塔-linux-部署"
-        },
-        {
-          "level": 3,
-          "title": "Docker 部署",
-          "slug": "docker-部署"
-        },
-        {
-          "level": 3,
-          "title": "Docker 平台部署",
-          "slug": "docker-平台部署"
-        },
-        {
-          "level": 2,
-          "title": "绑定域名",
-          "slug": "绑定域名"
-        },
-        {
-          "level": 2,
-          "title": "跨域问题解决",
-          "slug": "跨域问题解决"
-        },
-        {
-          "level": 2,
-          "title": "代码规范",
-          "slug": "代码规范"
-        },
-        {
-          "level": 2,
-          "title": "开发工具",
-          "slug": "开发工具"
-        },
-        {
-          "level": 2,
-          "title": "代码生成工具",
-          "slug": "代码生成工具"
-        },
-        {
-          "level": 2,
-          "title": "注册逻辑",
-          "slug": "注册逻辑"
-        },
-        {
-          "level": 2,
-          "title": "登录接口",
-          "slug": "登录接口"
-        },
-        {
-          "level": 2,
-          "title": "如何知道是哪个用户登录了？",
-          "slug": "如何知道是哪个用户登录了"
-        },
-        {
-          "level": 2,
-          "title": "用户管理接口",
-          "slug": "用户管理接口"
-        },
-        {
-          "level": 2,
-          "title": "前后端交互",
-          "slug": "前后端交互"
-        },
-        {
-          "level": 2,
-          "title": "后端优化",
-          "slug": "后端优化"
-        }
-      ]
-    },
-    {
-      "title": "归档",
-      "frontmatter": {
-        "archivesPage": true,
-        "title": "归档",
-        "permalink": "/archives/",
-        "article": false,
-        "readingShow": "top"
-      },
-      "regularPath": "/@pages/archivesPage.html",
-      "relativePath": "@pages/archivesPage.md",
-      "key": "v-d1ba87a6",
-      "path": "/archives/",
-      "lastUpdated": "2025/3/28 10:23:05",
-      "lastUpdatedTimestamp": 1743128585000
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
       "title": "sky-take-out",
@@ -6785,7 +6345,490 @@ export const siteData = {
           "title": "6.4 代码开发",
           "slug": "_6-4-代码开发"
         }
-      ]
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
+    },
+    {
+      "title": "idea快捷键",
+      "frontmatter": {
+        "title": "idea快捷键",
+        "date": "2025-03-17T15:39:10.000Z",
+        "permalink": "/pages/47e1e8/",
+        "categories": [
+          "Work"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/14.Work/01.idea%E5%BF%AB%E6%8D%B7%E9%94%AE.html",
+      "relativePath": "14.Work/01.idea快捷键.md",
+      "key": "v-277c682c",
+      "path": "/pages/47e1e8/",
+      "headers": [
+        {
+          "level": 3,
+          "title": "设置idea的背景颜色",
+          "slug": "设置idea的背景颜色"
+        },
+        {
+          "level": 2,
+          "title": "生成序列化id",
+          "slug": "生成序列化id"
+        },
+        {
+          "level": 2,
+          "title": "模板",
+          "slug": "模板"
+        }
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
+    },
+    {
+      "title": "Sql",
+      "frontmatter": {
+        "title": "Sql",
+        "date": "2025-03-15T09:43:14.000Z",
+        "permalink": "/pages/b8f6a1/",
+        "categories": [
+          "Work"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/14.Work/03.Sql.html",
+      "relativePath": "14.Work/03.Sql.md",
+      "key": "v-9656075a",
+      "path": "/pages/b8f6a1/",
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
+    },
+    {
+      "title": "项目搭建",
+      "frontmatter": {
+        "title": "项目搭建",
+        "date": "2025-03-16T14:46:55.000Z",
+        "permalink": "/pages/a1a8a7/",
+        "categories": [
+          "Work"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/14.Work/04.%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA.html",
+      "relativePath": "14.Work/04.项目搭建.md",
+      "key": "v-1ee99ef1",
+      "path": "/pages/a1a8a7/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "需求分析",
+          "slug": "需求分析"
+        },
+        {
+          "level": 2,
+          "title": "技术选型",
+          "slug": "技术选型"
+        },
+        {
+          "level": 3,
+          "title": "前端",
+          "slug": "前端"
+        },
+        {
+          "level": 3,
+          "title": "后端：",
+          "slug": "后端"
+        },
+        {
+          "level": 2,
+          "title": "部署：服务器 / 容器（平台）",
+          "slug": "部署-服务器-容器-平台"
+        },
+        {
+          "level": 3,
+          "title": "原始部署",
+          "slug": "原始部署"
+        },
+        {
+          "level": 3,
+          "title": "宝塔 Linux 部署",
+          "slug": "宝塔-linux-部署"
+        },
+        {
+          "level": 3,
+          "title": "Docker 部署",
+          "slug": "docker-部署"
+        },
+        {
+          "level": 3,
+          "title": "Docker 平台部署",
+          "slug": "docker-平台部署"
+        },
+        {
+          "level": 2,
+          "title": "绑定域名",
+          "slug": "绑定域名"
+        },
+        {
+          "level": 2,
+          "title": "跨域问题解决",
+          "slug": "跨域问题解决"
+        },
+        {
+          "level": 2,
+          "title": "代码规范",
+          "slug": "代码规范"
+        },
+        {
+          "level": 2,
+          "title": "开发工具",
+          "slug": "开发工具"
+        },
+        {
+          "level": 2,
+          "title": "代码生成工具",
+          "slug": "代码生成工具"
+        },
+        {
+          "level": 2,
+          "title": "注册逻辑",
+          "slug": "注册逻辑"
+        },
+        {
+          "level": 2,
+          "title": "登录接口",
+          "slug": "登录接口"
+        },
+        {
+          "level": 2,
+          "title": "如何知道是哪个用户登录了？",
+          "slug": "如何知道是哪个用户登录了"
+        },
+        {
+          "level": 2,
+          "title": "用户管理接口",
+          "slug": "用户管理接口"
+        },
+        {
+          "level": 2,
+          "title": "前后端交互",
+          "slug": "前后端交互"
+        },
+        {
+          "level": 2,
+          "title": "后端优化",
+          "slug": "后端优化"
+        }
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
+    },
+    {
+      "title": "MyBatisPlus",
+      "frontmatter": {
+        "title": "MyBatisPlus",
+        "date": "2025-01-17T14:57:31.000Z",
+        "permalink": "/pages/6f5b27/",
+        "categories": [
+          "SSM"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/13.SSM/04.MyBatisPlus.html",
+      "relativePath": "13.SSM/04.MyBatisPlus.md",
+      "key": "v-1c11e32d",
+      "path": "/pages/6f5b27/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "MyBatisPlus概述",
+          "slug": "mybatisplus概述"
+        },
+        {
+          "level": 2,
+          "title": "MyBatisPlus特性",
+          "slug": "mybatisplus特性"
+        },
+        {
+          "level": 2,
+          "title": "标准数据层CRUD功能",
+          "slug": "标准数据层crud功能"
+        },
+        {
+          "level": 2,
+          "title": "lombok",
+          "slug": "lombok"
+        },
+        {
+          "level": 2,
+          "title": "1.1.环境准备",
+          "slug": "_1-1-环境准备"
+        },
+        {
+          "level": 2,
+          "title": "1.2.快速开始",
+          "slug": "_1-2-快速开始"
+        },
+        {
+          "level": 3,
+          "title": "1.2.1引入依赖",
+          "slug": "_1-2-1引入依赖"
+        },
+        {
+          "level": 3,
+          "title": "1.2.2.定义Mapper",
+          "slug": "_1-2-2-定义mapper"
+        },
+        {
+          "level": 3,
+          "title": "1.2.3.测试",
+          "slug": "_1-2-3-测试"
+        },
+        {
+          "level": 2,
+          "title": "常见注解**",
+          "slug": "常见注解"
+        },
+        {
+          "level": 3,
+          "title": "@TableName**",
+          "slug": "tablename"
+        },
+        {
+          "level": 3,
+          "title": "@TableId",
+          "slug": "tableid"
+        },
+        {
+          "level": 3,
+          "title": "@TableField",
+          "slug": "tablefield"
+        },
+        {
+          "level": 3,
+          "title": "更多注解",
+          "slug": "更多注解"
+        },
+        {
+          "level": 2,
+          "title": "常见配置",
+          "slug": "常见配置"
+        },
+        {
+          "level": 2,
+          "title": "2.1.条件构造器",
+          "slug": "_2-1-条件构造器"
+        },
+        {
+          "level": 3,
+          "title": "2.1.1.QueryWrapper",
+          "slug": "_2-1-1-querywrapper"
+        },
+        {
+          "level": 3,
+          "title": "2.1.2.UpdateWrapper",
+          "slug": "_2-1-2-updatewrapper"
+        },
+        {
+          "level": 3,
+          "title": "2.1.3.LambdaQueryWrapper",
+          "slug": "_2-1-3-lambdaquerywrapper"
+        },
+        {
+          "level": 2,
+          "title": "2.2.自定义SQL",
+          "slug": "_2-2-自定义sql"
+        },
+        {
+          "level": 3,
+          "title": "2.2.1.基本用法",
+          "slug": "_2-2-1-基本用法"
+        },
+        {
+          "level": 3,
+          "title": "2.2.2.多表关联",
+          "slug": "_2-2-2-多表关联"
+        },
+        {
+          "level": 2,
+          "title": "2.3.Service接口",
+          "slug": "_2-3-service接口"
+        },
+        {
+          "level": 3,
+          "title": "2.3.1.CRUD",
+          "slug": "_2-3-1-crud"
+        },
+        {
+          "level": 3,
+          "title": "2.3.2.基本用法",
+          "slug": "_2-3-2-基本用法"
+        },
+        {
+          "level": 3,
+          "title": "2.3.3.Lambda",
+          "slug": "_2-3-3-lambda"
+        },
+        {
+          "level": 3,
+          "title": "2.3.4.批量新增",
+          "slug": "_2-3-4-批量新增"
+        },
+        {
+          "level": 2,
+          "title": "3.1.代码生成",
+          "slug": "_3-1-代码生成"
+        },
+        {
+          "level": 3,
+          "title": "3.1.1.安装插件",
+          "slug": "_3-1-1-安装插件"
+        },
+        {
+          "level": 3,
+          "title": "3.1.2.使用",
+          "slug": "_3-1-2-使用"
+        },
+        {
+          "level": 2,
+          "title": "3.2.静态工具",
+          "slug": "_3-2-静态工具"
+        },
+        {
+          "level": 2,
+          "title": "3.3.逻辑删除",
+          "slug": "_3-3-逻辑删除"
+        },
+        {
+          "level": 2,
+          "title": "3.3.通用枚举",
+          "slug": "_3-3-通用枚举"
+        },
+        {
+          "level": 3,
+          "title": "3.3.1.定义枚举",
+          "slug": "_3-3-1-定义枚举"
+        },
+        {
+          "level": 3,
+          "title": "3.3.2.配置枚举处理器",
+          "slug": "_3-3-2-配置枚举处理器"
+        },
+        {
+          "level": 3,
+          "title": "3.3.3.测试",
+          "slug": "_3-3-3-测试"
+        },
+        {
+          "level": 2,
+          "title": "3.4.JSON类型处理器",
+          "slug": "_3-4-json类型处理器"
+        },
+        {
+          "level": 3,
+          "title": "3.4.1.定义实体",
+          "slug": "_3-4-1-定义实体"
+        },
+        {
+          "level": 3,
+          "title": "3.4.2.使用类型处理器",
+          "slug": "_3-4-2-使用类型处理器"
+        },
+        {
+          "level": 2,
+          "title": "3.5.配置加密（选学）",
+          "slug": "_3-5-配置加密-选学"
+        },
+        {
+          "level": 3,
+          "title": "3.5.1.生成秘钥",
+          "slug": "_3-5-1-生成-秘钥"
+        },
+        {
+          "level": 3,
+          "title": "3.5.2.修改配置",
+          "slug": "_3-5-2-修改配置"
+        },
+        {
+          "level": 3,
+          "title": "3.5.3.测试",
+          "slug": "_3-5-3-测试"
+        },
+        {
+          "level": 2,
+          "title": "4.1.分页插件",
+          "slug": "_4-1-分页插件"
+        },
+        {
+          "level": 3,
+          "title": "4.1.1.配置分页插件",
+          "slug": "_4-1-1-配置分页插件"
+        },
+        {
+          "level": 3,
+          "title": "4.1.2.分页API",
+          "slug": "_4-1-2-分页-api"
+        },
+        {
+          "level": 2,
+          "title": "4.2.通用分页实体",
+          "slug": "_4-2-通用分页实体"
+        },
+        {
+          "level": 3,
+          "title": "4.2.1.实体",
+          "slug": "_4-2-1-实体"
+        },
+        {
+          "level": 3,
+          "title": "4.2.2.开发接口",
+          "slug": "_4-2-2-开发接口"
+        },
+        {
+          "level": 3,
+          "title": "4.2.3.改造PageQuery实体",
+          "slug": "_4-2-3-改造pagequery实体"
+        },
+        {
+          "level": 3,
+          "title": "4.2.4.改造PageDTO实体",
+          "slug": "_4-2-4-改造pagedto实体"
+        }
+      ],
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
+    },
+    {
+      "title": "Secure",
+      "frontmatter": {
+        "title": "Secure",
+        "date": "2025-03-15T09:42:04.000Z",
+        "permalink": "/pages/f2ef46/",
+        "categories": [
+          "Work"
+        ],
+        "tags": [
+          null
+        ],
+        "readingShow": "top"
+      },
+      "regularPath": "/14.Work/02.Secure.html",
+      "relativePath": "14.Work/02.Secure.md",
+      "key": "v-2732075a",
+      "path": "/pages/f2ef46/",
+      "lastUpdated": "2025/3/29 11:44:27",
+      "lastUpdatedTimestamp": 1743219867000
     },
     {
       "title": "分类",
@@ -6851,6 +6894,22 @@ export const siteData = {
       "path": "/",
       "lastUpdated": "2025/3/28 22:19:47",
       "lastUpdatedTimestamp": 1743171587000
+    },
+    {
+      "title": "归档",
+      "frontmatter": {
+        "archivesPage": true,
+        "title": "归档",
+        "permalink": "/archives/",
+        "article": false,
+        "readingShow": "top"
+      },
+      "regularPath": "/@pages/archivesPage.html",
+      "relativePath": "@pages/archivesPage.md",
+      "key": "v-d1ba87a6",
+      "path": "/archives/",
+      "lastUpdated": "2025/3/28 10:23:05",
+      "lastUpdatedTimestamp": 1743128585000
     }
   ],
   "themeConfig": {
@@ -6894,31 +6953,31 @@ export const siteData = {
             "items": [
               {
                 "text": "Redis安装",
-                "link": "https://cyanyep.top/InterviewQ/INTV/"
+                "link": "https://cyanyep.top/Redis/Redis安装/Win"
               },
               {
                 "text": "Redis基础",
-                "link": "https://cyanyep.top/Git"
+                "link": "https://cyanyep.top/Redis/Redis基础"
               },
               {
                 "text": "Redis实战",
-                "link": "https://cyanyep.top/Git"
+                "link": "https://cyanyep.top/Redis/Redis实战"
               },
               {
                 "text": "Redis集群安装",
-                "link": "https://cyanyep.top/Git"
+                "link": "https://cyanyep.top/Redis/Redis集群安装"
               },
               {
                 "text": "Redis分布式缓存",
-                "link": "https://cyanyep.top/Git"
+                "link": "https://cyanyep.top/Redis/Redis分布式缓存"
               },
               {
                 "text": "Redis多级缓存",
-                "link": "https://cyanyep.top/Git"
+                "link": "https://cyanyep.top/Redis/Redis多级缓存"
               },
               {
                 "text": "Redis原理",
-                "link": "https://cyanyep.top/Git"
+                "link": "https://cyanyep.top/Redis/Redis原理"
               }
             ]
           },
@@ -6961,27 +7020,27 @@ export const siteData = {
             "items": [
               {
                 "text": "Docker",
-                "link": "https://cyanyep.top/InterviewQ/INTV/"
+                "link": "https://cyanyep.top/MicroServices/Docker/"
               },
               {
                 "text": "RabbitMQ",
-                "link": "https://cyanyep.top/Git"
+                "link": "https://cyanyep.top/MicroServices/RabbitMQ"
               },
               {
                 "text": "SpringCloud",
-                "link": "https://cyanyep.top/Git"
+                "link": "https://cyanyep.top/MicroServices/SpringCloud"
               },
               {
                 "text": "Dubbo",
-                "link": "https://cyanyep.top/Git"
+                "link": "https://cyanyep.top/MicroServices/Dubbo"
               },
               {
                 "text": "MongoDB",
-                "link": "https://cyanyep.top/Git"
+                "link": "https://cyanyep.top/MicroServices/MongoDB"
               },
               {
                 "text": "Zookeeper",
-                "link": "https://cyanyep.top/Git"
+                "link": "https://cyanyep.top/MicroServices/Zookeeper"
               }
             ]
           },
@@ -6990,7 +7049,11 @@ export const siteData = {
             "items": [
               {
                 "text": "Java面试题",
-                "link": "https://cyanyep.top/InterviewQ/INTV/"
+                "link": "https://cyanyep.top/InterviewQ/Java面试题/"
+              },
+              {
+                "text": "JUC面试题",
+                "link": "https://cyanyep.top/InterviewQ/JUC面试题/"
               }
             ]
           }
@@ -7000,21 +7063,21 @@ export const siteData = {
         "text": "计算机",
         "items": [
           {
+            "text": "Linux",
+            "link": "https://cyanyep.top/Computer/Linux"
+          },
+          {
             "text": "软件测试",
-            "link": "https://blog.csdn.net/Computer/SoftwareTest"
+            "link": "https://cyanyep.top/Computer/SoftwareTest"
           }
         ]
       },
       {
-        "text": "西螈的 JavaScript 博客",
+        "text": "生活",
         "items": [
           {
-            "text": "Github",
-            "link": "https://github.com/cyanyep"
-          },
-          {
-            "text": "CSDN",
-            "link": "https://blog.csdn.net/rc4gyyc"
+            "text": "道理",
+            "link": "https://cyanyep.top/Life/Learn"
           }
         ]
       },
@@ -7045,7 +7108,7 @@ export const siteData = {
       "/01.Blog/": [
         [
           "01.Introduce.md",
-          "零成本搭建个人博客网站",
+          "低成本搭建个人博客网站",
           "/Blog/Introduce/"
         ],
         [
@@ -7064,9 +7127,9 @@ export const siteData = {
           "/Blog/DN/"
         ],
         [
-          "05.Qiniu.md",
+          "05.PicBed.md",
           "图床",
-          "/Blog/Qiniu/"
+          "/Blog/PicBed/"
         ],
         [
           "06.Sync.md",
@@ -7101,49 +7164,49 @@ export const siteData = {
           "/InterviewQ/INTV/"
         ],
         [
-          "02.Java.md",
-          "Java",
-          "/InterviewQ/Java/"
+          "02.Java面试题.md",
+          "Java面试题",
+          "/InterviewQ/Java面试题/"
         ],
         [
-          "03.JUC.md",
-          "JUC",
-          "/InterviewQ/JUC/"
+          "03.JUC面试题.md",
+          "JUC面试题",
+          "/InterviewQ/JUC面试题/"
         ],
         [
-          "04.JVM.md",
-          "JVM",
-          "/InterviewQ/JVM/"
+          "04.JVM面试题.md",
+          "JVM面试题",
+          "/InterviewQ/JVM面试题/"
         ],
         [
-          "05.Linux.md",
-          "Linux",
-          "/InterviewQ/Linux/"
+          "05.Linux面试题.md",
+          "Linux面试题",
+          "/InterviewQ/Linux面试题/"
         ],
         [
-          "06.SQL.md",
-          "SQL",
-          "/InterviewQ/SQL/"
+          "06.SQL面试题.md",
+          "SQL面试题",
+          "/InterviewQ/SQL面试题/"
         ],
         [
-          "07.Maven.md",
+          "07.Maven面试题.md",
           "Maven",
           "/InterviewQ/Maven/"
         ],
         [
-          "08.MyBatis.md",
+          "08.MyBatis面试题.md",
           "MyBatis",
           "/InterviewQ/MyBatis/"
         ],
         [
-          "09.SpringHome.md",
-          "SpringHome",
-          "/pages/896da2/"
+          "09.Spring面试题.md",
+          "Spring面试题",
+          "/InterviewQ/Spring面试题/"
         ],
         [
-          "10.Redis.md",
-          "Redis",
-          "/InterviewQ/Redis/"
+          "10.Redis面试题.md",
+          "Redis面试题",
+          "/InterviewQ/Redis面试题/"
         ],
         [
           "11.Algorithm.md",
@@ -7178,18 +7241,11 @@ export const siteData = {
           "/pages/6d69d7/"
         ]
       ],
-      "/06.Learn/": [
+      "/06.Life/": [
         [
           "01.Learn.md",
           "Learn",
-          "/pages/c70e3b/"
-        ]
-      ],
-      "/07.Linux/": [
-        [
-          "01.Linux.md",
-          "Linux",
-          "/pages/29ecf5/"
+          "/Life/Learn/"
         ]
       ],
       "/08.MicroServices/": [
@@ -7232,11 +7288,22 @@ export const siteData = {
         ]
       ],
       "/10.Redis/": [
-        [
-          "01.Redis安装.md",
-          "Redis安装说明",
-          "/pages/3c30a0/"
-        ],
+        {
+          "title": "Redis安装",
+          "collapsable": true,
+          "children": [
+            [
+              "01.Redis安装/01.Redis安装.md",
+              "Redis安装说明",
+              "/Redis/Redis安装/Win"
+            ],
+            [
+              "01.Redis安装/02.Linux.md",
+              "Linux",
+              "/Reids/Redis安装/Linux"
+            ]
+          ]
+        },
         [
           "02.Redis基础.md",
           "Redis基础",
