@@ -67,7 +67,7 @@ export default <VdoingThemeConfig>{
         {
             text: '计算机',
             items: [
-                { text: '软件测试', link: 'https://blog.csdn.net/Computer/SoftwareTest' }
+                { text: '软件测试', link: 'https://cyanyep.top/Computer/SoftwareTest' }
             ]
         },
         {
