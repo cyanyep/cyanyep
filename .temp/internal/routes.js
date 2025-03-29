@@ -25,22 +25,6 @@ export const routes = [
     redirect: "/Blog/Introduce/"
   },
   {
-    name: "v-3f56744d",
-    path: "/Blog/Qiniu/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-3f56744d").then(next)
-    },
-  },
-  {
-    path: "/Blog/Qiniu/index.html",
-    redirect: "/Blog/Qiniu/"
-  },
-  {
-    path: "/01.Blog/05.Qiniu.html",
-    redirect: "/Blog/Qiniu/"
-  },
-  {
     name: "v-6af2f6bb",
     path: "/Blog/build/",
     component: GlobalLayout,
@@ -55,22 +39,6 @@ export const routes = [
   {
     path: "/01.Blog/02.Build.html",
     redirect: "/Blog/build/"
-  },
-  {
-    name: "v-0ac604d3",
-    path: "/Blog/DN/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0ac604d3").then(next)
-    },
-  },
-  {
-    path: "/Blog/DN/index.html",
-    redirect: "/Blog/DN/"
-  },
-  {
-    path: "/01.Blog/04.DN.html",
-    redirect: "/Blog/DN/"
   },
   {
     name: "v-6bcf5e5a",
@@ -89,20 +57,20 @@ export const routes = [
     redirect: "/Blog/More/"
   },
   {
-    name: "v-4527aa9a",
-    path: "/Blog/AutoDeploy/",
+    name: "v-0ac604d3",
+    path: "/Blog/DN/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-4527aa9a").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-0ac604d3").then(next)
     },
   },
   {
-    path: "/Blog/AutoDeploy/index.html",
-    redirect: "/Blog/AutoDeploy/"
+    path: "/Blog/DN/index.html",
+    redirect: "/Blog/DN/"
   },
   {
-    path: "/01.Blog/07.AutoDeploy.html",
-    redirect: "/Blog/AutoDeploy/"
+    path: "/01.Blog/04.DN.html",
+    redirect: "/Blog/DN/"
   },
   {
     name: "v-0e7b15b3",
@@ -121,6 +89,22 @@ export const routes = [
     redirect: "/Blog/Sync/"
   },
   {
+    name: "v-4527aa9a",
+    path: "/Blog/AutoDeploy/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-4527aa9a").then(next)
+    },
+  },
+  {
+    path: "/Blog/AutoDeploy/index.html",
+    redirect: "/Blog/AutoDeploy/"
+  },
+  {
+    path: "/01.Blog/07.AutoDeploy.html",
+    redirect: "/Blog/AutoDeploy/"
+  },
+  {
     name: "v-631db1d0",
     path: "/pages/f8a36c/",
     component: GlobalLayout,
@@ -137,6 +121,22 @@ export const routes = [
     redirect: "/pages/f8a36c/"
   },
   {
+    name: "v-3f56744d",
+    path: "/Blog/Qiniu/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-3f56744d").then(next)
+    },
+  },
+  {
+    path: "/Blog/Qiniu/index.html",
+    redirect: "/Blog/Qiniu/"
+  },
+  {
+    path: "/01.Blog/05.Qiniu.html",
+    redirect: "/Blog/Qiniu/"
+  },
+  {
     name: "v-202ccaad",
     path: "/pages/2e662a/",
     component: GlobalLayout,
@@ -151,22 +151,6 @@ export const routes = [
   {
     path: "/03.Git/01.Git.html",
     redirect: "/pages/2e662a/"
-  },
-  {
-    name: "v-cd328d1a",
-    path: "/InterviewQ/Java/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-cd328d1a").then(next)
-    },
-  },
-  {
-    path: "/InterviewQ/Java/index.html",
-    redirect: "/InterviewQ/Java/"
-  },
-  {
-    path: "/04.InterviewQ/02.Java.html",
-    redirect: "/InterviewQ/Java/"
   },
   {
     name: "v-c739e29a",
@@ -217,20 +201,20 @@ export const routes = [
     redirect: "/InterviewQ/JVM/"
   },
   {
-    name: "v-7904caff",
-    path: "/InterviewQ/Linux/",
+    name: "v-cd328d1a",
+    path: "/InterviewQ/Java/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-7904caff").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-cd328d1a").then(next)
     },
   },
   {
-    path: "/InterviewQ/Linux/index.html",
-    redirect: "/InterviewQ/Linux/"
+    path: "/InterviewQ/Java/index.html",
+    redirect: "/InterviewQ/Java/"
   },
   {
-    path: "/04.InterviewQ/05.Linux.html",
-    redirect: "/InterviewQ/Linux/"
+    path: "/04.InterviewQ/02.Java.html",
+    redirect: "/InterviewQ/Java/"
   },
   {
     name: "v-210a26ee",
@@ -247,6 +231,22 @@ export const routes = [
   {
     path: "/04.InterviewQ/06.SQL.html",
     redirect: "/InterviewQ/SQL/"
+  },
+  {
+    name: "v-7904caff",
+    path: "/InterviewQ/Linux/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-7904caff").then(next)
+    },
+  },
+  {
+    path: "/InterviewQ/Linux/index.html",
+    redirect: "/InterviewQ/Linux/"
+  },
+  {
+    path: "/04.InterviewQ/05.Linux.html",
+    redirect: "/InterviewQ/Linux/"
   },
   {
     name: "v-73e1a14d",
@@ -377,20 +377,20 @@ export const routes = [
     redirect: "/pages/777f5e/"
   },
   {
-    name: "v-5059f7fe",
-    path: "/pages/6d69d7/",
+    name: "v-8ba3a0c2",
+    path: "/pages/eec04e/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-5059f7fe").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-8ba3a0c2").then(next)
     },
   },
   {
-    path: "/pages/6d69d7/index.html",
-    redirect: "/pages/6d69d7/"
+    path: "/pages/eec04e/index.html",
+    redirect: "/pages/eec04e/"
   },
   {
-    path: "/05.Java/04.反射&动态代理.html",
-    redirect: "/pages/6d69d7/"
+    path: "/05.Java/02.JUC.html",
+    redirect: "/pages/eec04e/"
   },
   {
     name: "v-eedbe766",
@@ -409,20 +409,20 @@ export const routes = [
     redirect: "/pages/c70e3b/"
   },
   {
-    name: "v-8ba3a0c2",
-    path: "/pages/eec04e/",
+    name: "v-5059f7fe",
+    path: "/pages/6d69d7/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-8ba3a0c2").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-5059f7fe").then(next)
     },
   },
   {
-    path: "/pages/eec04e/index.html",
-    redirect: "/pages/eec04e/"
+    path: "/pages/6d69d7/index.html",
+    redirect: "/pages/6d69d7/"
   },
   {
-    path: "/05.Java/02.JUC.html",
-    redirect: "/pages/eec04e/"
+    path: "/05.Java/04.反射&动态代理.html",
+    redirect: "/pages/6d69d7/"
   },
   {
     name: "v-3c0876ed",
@@ -441,6 +441,470 @@ export const routes = [
     redirect: "/pages/29ecf5/"
   },
   {
+    name: "v-fc6c8ae6",
+    path: "/pages/427068/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-fc6c8ae6").then(next)
+    },
+  },
+  {
+    path: "/pages/427068/index.html",
+    redirect: "/pages/427068/"
+  },
+  {
+    path: "/08.MicroServices/01.MicroServices.html",
+    redirect: "/pages/427068/"
+  },
+  {
+    name: "v-4ff8ceea",
+    path: "/pages/16ebf4/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-4ff8ceea").then(next)
+    },
+  },
+  {
+    path: "/pages/16ebf4/index.html",
+    redirect: "/pages/16ebf4/"
+  },
+  {
+    path: "/08.MicroServices/02.RabbitMQ.html",
+    redirect: "/pages/16ebf4/"
+  },
+  {
+    name: "v-6ab94649",
+    path: "/pages/e01785/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-6ab94649").then(next)
+    },
+  },
+  {
+    path: "/pages/e01785/index.html",
+    redirect: "/pages/e01785/"
+  },
+  {
+    path: "/08.MicroServices/03.Docker.html",
+    redirect: "/pages/e01785/"
+  },
+  {
+    name: "v-eee68fa6",
+    path: "/pages/bd79a7/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-eee68fa6").then(next)
+    },
+  },
+  {
+    path: "/pages/bd79a7/index.html",
+    redirect: "/pages/bd79a7/"
+  },
+  {
+    path: "/08.MicroServices/04.Dubbo.html",
+    redirect: "/pages/bd79a7/"
+  },
+  {
+    name: "v-3a0063ad",
+    path: "/pages/7839e5/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-3a0063ad").then(next)
+    },
+  },
+  {
+    path: "/pages/7839e5/index.html",
+    redirect: "/pages/7839e5/"
+  },
+  {
+    path: "/08.MicroServices/06.Zookeeper.html",
+    redirect: "/pages/7839e5/"
+  },
+  {
+    name: "v-9474a4e6",
+    path: "/pages/75426d/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-9474a4e6").then(next)
+    },
+  },
+  {
+    path: "/pages/75426d/index.html",
+    redirect: "/pages/75426d/"
+  },
+  {
+    path: "/08.MicroServices/05.MongoDB.html",
+    redirect: "/pages/75426d/"
+  },
+  {
+    name: "v-448b85d8",
+    path: "/pages/3c30a0/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-448b85d8").then(next)
+    },
+  },
+  {
+    path: "/pages/3c30a0/index.html",
+    redirect: "/pages/3c30a0/"
+  },
+  {
+    path: "/10.Redis/01.Redis安装.html",
+    redirect: "/pages/3c30a0/"
+  },
+  {
+    name: "v-2d5edf7b",
+    path: "/pages/83183b/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-2d5edf7b").then(next)
+    },
+  },
+  {
+    path: "/pages/83183b/index.html",
+    redirect: "/pages/83183b/"
+  },
+  {
+    path: "/10.Redis/02.Redis基础.html",
+    redirect: "/pages/83183b/"
+  },
+  {
+    name: "v-96d8cf86",
+    path: "/pages/6b727a/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-96d8cf86").then(next)
+    },
+  },
+  {
+    path: "/pages/6b727a/index.html",
+    redirect: "/pages/6b727a/"
+  },
+  {
+    path: "/10.Redis/04.Redis集群安装.html",
+    redirect: "/pages/6b727a/"
+  },
+  {
+    name: "v-9f5e32aa",
+    path: "/pages/e81cee/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-9f5e32aa").then(next)
+    },
+  },
+  {
+    path: "/pages/e81cee/index.html",
+    redirect: "/pages/e81cee/"
+  },
+  {
+    path: "/10.Redis/07.Redis原理.html",
+    redirect: "/pages/e81cee/"
+  },
+  {
+    name: "v-6c489d60",
+    path: "/pages/97d2c6/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-6c489d60").then(next)
+    },
+  },
+  {
+    path: "/pages/97d2c6/index.html",
+    redirect: "/pages/97d2c6/"
+  },
+  {
+    path: "/10.Redis/05.Redis分布式缓存.html",
+    redirect: "/pages/97d2c6/"
+  },
+  {
+    name: "v-48f6742d",
+    path: "/pages/767b46/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-48f6742d").then(next)
+    },
+  },
+  {
+    path: "/pages/767b46/index.html",
+    redirect: "/pages/767b46/"
+  },
+  {
+    path: "/09.MySQL/01.MySQL.html",
+    redirect: "/pages/767b46/"
+  },
+  {
+    name: "v-c8a5cf8c",
+    path: "/pages/c7ec43/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-c8a5cf8c").then(next)
+    },
+  },
+  {
+    path: "/pages/c7ec43/index.html",
+    redirect: "/pages/c7ec43/"
+  },
+  {
+    path: "/10.Redis/06.Redis多级缓存.html",
+    redirect: "/pages/c7ec43/"
+  },
+  {
+    name: "v-1157bebe",
+    path: "/pages/5c3702/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1157bebe").then(next)
+    },
+  },
+  {
+    path: "/pages/5c3702/index.html",
+    redirect: "/pages/5c3702/"
+  },
+  {
+    path: "/10.Redis/08.案例导入说明.html",
+    redirect: "/pages/5c3702/"
+  },
+  {
+    name: "v-ca99173c",
+    path: "/pages/0459ad/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-ca99173c").then(next)
+    },
+  },
+  {
+    path: "/pages/0459ad/index.html",
+    redirect: "/pages/0459ad/"
+  },
+  {
+    path: "/10.Redis/09.安装OpenResty.html",
+    redirect: "/pages/0459ad/"
+  },
+  {
+    name: "v-03357bf9",
+    path: "/pages/6de838/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-03357bf9").then(next)
+    },
+  },
+  {
+    path: "/pages/6de838/index.html",
+    redirect: "/pages/6de838/"
+  },
+  {
+    path: "/12.SpringBoot/01.big-event.html",
+    redirect: "/pages/6de838/"
+  },
+  {
+    name: "v-2a143353",
+    path: "/pages/7dc24f/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-2a143353").then(next)
+    },
+  },
+  {
+    path: "/pages/7dc24f/index.html",
+    redirect: "/pages/7dc24f/"
+  },
+  {
+    path: "/11.Computer/01.SoftwareTest.html",
+    redirect: "/pages/7dc24f/"
+  },
+  {
+    name: "v-663869a2",
+    path: "/pages/f302c3/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-663869a2").then(next)
+    },
+  },
+  {
+    path: "/pages/f302c3/index.html",
+    redirect: "/pages/f302c3/"
+  },
+  {
+    path: "/10.Redis/03.Redis实战.html",
+    redirect: "/pages/f302c3/"
+  },
+  {
+    name: "v-b3797e00",
+    path: "/pages/e27777/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-b3797e00").then(next)
+    },
+  },
+  {
+    path: "/pages/e27777/index.html",
+    redirect: "/pages/e27777/"
+  },
+  {
+    path: "/12.SpringBoot/05.数据库设计文档.html",
+    redirect: "/pages/e27777/"
+  },
+  {
+    name: "v-48d11354",
+    path: "/pages/651745/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-48d11354").then(next)
+    },
+  },
+  {
+    path: "/pages/651745/index.html",
+    redirect: "/pages/651745/"
+  },
+  {
+    path: "/12.SpringBoot/04.Spring注解.html",
+    redirect: "/pages/651745/"
+  },
+  {
+    name: "v-e966c23e",
+    path: "/pages/cde4de/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-e966c23e").then(next)
+    },
+  },
+  {
+    path: "/pages/cde4de/index.html",
+    redirect: "/pages/cde4de/"
+  },
+  {
+    path: "/13.SSM/01.Spring.html",
+    redirect: "/pages/cde4de/"
+  },
+  {
+    name: "v-0133d33f",
+    path: "/pages/73b0ae/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-0133d33f").then(next)
+    },
+  },
+  {
+    path: "/pages/73b0ae/index.html",
+    redirect: "/pages/73b0ae/"
+  },
+  {
+    path: "/13.SSM/02.SpringBoot.html",
+    redirect: "/pages/73b0ae/"
+  },
+  {
+    name: "v-080c2ce6",
+    path: "/pages/1fa27c/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-080c2ce6").then(next)
+    },
+  },
+  {
+    path: "/pages/1fa27c/index.html",
+    redirect: "/pages/1fa27c/"
+  },
+  {
+    path: "/13.SSM/03.MyBatis.html",
+    redirect: "/pages/1fa27c/"
+  },
+  {
+    name: "v-277c682c",
+    path: "/pages/47e1e8/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-277c682c").then(next)
+    },
+  },
+  {
+    path: "/pages/47e1e8/index.html",
+    redirect: "/pages/47e1e8/"
+  },
+  {
+    path: "/14.Work/01.idea快捷键.html",
+    redirect: "/pages/47e1e8/"
+  },
+  {
+    name: "v-2732075a",
+    path: "/pages/f2ef46/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-2732075a").then(next)
+    },
+  },
+  {
+    path: "/pages/f2ef46/index.html",
+    redirect: "/pages/f2ef46/"
+  },
+  {
+    path: "/14.Work/02.Secure.html",
+    redirect: "/pages/f2ef46/"
+  },
+  {
+    name: "v-9656075a",
+    path: "/pages/b8f6a1/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-9656075a").then(next)
+    },
+  },
+  {
+    path: "/pages/b8f6a1/index.html",
+    redirect: "/pages/b8f6a1/"
+  },
+  {
+    path: "/14.Work/03.Sql.html",
+    redirect: "/pages/b8f6a1/"
+  },
+  {
+    name: "v-3a699613",
+    path: "/pages/c0269b/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-3a699613").then(next)
+    },
+  },
+  {
+    path: "/pages/c0269b/index.html",
+    redirect: "/pages/c0269b/"
+  },
+  {
+    path: "/12.SpringBoot/03.sky-take-out2.html",
+    redirect: "/pages/c0269b/"
+  },
+  {
+    name: "v-1c11e32d",
+    path: "/pages/6f5b27/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1c11e32d").then(next)
+    },
+  },
+  {
+    path: "/pages/6f5b27/index.html",
+    redirect: "/pages/6f5b27/"
+  },
+  {
+    path: "/13.SSM/04.MyBatisPlus.html",
+    redirect: "/pages/6f5b27/"
+  },
+  {
+    name: "v-1ee99ef1",
+    path: "/pages/a1a8a7/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1ee99ef1").then(next)
+    },
+  },
+  {
+    path: "/pages/a1a8a7/index.html",
+    redirect: "/pages/a1a8a7/"
+  },
+  {
+    path: "/14.Work/04.项目搭建.html",
+    redirect: "/pages/a1a8a7/"
+  },
+  {
     name: "v-d1ba87a6",
     path: "/archives/",
     component: GlobalLayout,
@@ -455,6 +919,22 @@ export const routes = [
   {
     path: "/@pages/archivesPage.html",
     redirect: "/archives/"
+  },
+  {
+    name: "v-6e6ef9f3",
+    path: "/pages/1e2d53/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-6e6ef9f3").then(next)
+    },
+  },
+  {
+    path: "/pages/1e2d53/index.html",
+    redirect: "/pages/1e2d53/"
+  },
+  {
+    path: "/12.SpringBoot/02.sky-take-out.html",
+    redirect: "/pages/1e2d53/"
   },
   {
     name: "v-0343b8e6",
