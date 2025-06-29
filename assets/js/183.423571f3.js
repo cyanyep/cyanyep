@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[183],{556:function(t,s,n){"use strict";n.r(s);var e=n(1),r=Object(e.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("p",[t("a",{attrs:{href:"../Computer/DesignPatterns"}},[this._v("设计模式")])])])}),[],!1,null,null,null);s.default=r.exports}}]);
